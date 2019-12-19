@@ -9,10 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Технобаг</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontello.min.css" />
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/media.min.css" />
-    <link rel="stylesheet" href="css/fontello.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body>
     <header class="main-header">
@@ -391,7 +391,10 @@
       </section>
       <section id="video" class="video-section">
         <div class="container">
-          <div class="video-section__content">
+          <div
+            class="video-section__content lazy"
+            data-src="assets/video-section-bg.png"
+          >
             <div>
               <i class="icon-youtube-play video-section__content-icon"></i>
             </div>
@@ -407,7 +410,11 @@
           </div>
         </div>
       </section>
-      <section id="prices" class="prices-section">
+      <section
+        id="prices"
+        class="prices-section lazy"
+        data-src="assets/prices-background.png"
+      >
         <div class="container">
           <div class="text-center mb-6">
             <h1 class="section-title section-title--light mb-3">
@@ -640,7 +647,11 @@
           </div>
         </div>
       </section>
-      <section id="specs" class="specs-section">
+      <section
+        id="specs"
+        class="specs-section lazy"
+        data-src="assets/specs-background.png"
+      >
         <div class="container">
           <div class="text-center mb-6">
             <h1 class="section-title">
@@ -844,7 +855,11 @@
           </div>
         </div>
       </section>
-      <section id="about" class="about-section">
+      <section
+        id="about"
+        class="about-section lazy"
+        data-src="assets/about-background.png"
+      >
         <div class="container">
           <div class="text-center mb-3">
             <h1 class="section-title section-title--light mb-3">
@@ -1153,7 +1168,11 @@
               </div>
             </div>
             <div>
-              <button id="loadBranchesBtn" class="btn-success dd-button mb-3 w-100" type="button">
+              <button
+                id="loadBranchesBtn"
+                class="btn-success dd-button mb-3 w-100"
+                type="button"
+              >
                 Показать ещё
               </button>
             </div>
@@ -1237,7 +1256,8 @@
       </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
