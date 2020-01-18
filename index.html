@@ -30,84 +30,80 @@
   <body>
     <!-- release 1.2 -->
     <!-- inject:header:html -->
-    <header id="header" class="header floating">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg p-0">
-          <a class="navbar-brand" href="/">
-            <img
-              src="images/logo-light.png"
-              alt="logo"
-              class="logo logo-light"
-            />
-            <img src="images/logo-dark.png" alt="logo" class="logo logo-dark" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars text-white"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="main-navbar navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#hero" data-translatable>
-                  <span>ГЛАВНАЯ</span>
-                  <span>HOME</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about" data-translatable>
-                  <span>О НАС</span>
-                  <span>ABOUT US</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services" data-translatable>
-                  <span>НАШИ УСЛУГИ</span>
-                  <span>OUT SERVICES</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio" data-translatable>
-                  <span>ПОРТФОЛИО</span>
-                  <span>PORTFOLIO</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer" data-translatable>
-                  <span>КОНТАКТЫ</span>
-                  <span>CONTACTS</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="language-switcher ml-auto">
-              <li class="language-switcher__item">
-                <a
-                  class="language-switcher__item-link"
-                  data-lang="ru"
-                  href="javascript:void(0)"
-                  >RU</a
-                >
-              </li>
-              <span class="language-switcher__separator">/</span>
-              <li class="language-switcher__item">
-                <a
-                  class="language-switcher__item-link"
-                  data-lang="en"
-                  href="javascript:void(0)"
-                  >ENG</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <header id="header" class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg p-0">
+      <a class="navbar-brand" href="/">
+        <img src="images/logo-light.png" alt="logo" class="logo logo-light" />
+        <img src="images/logo-dark.png" alt="logo" class="logo logo-dark" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="main-navbar navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero" data-translatable>
+              <span>ГЛАВНАЯ</span>
+              <span>HOME</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-translatable>
+              <span>О НАС</span>
+              <span>ABOUT US</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services" data-translatable>
+              <span>НАШИ УСЛУГИ</span>
+              <span>OUT SERVICES</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" data-translatable>
+              <span>ПОРТФОЛИО</span>
+              <span>PORTFOLIO</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer" data-translatable>
+              <span>КОНТАКТЫ</span>
+              <span>CONTACTS</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="language-switcher ml-auto">
+          <li class="language-switcher__item">
+            <a
+              class="language-switcher__item-link"
+              data-lang="ru"
+              href="javascript:void(0)"
+              >RU</a
+            >
+          </li>
+          <span class="language-switcher__separator">/</span>
+          <li class="language-switcher__item">
+            <a
+              class="language-switcher__item-link"
+              data-lang="en"
+              href="javascript:void(0)"
+              >ENG</a
+            >
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
+  </div>
+</header>
 
     <!-- endinject -->
     <main class="main">
@@ -433,7 +429,7 @@
               <span>PORTFOLIO</span>
             </h3>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <a
                   href="http://aspectmf.ru/"
                   target="_blank"
@@ -441,27 +437,41 @@
                   class="text-main underline-none"
                 >
                   <div class="scroll-fadeIn">
-                    <p class="text-center" data-translatable>
-                      <span
-                        ><i>Аспект</i>
-                        <strong>(сайт минеральных удобрений)</strong></span
-                      >
-                      <span
-                        ><i>Аспект</i>
-                        <strong>(mineral fertilizers project)</strong></span
-                      >
+                    <p class="text-center mb-0">
+                      <strong>Аспект</strong>
                     </p>
                     <figure class="progressive portfolio-img mb-5">
                       <img
                         class="progressive__img progressive--not-loaded"
-                        data-progressive="images/portfolio_1.png"
-                        src="images/portfolio_1_low.png"
+                        data-progressive="images/project_aspekt.png"
+                        src="images/project_aspekt-low.png"
                       />
                     </figure>
                   </div>
                 </a>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
+                <a
+                  href="projects/tehnobag/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-main underline-none"
+                >
+                  <div class="scroll-fadeIn">
+                    <p class="text-center mb-0">
+                      <strong>Технобаг</strong>
+                    </p>
+                    <figure class="progressive portfolio-img mb-5">
+                      <img
+                        class="progressive__img progressive--not-loaded"
+                        data-progressive="images/project_tehnobag.png"
+                        src="images/project_tehnobag-low.png"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
                 <a
                   href="projects/bermuda/index.html"
                   target="_blank"
@@ -469,25 +479,20 @@
                   class="text-main underline-none"
                 >
                   <div class="scroll-fadeIn">
-                    <p class="text-center" data-translatable>
-                      <span
-                        ><i>Bermuda</i> <strong>(РАБОЧИЙ МАКЕТ)</strong></span
-                      >
-                      <span
-                        ><i>Bermuda</i> <strong>(PROJECT MOCKUP)</strong></span
-                      >
+                    <p class="text-center mb-0">
+                      <strong>Bermuda</strong>
                     </p>
                     <figure class="progressive portfolio-img mb-5">
                       <img
                         class="progressive__img progressive--not-loaded"
-                        data-progressive="images/portfolio_2.png"
-                        src="images/portfolio_2_low.png"
+                        data-progressive="images/project_bermuda.png"
+                        src="images/project_aspekt-low.png"
                       />
                     </figure>
                   </div>
                 </a>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <a
                   href="projects/ems/index.html"
                   target="_blank"
@@ -495,45 +500,119 @@
                   class="text-main underline-none"
                 >
                   <div class="scroll-fadeIn">
-                    <p class="text-center" data-translatable>
-                      <span
-                        ><i>EMS PRO</i> <strong>(РАБОЧИЙ МАКЕТ)</strong></span
-                      >
-                      <span
-                        ><i>EMS PRO</i> <strong>(PROJECT MOCKUP)</strong></span
-                      >
+                    <p class="text-center mb-0">
+                      <strong>EMS PRO</strong>
                     </p>
                     <figure class="progressive portfolio-img mb-5">
                       <img
                         class="progressive__img progressive--not-loaded"
-                        data-progressive="images/portfolio_3.png"
-                        src="images/portfolio_3_low.png"
+                        data-progressive="images/project_ems.png"
+                        src="images/project_ems-low.png"
                       />
                     </figure>
                   </div>
                 </a>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <a
-                  href="images/portfolio_4.png"
+                  href="projects/avtopromsnab/index.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-main underline-none"
                 >
                   <div class="scroll-fadeIn">
-                    <p class="text-center" data-translatable>
-                      <span
-                        ><i>FreshMan</i> <strong>(РАБОЧИЙ МАКЕТ)</strong></span
-                      >
-                      <span
-                        ><i>FreshMan</i> <strong>(PROJECT MOCKUP)</strong></span
-                      >
+                    <p class="text-center mb-0">
+                      <strong>АвтоПромСнаб</strong>
                     </p>
                     <figure class="progressive portfolio-img mb-5">
                       <img
                         class="progressive__img progressive--not-loaded"
-                        data-progressive="images/portfolio_4.png"
-                        src="images/portfolio_4_low.png"
+                        data-progressive="images/project_avtopromsnab.png"
+                        src="images/project_avtopromsnab-low.png"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="projects/freshman.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-main underline-none"
+                >
+                  <div class="scroll-fadeIn">
+                    <p class="text-center mb-0">
+                      <strong>FreshMan</strong>
+                    </p>
+                    <figure class="progressive portfolio-img mb-5">
+                      <img
+                        class="progressive__img progressive--not-loaded"
+                        data-progressive="images/project_freshman.png"
+                        src="images/project_freshman-low.png"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="projects/queen-of-pain.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-main underline-none"
+                >
+                  <div class="scroll-fadeIn">
+                    <p class="text-center mb-0">
+                      <strong>Queen of Pain</strong>
+                    </p>
+                    <figure class="progressive portfolio-img mb-5">
+                      <img
+                        class="progressive__img progressive--not-loaded"
+                        data-progressive="images/project_queen_of_pain.png"
+                        src="images/project_queen_of_pain-low.png"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="projects/bushe.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-main underline-none"
+                >
+                  <div class="scroll-fadeIn">
+                    <p class="text-center mb-0">
+                      <strong>Bushe</strong>
+                    </p>
+                    <figure class="progressive portfolio-img mb-5">
+                      <img
+                        class="progressive__img progressive--not-loaded"
+                        data-progressive="images/project_bushe.png"
+                        src="images/project_bushe-low.png"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="projects/practiceedge.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-main underline-none"
+                >
+                  <div class="scroll-fadeIn">
+                    <p class="text-center mb-0">
+                      <strong>Practiceedge</strong>
+                    </p>
+                    <figure class="progressive portfolio-img mb-5">
+                      <img
+                        class="progressive__img progressive--not-loaded"
+                        data-progressive="images/project_practiceedge.png"
+                        src="images/project_practiceedge-low.png"
                       />
                     </figure>
                   </div>
@@ -546,113 +625,109 @@
     </main>
     <!-- inject:footer:html -->
     <footer id="footer" class="footer skew-clean-top">
-      <div class="footer-content-wrapper">
-        <div class="container">
-          <h3 class="section-title scroll-fadeIn" data-translatable>
-            <span>КОНТАКТЫ</span>
-            <span>CONTACTS</span>
-          </h3>
-          <button id="play_music" class="play-music">
-            <i class="svg-icon svg-icon__play"></i>
-          </button>
-          <form
-            class="contact-form scroll-fadeIn mb-5"
-            action="https://formspree.io/xledraaz"
-            method="POST"
-          >
-            <div class="contact-form__controls-wrapper">
-              <div class="contact-form__col">
-                <div class="contact-form__control">
-                  <label for="name_input" data-translatable>
-                    <span>ИМЯ:</span>
-                    <span>NAME:</span>
-                  </label>
-                  <input
-                    data-translatable
-                    id="name_input"
-                    class="contact-form__input"
-                    type="text"
-                    name="name"
-                    autocomplete="name"
-                    required
-                  />
-                </div>
-                <div class="contact-form__control">
-                  <label for="email_input" data-translatable>
-                    <span>ЭЛЕКТРОННАЯ ПОЧТА:</span>
-                    <span>EMAIL:</span>
-                  </label>
-                  <input
-                    id="email_input"
-                    class="contact-form__input"
-                    type="text"
-                    name="email"
-                    autocomplete="email"
-                    required
-                  />
-                </div>
-                <div class="contact-form__control">
-                  <label for="subject_input" data-translatable>
-                    <span>ТЕМА:</span>
-                    <span>SUBJECT:</span>
-                  </label>
-                  <input
-                    id="subject_input"
-                    class="contact-form__input"
-                    type="text"
-                    name="subject"
-                    autocomplete="off"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="contact-form__col">
-                <div class="contact-form__control">
-                  <label for="message_input" data-translatable>
-                    <span>СООБЩЕНИЕ:</span>
-                    <span>MESSAGE:</span>
-                  </label>
-                  <textarea
-                    id="message_input"
-                    class="contact-form__textarea"
-                    name="message"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="contact-form__control mt-3">
-              <button
-                class="contact-form__button"
-                type="submit"
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <h3 class="section-title scroll-fadeIn" data-translatable>
+        <span>КОНТАКТЫ</span>
+        <span>CONTACTS</span>
+      </h3>
+      <button id="play_music" class="play-music">
+        <i class="svg-icon svg-icon__play"></i>
+      </button>
+      <form
+        class="contact-form scroll-fadeIn mb-5"
+        action="https://formspree.io/xledraaz"
+        method="POST"
+      >
+        <div class="contact-form__controls-wrapper">
+          <div class="contact-form__col">
+            <div class="contact-form__control">
+              <label for="name_input" data-translatable>
+                <span>ИМЯ:</span>
+                <span>NAME:</span>
+              </label>
+              <input
                 data-translatable
-              >
-                <span>ОТПРАВИТЬ</span>
-                <span>SUBMIT</span>
-              </button>
+                id="name_input"
+                class="contact-form__input"
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+              />
             </div>
-          </form>
-          <div class="text-center scroll-fadeIn">
-            <a
-              class="mx-1"
-              href="https://api.whatsapp.com/send?phone=+79148277634"
-              target="_blank"
-            >
-              <i class="svg-icon svg-icon__whatsapp d-inline-block"></i>
-            </a>
-            <a class="mx-1" href="https://t.me/Lunev_322" target="_blank">
-              <i class="svg-icon svg-icon__telegram d-inline-block"></i>
-            </a>
+            <div class="contact-form__control">
+              <label for="email_input" data-translatable>
+                <span>ЭЛЕКТРОННАЯ ПОЧТА:</span>
+                <span>EMAIL:</span>
+              </label>
+              <input
+                id="email_input"
+                class="contact-form__input"
+                type="text"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="contact-form__control">
+              <label for="subject_input" data-translatable>
+                <span>ТЕМА:</span>
+                <span>SUBJECT:</span>
+              </label>
+              <input
+                id="subject_input"
+                class="contact-form__input"
+                type="text"
+                name="subject"
+                autocomplete="off"
+                required
+              />
+            </div>
           </div>
-          <div class="text-center font-weight-bold scroll-fadeIn">
-            web.digitaldream.team@gmail.com
+          <div class="contact-form__col">
+            <div class="contact-form__control">
+              <label for="message_input" data-translatable>
+                <span>СООБЩЕНИЕ:</span>
+                <span>MESSAGE:</span>
+              </label>
+              <textarea
+                id="message_input"
+                class="contact-form__textarea"
+                name="message"
+                rows="4"
+                cols="50"
+                required
+              ></textarea>
+            </div>
           </div>
         </div>
+        <div class="contact-form__control mt-3">
+          <button class="contact-form__button" type="submit" data-translatable>
+            <span>ОТПРАВИТЬ</span>
+            <span>SUBMIT</span>
+          </button>
+        </div>
+      </form>
+      <div class="text-center scroll-fadeIn">
+        <a
+          class="mx-1"
+          href="https://api.whatsapp.com/send?phone=+79148277634"
+          target="_blank"
+        >
+          <i class="svg-icon svg-icon__whatsapp d-inline-block"></i>
+        </a>
+        <a class="mx-1" href="https://t.me/Lunev_322" target="_blank">
+          <i class="svg-icon svg-icon__telegram d-inline-block"></i>
+        </a>
       </div>
-      <canvas id="footer-canvas" class="footer-canvas"></canvas>
-    </footer>
+      <div class="text-center font-weight-bold scroll-fadeIn">
+        web.digitaldream.team@gmail.com
+      </div>
+    </div>
+  </div>
+  <canvas id="footer-canvas" class="footer-canvas"></canvas>
+</footer>
 
     <!-- endinject -->
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
