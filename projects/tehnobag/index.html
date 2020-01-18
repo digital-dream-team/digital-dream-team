@@ -19,7 +19,10 @@
       <nav class="navbar navbar-expand-lg p-0">
         <div class="navbar-inner-mobile d-flex d-lg-none">
           <div class="container">
-            <a class="d-block d-lg-none navbar-brand logo-wrapper" href="/">
+            <a
+              class="d-block d-lg-none navbar-brand logo-wrapper no-underline"
+              href="/"
+            >
               <img
                 class="logo mr-2"
                 src="assets/logo-negative.png"
@@ -44,7 +47,7 @@
           <div class="navbar-inner">
             <div class="navbar-inner__top d-none d-lg-flex">
               <div class="container">
-                <a class="navbar-brand logo-wrapper" href="/">
+                <a class="navbar-brand logo-wrapper no-underline" href="/">
                   <img class="logo mr-2" src="assets/logo.png" alt="logo" />
                   <span class="logo-text">Технобаг.рф</span>
                 </a>
@@ -55,7 +58,7 @@
                     </p>
                     <a
                       href="tel:84957894732"
-                      class="navbar-contacts__item-content"
+                      class="navbar-contacts__item-content no-underline"
                     >
                       8 (495) 789 47 32
                     </a>
@@ -66,7 +69,7 @@
                     </p>
                     <a
                       href="tel:88003332625"
-                      class="navbar-contacts__item-content"
+                      class="navbar-contacts__item-content no-underline"
                     >
                       8 (800) 333 26 25
                     </a>
@@ -85,7 +88,7 @@
                     </p>
                     <a
                       href="mailto:E2505430@mail.ru"
-                      class="navbar-contacts__item-content"
+                      class="navbar-contacts__item-content no-underline"
                     >
                       E2505430@mail.ru
                     </a>
@@ -97,47 +100,47 @@
               <div class="container">
                 <ul class="navbar-nav w-100 d-flex justify-content-between">
                   <li class="nav-item">
-                    <a class="nav-link" href="#features">
+                    <a class="nav-link no-underline" href="#features">
                       Преимущества
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#prices">
+                    <a class="nav-link no-underline" href="#prices">
                       Цены
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#specs">
+                    <a class="nav-link no-underline" href="#specs">
                       Характеристики
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#individualOrders">
+                    <a class="nav-link no-underline" href="#individualOrders">
                       Индивидуальный заказ
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#howToOrder">
+                    <a class="nav-link no-underline" href="#howToOrder">
                       Как заказать?
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about">
+                    <a class="nav-link no-underline" href="#about">
                       О компании
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#requisites">
+                    <a class="nav-link no-underline" href="#requisites">
                       Реквизиты
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacts">
+                    <a class="nav-link no-underline" href="#contacts">
                       Контакты
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#branches">
+                    <a class="nav-link no-underline" href="#branches">
                       Филиалы
                     </a>
                   </li>
@@ -150,103 +153,109 @@
     </header>
     <main class="main">
       <section id="hero" class="hero-section">
-        <div class="container">
-          <div class="col-lg-6">
-            <div class="text-center text-lg-left">
-              <h1 class="page-title mb-3">ТЕХНОБАГ</h1>
-              <h2 class="section-title mb-5">
-                Мешки фильтровальные для обезвоживания осадка
-              </h2>
-            </div>
-            <form
-              id="contactForm"
-              class="contact-form"
-              action="http://scripts.local"
-              method="POST"
-            >
-              <div class="row align-items-end">
-                <div class="col-md-4 p-0 p-md-1">
-                  <div class="form-group">
-                    <label for="formEmailInput" class="contact-form__title"
-                      >Получить КП:</label
+        <div id="scene_1">
+          <div class="container" data-depth="0.0">
+            <div class="col-lg-6">
+              <div class="text-center text-lg-left">
+                <h1 class="page-title mb-3">ТЕХНОБАГ</h1>
+                <h2 class="section-title mb-5">
+                  Мешки фильтровальные для обезвоживания осадка
+                </h2>
+              </div>
+              <form
+                id="contactForm"
+                class="contact-form"
+                action="http://scripts.local"
+                method="POST"
+              >
+                <div class="row align-items-end">
+                  <div class="col-md-4 p-0 p-md-1">
+                    <div class="form-group">
+                      <label for="formEmailInput" class="contact-form__title"
+                        >Получить КП:</label
+                      >
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control contact-form__input"
+                        id="formEmailInput"
+                        placeholder="E-mail"
+                        autocomplete="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-0 p-md-1">
+                    <div class="form-group">
+                      <input
+                        name="organization"
+                        type="text"
+                        class="form-control contact-form__input"
+                        id="formOrganizationInput"
+                        placeholder="Организация"
+                        autocomplete="organization"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-0 p-md-1">
+                    <button
+                      type="submit"
+                      class="contact-form__btn dd-button w-100 mb-3"
                     >
-                    <input
-                      name="email"
-                      type="email"
-                      class="form-control contact-form__input"
-                      id="formEmailInput"
-                      placeholder="E-mail"
-                      autocomplete="email"
-                      required
-                    />
+                      Заказать
+                    </button>
                   </div>
                 </div>
-                <div class="col-md-4 p-0 p-md-1">
-                  <div class="form-group">
-                    <input
-                      name="organization"
-                      type="text"
-                      class="form-control contact-form__input"
-                      id="formOrganizationInput"
-                      placeholder="Организация"
-                      autocomplete="organization"
-                      required
-                    />
+                <div class="custom-control custom-checkbox mb-3">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input contact-form__checkbox"
+                    id="formTermsCheckbox"
+                    required
+                    checked
+                  />
+                  <label class="custom-control-label" for="formTermsCheckbox">
+                    Согласен с <a href="#">политикой конфиденциальности</a>
+                  </label>
+                </div>
+              </form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="hero-section__icon-wrapper">
+                    <div>
+                      <i class="icon-shipped hero-section__icon"></i>
+                    </div>
+                    <div>
+                      <p class="hero-section__icon-text">
+                        Оптом от производителя с доставкой по России!
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-4 p-0 p-md-1">
-                  <button
-                    type="submit"
-                    class="contact-form__btn btn-success dd-button w-100 mb-3"
-                  >
-                    Заказать
-                  </button>
-                </div>
-              </div>
-              <div class="custom-control custom-checkbox mb-3">
-                <input
-                  type="checkbox"
-                  class="custom-control-input contact-form__checkbox"
-                  id="formTermsCheckbox"
-                  required
-                />
-                <label class="custom-control-label" for="formTermsCheckbox">
-                  Согласен с <a href="#">политикой конфиденциальности</a>
-                </label>
-              </div>
-              <div class="contact-form__response-success">
-                Заказ успешно отправлен
-              </div>
-              <div class="contact-form__response-error">
-                Произошла ошибка
-              </div>
-            </form>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="hero-section__icon-wrapper">
-                  <div>
-                    <i class="icon-shipped hero-section__icon"></i>
-                  </div>
-                  <div>
-                    <p class="hero-section__icon-text">
-                      Оптом от производителя с доставкой по России!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="hero-section__icon-wrapper">
-                  <div>
-                    <i class="icon-medal hero-section__icon"></i>
-                  </div>
-                  <div>
-                    <p class="hero-section__icon-text">
-                      Лучший товар на российском рынке!
-                    </p>
+                <div class="col-md-6">
+                  <div class="hero-section__icon-wrapper">
+                    <div>
+                      <i class="icon-medal hero-section__icon"></i>
+                    </div>
+                    <div>
+                      <p class="hero-section__icon-text">
+                        Лучший товар на российском рынке!
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="layer-wrapper hero_1-wrapper">
+            <img src="assets/hero_1.png" data-depth="0.4" class="layer hero_1" alt="pic">
+          </div>
+          <div class="layer-wrapper hero_2-wrapper">
+            <img src="assets/hero_2.png" data-depth="0.6" class="layer hero_2" alt="pic">
+          </div>
+          <div class="layer-wrapper hero_3-wrapper">
+            <img src="assets/hero_3.png" data-depth="0.2" class="layer hero_3" alt="pic">
           </div>
         </div>
       </section>
@@ -425,7 +434,7 @@
               обезвоживания осадка
             </h2>
             <div>
-              <a class="btn-success dd-button mb-3" href="#" download>
+              <a class="dd-button mb-3" href="#" download>
                 Скачать прайс-лист
               </a>
             </div>
@@ -460,8 +469,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    href="javascript:void(0)"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
                   >
                     Заказать
                   </a>
@@ -481,8 +490,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -500,8 +509,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -519,8 +528,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -538,8 +547,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -557,8 +566,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -576,8 +585,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -595,8 +604,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -617,8 +626,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -636,8 +645,8 @@
                 </div>
                 <div class="col-lg-2">
                   <a
-                    class="btn btn-success py-2 px-3 prices-table__btn"
-                    href="#hero"
+                    class="btn py-2 px-3 prices-table__btn open-popup-form-btn"
+                    href="javascript:void(0)"
                   >
                     Заказать
                   </a>
@@ -706,6 +715,11 @@
               </div>
             </div>
           </div>
+
+          <div class="scroll-icon-wrapper">
+            <span class="scroll-icon-text">Листайте ниже</span>
+            <i class="mouse-svg"></i>
+          </div>
         </div>
       </section>
       <section id="individualOrders" class="individual-orders-section">
@@ -725,7 +739,7 @@
                   с указанием размеров, плотности и схемой.
                 </p>
                 <div>
-                  <a class="btn-success dd-button mb-3" href="#hero">
+                  <a class="dd-button mb-3 open-popup-form-btn" href="javascript:void(0)">
                     Заказать индивидуально
                   </a>
                 </div>
@@ -733,7 +747,7 @@
             </div>
             <div class="col-md-6">
               <div class="individual-order-feature">
-                <div class="mr-3">
+                <div class="individual-order-feature__icon-wrapper">
                   <i class="icon-production individual-order-feature__icon"></i>
                 </div>
                 <div>
@@ -747,7 +761,7 @@
                 </div>
               </div>
               <div class="individual-order-feature">
-                <div class="mr-3">
+                <div class="individual-order-feature__icon-wrapper">
                   <i class="icon-similarity individual-order-feature__icon"></i>
                 </div>
                 <div>
@@ -759,7 +773,7 @@
                 </div>
               </div>
               <div class="individual-order-feature">
-                <div class="mr-3">
+                <div class="individual-order-feature__icon-wrapper">
                   <i
                     class="icon-recognition individual-order-feature__icon"
                   ></i>
@@ -972,7 +986,7 @@
                       Телефон
                     </p>
                     <p class="requisite-card__item-text">
-                      8 (800) 333-26-25
+                      <a href="tel:88003332625">8 (800) 333-26-25</a>
                     </p>
                   </div>
                   <div class="col-lg-6">
@@ -1170,7 +1184,7 @@
             <div>
               <button
                 id="loadBranchesBtn"
-                class="btn-success dd-button mb-3 w-100"
+                class="dd-button mb-3 w-100"
                 type="button"
               >
                 Показать ещё
@@ -1184,7 +1198,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 order-1 order-md-1">
-            <a class="logo-wrapper justify-content-center mb-5" href="/">
+            <a
+              class="logo-wrapper justify-content-center mb-5 no-underline"
+              href="/"
+            >
               <img
                 class="logo mr-2"
                 src="assets/logo-negative.png"
@@ -1204,16 +1221,19 @@
           <div class="col-md-4 order-2 order-md-3">
             <div class="row">
               <div class="col-md-6">
-                <a class="main-footer__contact-content" href="tel:88003332625">
+                <a
+                  class="main-footer__contact-content no-underline"
+                  href="tel:88003332625"
+                >
                   8 (800) 333 26 25
                 </a>
-                <p class="main-footer__contact-title">
+                <p class="main-footer__contact-title no-underline">
                   Добавочный 142
                 </p>
               </div>
               <div class="col-md-6 mb-5">
                 <a
-                  class="main-footer__contact-content"
+                  class="main-footer__contact-content no-underline"
                   href="mailto:E2505430@mail.ru"
                 >
                   E2505430@mail.ru
@@ -1226,34 +1246,151 @@
           </div>
           <div class="col-md-4 order-4 order-md-4 ml-auto">
             <div class="social-links">
-              <a href="#" target="_blank">
-                <div class="icon-facebook-squared social-links__icon"></div>
+              <a href="#" target="_blank" class="no-underline">
+                <i class="icon-facebook-squared social-links__icon"></i>
               </a>
-              <a href="#" target="_blank">
-                <div class="icon-vkontakte social-links__icon"></div>
+              <a href="#" target="_blank" class="no-underline">
+                <i class="icon-vkontakte social-links__icon"></i>
               </a>
-              <a href="#" target="_blank">
-                <div class="icon-youtube-play social-links__icon"></div>
+              <a href="#" target="_blank" class="no-underline">
+                <i class="icon-youtube-play social-links__icon"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <div id="form-popup" class="cdk-overlay">
+      <div class="cdk-overlay__content cdk-overlay__content--form">
+        <div class="popup-form-wrapper">
+          <button class="popup-form__close">
+            <i class="icon-cross"></i>
+          </button>
+          <form
+            id="popupContactForm"
+            class="popup-form"
+            action="http://scripts.local"
+            method="POST"
+          >
+            <p class="popup-form__title">
+              Оставить заявку
+            </p>
+            <p class="popup-form__text">
+              Указажите свое имя и номер телефона. Мы вам позвоним для
+              утверждения и оформление Вашего заказа!
+            </p>
+            <div class="row mb-5">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="popupFormNameInput" class="popup-form__label">
+                    Как вас зовут?
+                  </label>
+                  <input
+                    name="name"
+                    type="text"
+                    id="popupFormNameInput"
+                    class="popup-form__input"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label  for="popupFormPhoneInput" class="popup-form__label">
+                    Номер телефона
+                  </label>
+                  <input
+                    name="phone"
+                    type="tel"
+                    id="popupFormPhoneInput"
+                     class="popup-form__input"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <button
+                    type="submit"
+                    class="dd-button mb-3"
+                  >
+                    Оставить заявку
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="popupFormTermsCheckbox"
+                    required
+                    checked
+                  />
+                  <label
+                    class="custom-control-label"
+                    for="popupFormTermsCheckbox"
+                  >
+                    Нажимая на кнопку вы соглашаетесь на обработку персональных
+                    данных
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div id="video-popup" class="cdk-overlay">
       <div class="cdk-overlay__close">
         <i class="icon-cross"></i>
       </div>
       <div class="cdk-overlay__content">
-        <div class="youtube-video-place embed-responsive embed-responsive-16by9 video-rounded" data-yt-url="https://www.youtube.com/embed/L7OLY4HCctQ">
-          <!-- <iframe
-            class="embed-responsive-item"
-            src="https://www.youtube.com/embed/L7OLY4HCctQ"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe> -->
+        <div
+          class="youtube-video-place embed-responsive embed-responsive-16by9 video-rounded"
+          data-yt-url="https://www.youtube.com/embed/L7OLY4HCctQ?autoplay=1"
+        >
           <div class="play-youtube-video">
             <i class="icon-play-circled"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="success-popup" class="cdk-overlay">
+      <div class="cdk-overlay__content cdk-overlay__content--message">
+        <div class="message message--success">
+          <button class="message__close">
+            <i class="icon-cross"></i>
+          </button>
+          <div class="text-center">
+            <div class="message__icon-wrapper">
+              <i class="icon-ok message__icon message__icon--success"></i>
+            </div>
+            <p class="message__title">Ваша заявка отправлена!</p>
+            <p class="message__text">
+              В близжайшее время вам перезвонит наш специалист для уточнения и
+              оформления Вашего заказа!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="error-popup" class="cdk-overlay">
+      <div class="cdk-overlay__content cdk-overlay__content--message">
+        <div class="message message--error">
+          <button class="message__close">
+            <i class="icon-cross"></i>
+          </button>
+          <div class="text-center">
+            <div class="message__icon-wrapper">
+              <i class="icon-cross message__icon message__icon--error"></i>
+            </div>
+            <p class="message__title">Произошла ошибка!</p>
+            <p class="message__text">Повторите попытку позже.</p>
           </div>
         </div>
       </div>
@@ -1261,6 +1398,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.lazy.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
