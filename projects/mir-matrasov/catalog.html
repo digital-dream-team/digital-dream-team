@@ -154,7 +154,7 @@
               </li>
               <li class="main-nav-panel__item">
                 <a href="#">
-                  <i class="icon-icon_favorite"></i>
+                  <i class="icon-icon_favorite_2"></i>
                   <span>Избранное</span>
                 </a>
               </li>
@@ -367,7 +367,7 @@
                   <div class="products-grid">
                     <div class="products-grid__item">
                       <div class="product-card-wrap">
-                        <div class="product-card">
+                        <div class="product-card product-card--favorite">
                           <div>
                             <div class="product-card__label">
                               Наматрасник в подарок
@@ -417,12 +417,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -430,20 +436,359 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--out-of-stock">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--added">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -561,12 +906,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -574,20 +925,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -705,12 +1069,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -718,20 +1088,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -849,12 +1232,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -862,308 +1251,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
-                            </div>
-                            <div class="product-card__attributes">
-                              <div class="row">
-                                <div class="col-10">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_softness"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Жесткость
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        Средне-мягкий
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        Средне-жесткий
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-5">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_height"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Высота
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        18 см
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-5">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_spring"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Пружины
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        EVS-500
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="products-grid__item">
-                      <div class="product-card-wrap">
-                        <div class="product-card">
-                          <div>
-                            <div class="product-card__label">
-                              Наматрасник в подарок
-                            </div>
-                            <a href="#">
-                              <img
-                                src="assets/m1.png"
-                                alt="pic"
-                                class="product-card__image"
-                              />
-                            </a>
-                          </div>
-                          <div>
-                            <a
-                              href="#"
-                              class="product-card__category text-small text-black-secondary"
-                            >
-                              Матрас анатомический
-                            </a>
-                            <a href="#" class="product-card__title text-black">
-                              ASKONA TERAPIA Orient
-                              <span class="product-card__size">
-                                80 × 200 см
-                              </span>
-                            </a>
-                            <div class="product-card__actions">
-                              <div class="product-card__rate rating-stars">
-                                <span class="rating-stars__star-wrap">
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star"
-                                  ></i>
-                                </span>
-                                <span class="text-small text-black-secondary">
-                                  7 отзывов
-                                </span>
-                              </div>
-                              <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
-                                  <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
-                                  <i class="icon-icon_compare"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="product-card__footer">
-                              <div class="product-card__price">
-                                <div class="text-small text-black-secondary">
-                                  Цена
-                                </div>
-                                <span
-                                  class="product-card__discount text-black-subtext"
-                                >
-                                  300 000 ₸
-                                </span>
-                                <span
-                                  class="text-normal text-black font-weight-bold"
-                                >
-                                  300 000 ₸
-                                </span>
-                              </div>
-                              <a class="btn btn-outline-action" href="#">
-                                В корзину
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
                               </a>
-                            </div>
-                            <div class="product-card__attributes">
-                              <div class="row">
-                                <div class="col-10">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_softness"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Жесткость
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        Средне-мягкий
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        Средне-жесткий
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-5">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_height"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Высота
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        18 см
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-5">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_spring"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Пружины
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        EVS-500
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="products-grid__item">
-                      <div class="product-card-wrap">
-                        <div class="product-card">
-                          <div>
-                            <div class="product-card__label">
-                              Наматрасник в подарок
-                            </div>
-                            <a href="#">
-                              <img
-                                src="assets/m1.png"
-                                alt="pic"
-                                class="product-card__image"
-                              />
-                            </a>
-                          </div>
-                          <div>
-                            <a
-                              href="#"
-                              class="product-card__category text-small text-black-secondary"
-                            >
-                              Матрас анатомический
-                            </a>
-                            <a href="#" class="product-card__title text-black">
-                              ASKONA TERAPIA Orient
-                              <span class="product-card__size">
-                                80 × 200 см
-                              </span>
-                            </a>
-                            <div class="product-card__actions">
-                              <div class="product-card__rate rating-stars">
-                                <span class="rating-stars__star-wrap">
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star"
-                                  ></i>
-                                </span>
-                                <span class="text-small text-black-secondary">
-                                  7 отзывов
-                                </span>
-                              </div>
-                              <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
-                                  <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
-                                  <i class="icon-icon_compare"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="product-card__footer">
-                              <div class="product-card__price">
-                                <div class="text-small text-black-secondary">
-                                  Цена
-                                </div>
-                                <span
-                                  class="product-card__discount text-black-subtext"
-                                >
-                                  300 000 ₸
-                                </span>
-                                <span
-                                  class="text-normal text-black font-weight-bold"
-                                >
-                                  300 000 ₸
-                                </span>
-                              </div>
-                              <a class="btn btn-outline-action" href="#">
-                                В корзину
-                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -1292,12 +1406,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -1305,20 +1425,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -1436,12 +1569,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -1449,20 +1588,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -1580,12 +1732,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -1593,20 +1751,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -1724,12 +1895,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -1737,20 +1914,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -1868,12 +2058,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -1881,164 +2077,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
-                            </div>
-                            <div class="product-card__attributes">
-                              <div class="row">
-                                <div class="col-10">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_softness"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Жесткость
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        Средне-мягкий
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        Средне-жесткий
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-5">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_height"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Высота
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        18 см
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-5">
-                                  <div class="product-card__attributes-item">
-                                    <i class="icon-icon_spring"></i>
-                                    <div>
-                                      <p
-                                        class="text-small text-black-secondary mb-0"
-                                      >
-                                        Пружины
-                                      </p>
-                                      <p
-                                        class="text-normal text-black-subtext mb-0"
-                                      >
-                                        EVS-500
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="products-grid__item">
-                      <div class="product-card-wrap">
-                        <div class="product-card">
-                          <div>
-                            <div class="product-card__label">
-                              Наматрасник в подарок
-                            </div>
-                            <a href="#">
-                              <img
-                                src="assets/m1.png"
-                                alt="pic"
-                                class="product-card__image"
-                              />
-                            </a>
-                          </div>
-                          <div>
-                            <a
-                              href="#"
-                              class="product-card__category text-small text-black-secondary"
-                            >
-                              Матрас анатомический
-                            </a>
-                            <a href="#" class="product-card__title text-black">
-                              ASKONA TERAPIA Orient
-                              <span class="product-card__size">
-                                80 × 200 см
-                              </span>
-                            </a>
-                            <div class="product-card__actions">
-                              <div class="product-card__rate rating-stars">
-                                <span class="rating-stars__star-wrap">
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star active"
-                                  ></i>
-                                  <i
-                                    class="rating-stars__star icon-icon_star"
-                                  ></i>
-                                </span>
-                                <span class="text-small text-black-secondary">
-                                  7 отзывов
-                                </span>
-                              </div>
-                              <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
-                                  <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
-                                  <i class="icon-icon_compare"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="product-card__footer">
-                              <div class="product-card__price">
-                                <div class="text-small text-black-secondary">
-                                  Цена
-                                </div>
-                                <span
-                                  class="product-card__discount text-black-subtext"
-                                >
-                                  300 000 ₸
-                                </span>
-                                <span
-                                  class="text-normal text-black font-weight-bold"
-                                >
-                                  300 000 ₸
-                                </span>
-                              </div>
-                              <a class="btn btn-outline-action" href="#">
-                                В корзину
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
                               </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -2239,7 +2304,7 @@
                   <div class="products-grid">
                     <div class="products-grid__item">
                       <div class="product-card-wrap">
-                        <div class="product-card">
+                        <div class="product-card product-card--sm-big">
                           <div>
                             <div class="product-card__label">
                               Наматрасник в подарок
@@ -2289,12 +2354,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -2302,20 +2373,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -2383,7 +2467,7 @@
                     </div>
                     <div class="products-grid__item">
                       <div class="product-card-wrap">
-                        <div class="product-card">
+                        <div class="product-card product-card--sm-big">
                           <div>
                             <div class="product-card__label">
                               Наматрасник в подарок
@@ -2433,12 +2517,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -2446,20 +2536,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -2527,7 +2630,7 @@
                     </div>
                     <div class="products-grid__item">
                       <div class="product-card-wrap">
-                        <div class="product-card">
+                        <div class="product-card product-card--sm-big">
                           <div>
                             <div class="product-card__label">
                               Наматрасник в подарок
@@ -2577,12 +2680,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -2590,20 +2699,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -2671,7 +2793,7 @@
                     </div>
                     <div class="products-grid__item">
                       <div class="product-card-wrap">
-                        <div class="product-card">
+                        <div class="product-card product-card--sm-big">
                           <div>
                             <div class="product-card__label">
                               Наматрасник в подарок
@@ -2721,12 +2843,18 @@
                                 </span>
                               </div>
                               <div class="product-card__actions-panel">
-                                <button class="product-card__control-btn">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
                                   <i class="icon-icon_favorite"></i>
-                                </button>
-                                <button class="product-card__control-btn">
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
                                   <i class="icon-icon_compare"></i>
-                                </button>
+                                </a>
                               </div>
                             </div>
                             <div class="product-card__footer">
@@ -2734,20 +2862,33 @@
                                 <div class="text-small text-black-secondary">
                                   Цена
                                 </div>
-                                <span
+                                <div
                                   class="product-card__discount text-black-subtext"
                                 >
                                   300 000 ₸
-                                </span>
-                                <span
+                                </div>
+                                <div
                                   class="text-normal text-black font-weight-bold"
                                 >
                                   300 000 ₸
-                                </span>
+                                </div>
                               </div>
-                              <a class="btn btn-outline-action" href="#">
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
                                 В корзину
                               </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
                             </div>
                             <div class="product-card__attributes">
                               <div class="row">
@@ -3179,25 +3320,110 @@
     <button class="overlay-cdk__close-btn">
       <i class="demo-icon icon-icon_close_1"></i>
     </button>
-    <div class="overlay-cdk__content container">
-      <div class="overlay-cdk__content-video-wrap">
-        <!-- <iframe
-          src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-          allowfullscreen
-          frameborder="0"
-        ></iframe> -->
-        <div
-          class="overlay-cdk__content-video embed-responsive embed-responsive-16by9"
-        >
-          <iframe
-            class="embed-responsive-item"
-            src="https://www.youtube.com/embed/ScMzIvxBSi4"
-            allowfullscreen
-          ></iframe>
+    <div class="overlay-cdk__content-wrap container">
+      <div class="overlay-cdk__content">
+        <div class="overlay-cdk__content-video-wrap">
+          <div
+            class="overlay-cdk__content-video embed-responsive embed-responsive-16by9"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/ScMzIvxBSi4"
+              allowfullscreen
+            ></iframe>
+            <!-- <iframe
+              class="embed-responsive-item"
+              src=""
+              allowfullscreen
+            ></iframe> -->
+          </div>
         </div>
-      </div>
-      <div class="overlay-cdk__content-feed-container">
-        feed
+        <div class="overlay-cdk__content-feed-container">
+          <div class="overlay-cdk__content-feed-header">
+            <p class="text-subtitle text-black-subtext">
+              Статьи и видео-обзоры
+            </p>
+            <a href="#">Смотреть все материалы</a>
+          </div>
+          <div class="overlay-cdk__content-feed-grid mobile-slider">
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                <span class="badge-label">Видео</span>
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
