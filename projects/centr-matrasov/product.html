@@ -8,6 +8,11 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Product</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="libs/swiper.min.css" />
     <link rel="stylesheet" href="css/components.min.css" />
     <link rel="stylesheet" href="css/main.min.css" />
@@ -20,7 +25,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
         <div class="main-header__logo-wrap">
-          <a href="#">
+          <a href="../index.html">
             <img class="w-100" src="assets/logo.png" alt="logo" />
           </a>
         </div>
@@ -284,7 +289,7 @@
               <div class="main-container__content">
                 <section>
                   <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                       <div class="product-media-gallery">
                         <div class="product-media-gallery__label badge-label">
                           <span
@@ -361,12 +366,16 @@
                             ></div>
                           </div>
                           <!-- Add Arrows -->
-                          <!-- <div
-                            class="swiper-button-next swiper-button-white"
-                          ></div>
-                          <div
-                            class="swiper-button-prev swiper-button-white"
-                          ></div> -->
+                          <!-- Add Pagination -->
+                          <div class="swiper-control">
+                            <div
+                              class="swiper-button-prev swiper-button-white"
+                            ></div>
+                            <div class="swiper-pagination"></div>
+                            <div
+                              class="swiper-button-next swiper-button-white"
+                            ></div>
+                          </div>
                         </div>
                         <div class="product-media-gallery__thumbs-wrap">
                           <div
@@ -461,7 +470,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                       <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item">
@@ -525,7 +534,7 @@
                       </div>
                       <hr class="product-page__actions-divider" />
                       <div class="product-page__mobile-sidebar-spot"></div>
-                      <div>
+                      <div class="product-page__short-description">
                         <p
                           class="text-small text-black-secondary font-weight-bold text-uppercase"
                         >
@@ -537,58 +546,58 @@
                           гипоаллергенных наполнителей, в чехле премиального
                           дизайна из хлопка
                         </p>
-                        <div class="product-page__attributes">
-                          <div class="product-page__attributes-item">
-                            <i class="icon-icon_hardness"></i>
-                            <div
-                              class="product-page__attributes-item-title text-small text-black-secondary"
-                            >
-                              Жесткость
-                            </div>
-                            <div
-                              class="product-page__attributes-item-value text-small text-black"
-                            >
-                              Средне-мягкий
-                            </div>
+                      </div>
+                      <div class="product-page__attributes">
+                        <div class="product-page__attributes-item">
+                          <i class="icon-icon_hardness"></i>
+                          <div
+                            class="product-page__attributes-item-title text-small text-black-secondary"
+                          >
+                            Жесткость
                           </div>
-                          <div class="product-page__attributes-item">
-                            <i class="icon-icon_height"></i>
-                            <div
-                              class="product-page__attributes-item-title text-small text-black-secondary"
-                            >
-                              Высота
-                            </div>
-                            <div
-                              class="product-page__attributes-item-value text-small text-black"
-                            >
-                              32 см
-                            </div>
+                          <div
+                            class="product-page__attributes-item-value text-small text-black"
+                          >
+                            Средне-мягкий
                           </div>
-                          <div class="product-page__attributes-item">
-                            <i class="icon-icon_weight"></i>
-                            <div
-                              class="product-page__attributes-item-title text-small text-black-secondary"
-                            >
-                              Нагрузка
-                            </div>
-                            <div
-                              class="product-page__attributes-item-value text-small text-black"
-                            >
-                              До 120 кг
-                            </div>
+                        </div>
+                        <div class="product-page__attributes-item">
+                          <i class="icon-icon_height"></i>
+                          <div
+                            class="product-page__attributes-item-title text-small text-black-secondary"
+                          >
+                            Высота
                           </div>
-                          <div class="product-page__attributes-item">
-                            <i class="icon-icon_softness"></i>
-                            <div
-                              class="product-page__attributes-item-title text-small text-black-secondary"
-                            >
-                              Наполнители
-                            </div>
-                            <div
-                              class="product-page__attributes-item-value text-small text-black"
-                            >
-                              Независимый пружинный блок EVS-1000
-                            </div>
+                          <div
+                            class="product-page__attributes-item-value text-small text-black"
+                          >
+                            32 см
+                          </div>
+                        </div>
+                        <div class="product-page__attributes-item">
+                          <i class="icon-icon_weight"></i>
+                          <div
+                            class="product-page__attributes-item-title text-small text-black-secondary"
+                          >
+                            Нагрузка
+                          </div>
+                          <div
+                            class="product-page__attributes-item-value text-small text-black"
+                          >
+                            До 120 кг
+                          </div>
+                        </div>
+                        <div class="product-page__attributes-item">
+                          <i class="icon-icon_softness"></i>
+                          <div
+                            class="product-page__attributes-item-title text-small text-black-secondary"
+                          >
+                            Наполнители
+                          </div>
+                          <div
+                            class="product-page__attributes-item-value text-small text-black"
+                          >
+                            Независимый пружинный блок EVS-1000
                           </div>
                         </div>
                       </div>
@@ -599,7 +608,7 @@
                   <h3 class="text-subtitle text-black-subtext mbp-20">
                     Описание товара
                   </h3>
-                  <p>
+                  <p class="to-shorten">
                     Двуспальный ортопедический матрас Sultan в роскошном белом
                     чехле из хлопка, создаст особенный кофорт и уют в доме.
                     Несколько слоев высокоэластичных материалов и
@@ -613,7 +622,7 @@
                   <h3 class="text-subtitle text-black-subtext mbp-20">
                     Подробные характеристики
                   </h3>
-                  <div class="row">
+                  <div class="row to-shorten">
                     <div class="col-md-5">
                       <div class="product-spec">
                         <p class="product-spec__title">Страна-производитель</p>
@@ -708,8 +717,8 @@
                   </div>
                 </section>
                 <section class="mbp-20">
-                  <div class="blog-posts-grid-wrap mobile-slider">
-                    <div class="blog-posts-grid">
+                  <div class="blog-posts-grid-wrap">
+                    <div class="blog-posts-grid mobile-slider">
                       <div
                         class="blog-posts-grid__item-wrap blog-posts-grid__video-item"
                       >
@@ -2313,7 +2322,9 @@
                             27 Марта 2020
                           </div>
                         </div>
-                        <div class="product-page__reviews-comment-text">
+                        <div
+                          class="product-page__reviews-comment-text to-shorten"
+                        >
                           <p>
                             зря люди пишут, что плохой - очень даже хороший
                             компактный матрас! Узкий - удобно класть на диван,
@@ -2374,7 +2385,9 @@
                             27 Марта 2020
                           </div>
                         </div>
-                        <div class="product-page__reviews-comment-text">
+                        <div
+                          class="product-page__reviews-comment-text to-shorten"
+                        >
                           <p>
                             зря люди пишут, что плохой - очень даже хороший
                             компактный матрас! Узкий - удобно класть на диван,
@@ -2594,576 +2607,154 @@
               </div>
             </div>
             <div class="d-none d-lg-block col-lg-2 h-100">
-              <div class="sidebar product-page-sidebar">
-                <p
-                  class="text-small text-black-secondary font-weight-bold text-uppercase mbp-10"
-                >
-                  В корзину
-                </p>
-                <p class="text-subtitle mbp-5">Элитный матрас «SULTAN»</p>
-                <div class="mbp-10">
-                  <div class="product-page-sidebar__actions-panel">
-                    <div
-                      class="product-page-sidebar__actions-panel-rate rating-stars"
-                    >
-                      <span class="rating-stars__star-wrap">
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star"></i>
-                      </span>
-                      <span class="text-small text-black-secondary">
-                        7 отзывов
-                      </span>
-                    </div>
-                    <div class="product-page-sidebar__actions-panel-controls">
-                      <a
-                        href="#"
-                        class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__favorite-btn"
-                      >
-                        <i class="icon-icon_favorite"></i>
-                      </a>
-                      <a
-                        href="#"
-                        class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__compare-btn"
-                      >
-                        <i class="icon-icon_compare"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="mbp-10">
-                  <div class="product-page-sidebar__price">
-                    <div
-                      class="product-page-sidebar__price-discount text-black-subtext"
-                    >
-                      300 000 ₸
-                    </div>
-                    <div class="text-title text-attention">
-                      300 000 ₸
-                    </div>
-                  </div>
-                  <div
-                    class="product-page-sidebar__out-of-stock text-black-secondary"
+              <div class="sidebar-initial-spot">
+                <div class="sidebar product-page-sidebar">
+                  <p
+                    class="text-small text-black-secondary font-weight-bold text-uppercase mbp-10"
                   >
-                    Товара нет в наличии
+                    В корзину
+                  </p>
+                  <p class="text-subtitle mbp-5">Элитный матрас «SULTAN»</p>
+                  <div class="mbp-10">
+                    <div class="product-page-sidebar__actions-panel">
+                      <div
+                        class="product-page-sidebar__actions-panel-rate rating-stars"
+                      >
+                        <span class="rating-stars__star-wrap">
+                          <i
+                            class="rating-stars__star icon-icon_star active"
+                          ></i>
+                          <i
+                            class="rating-stars__star icon-icon_star active"
+                          ></i>
+                          <i
+                            class="rating-stars__star icon-icon_star active"
+                          ></i>
+                          <i
+                            class="rating-stars__star icon-icon_star active"
+                          ></i>
+                          <i class="rating-stars__star icon-icon_star"></i>
+                        </span>
+                        <span class="text-small text-black-secondary">
+                          7 отзывов
+                        </span>
+                      </div>
+                      <div class="product-page-sidebar__actions-panel-controls">
+                        <a
+                          href="#"
+                          class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__favorite-btn"
+                        >
+                          <i class="icon-icon_favorite"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__compare-btn"
+                        >
+                          <i class="icon-icon_compare"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="product-page-sidebar__control-panel mbp-20">
-                  <a
-                    href="#"
-                    class="btn btn-outline-main product-page-sidebar__notify-btn w-100"
-                  >
-                    Сообщить о поступлении товара
-                  </a>
-                  <div class="product-page-sidebar__added-btn-wrap mbp-10">
+                  <div class="mbp-10">
+                    <div class="product-page-sidebar__price">
+                      <div
+                        class="product-page-sidebar__price-discount text-black-subtext"
+                      >
+                        300 000 ₸
+                      </div>
+                      <div class="text-title text-attention">
+                        300 000 ₸
+                      </div>
+                    </div>
+                    <div
+                      class="product-page-sidebar__out-of-stock text-black-secondary"
+                    >
+                      Товара нет в наличии
+                    </div>
+                  </div>
+                  <div class="product-page-sidebar__control-panel mbp-20">
                     <a
                       href="#"
-                      class="btn btn-main product-page-sidebar__added-btn"
+                      class="btn btn-outline-main product-page-sidebar__notify-btn w-100"
                     >
-                      <span>Перейти в корзину</span>
-                      <i class="icon-icon_cart"></i>
+                      Сообщить о поступлении товара
                     </a>
-                    <div class="quantity-control">
+                    <div class="product-page-sidebar__added-btn-wrap mbp-10">
                       <a
-                        class="quantity-control__btn quantity-control__minus-btn"
                         href="#"
-                        >-
+                        class="btn btn-main product-page-sidebar__added-btn"
+                      >
+                        <span>Перейти в корзину</span>
+                        <i class="icon-icon_cart"></i>
                       </a>
-                      <input
-                        class="quantity-control__input"
-                        type="number"
-                        value="1"
-                        disabled
-                      />
-                      <a
-                        class="quantity-control__btn quantity-control__plus-btn"
-                        href="#"
-                        >+
-                      </a>
-                    </div>
-                  </div>
-                  <a
-                    href="#"
-                    class="btn btn-main product-page-sidebar__add-btn w-100 mbp-10"
-                  >
-                    В корзину <i class="icon-icon_cart"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="btn btn-outline-main product-page-sidebar__phone-btn w-100"
-                  >
-                    Купить по телефону
-                  </a>
-                </div>
-                <div class="product-page-sidebar__attributes">
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_ok_1 text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Есть в наличии</div>
-                    </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_credit text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Доступна рассрочка!</div>
-                      <div class="text-black-secondary">
-                        Как получить рассрочку?
+                      <div class="quantity-control">
+                        <a
+                          class="quantity-control__btn quantity-control__minus-btn"
+                          href="#"
+                          >-
+                        </a>
+                        <input
+                          class="quantity-control__input"
+                          type="number"
+                          value="1"
+                          disabled
+                        />
+                        <a
+                          class="quantity-control__btn quantity-control__plus-btn"
+                          href="#"
+                          >+
+                        </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_bed text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Доступен тест-драйв</div>
-                      <div class="text-black-secondary">
-                        Как проходит тест-драйв?
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_delivery_1 text-action-dark"></i>
-                    <div class="text-small">
-                      <span class="text-action-dark">
-                        Бесплатная доставка до Нур-Султана, примерно
-                        <span class="font-weight-bold">4 дня</span>.
-                      </span>
-                      <span class="text-black-secondary">
-                        Подробнее об условиях доставке
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="sidebar product-page-sidebar product-page-sidebar--out-of-stock"
-              >
-                <p
-                  class="text-small text-black-secondary font-weight-bold text-uppercase mbp-10"
-                >
-                  В корзину
-                </p>
-                <p class="text-subtitle mbp-5">Элитный матрас «SULTAN»</p>
-                <div class="mbp-10">
-                  <div class="product-page-sidebar__actions-panel">
-                    <div
-                      class="product-page-sidebar__actions-panel-rate rating-stars"
-                    >
-                      <span class="rating-stars__star-wrap">
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star"></i>
-                      </span>
-                      <span class="text-small text-black-secondary">
-                        7 отзывов
-                      </span>
-                    </div>
-                    <div class="product-page-sidebar__actions-panel-controls">
-                      <a
-                        href="#"
-                        class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__favorite-btn"
-                      >
-                        <i class="icon-icon_favorite"></i>
-                      </a>
-                      <a
-                        href="#"
-                        class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__compare-btn"
-                      >
-                        <i class="icon-icon_compare"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="mbp-10">
-                  <div class="product-page-sidebar__price">
-                    <div
-                      class="product-page-sidebar__price-discount text-black-subtext"
-                    >
-                      300 000 ₸
-                    </div>
-                    <div class="text-title text-attention">
-                      300 000 ₸
-                    </div>
-                  </div>
-                  <div
-                    class="product-page-sidebar__out-of-stock text-black-secondary"
-                  >
-                    Товара нет в наличии
-                  </div>
-                </div>
-                <div class="product-page-sidebar__control-panel mbp-20">
-                  <a
-                    href="#"
-                    class="btn btn-outline-main product-page-sidebar__notify-btn w-100"
-                  >
-                    Сообщить о поступлении товара
-                  </a>
-                  <div class="product-page-sidebar__added-btn-wrap mbp-10">
                     <a
                       href="#"
-                      class="btn btn-main product-page-sidebar__added-btn"
+                      class="btn btn-main product-page-sidebar__add-btn w-100 mbp-10"
                     >
-                      <span>Перейти в корзину</span>
-                      <i class="icon-icon_cart"></i>
+                      В корзину <i class="icon-icon_cart"></i>
                     </a>
-                    <div class="quantity-control">
-                      <a
-                        class="quantity-control__btn quantity-control__minus-btn"
-                        href="#"
-                        >-
-                      </a>
-                      <input
-                        class="quantity-control__input"
-                        type="number"
-                        value="1"
-                        disabled
-                      />
-                      <a
-                        class="quantity-control__btn quantity-control__plus-btn"
-                        href="#"
-                        >+
-                      </a>
-                    </div>
-                  </div>
-                  <a
-                    href="#"
-                    class="btn btn-main product-page-sidebar__add-btn w-100 mbp-10"
-                  >
-                    В корзину <i class="icon-icon_cart"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="btn btn-outline-main product-page-sidebar__phone-btn w-100"
-                  >
-                    Купить по телефону
-                  </a>
-                </div>
-                <div class="product-page-sidebar__attributes">
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_ok_1 text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Есть в наличии</div>
-                    </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_credit text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Доступна рассрочка!</div>
-                      <div class="text-black-secondary">
-                        Как получить рассрочку?
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_bed text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Доступен тест-драйв</div>
-                      <div class="text-black-secondary">
-                        Как проходит тест-драйв?
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_delivery_1 text-action-dark"></i>
-                    <div class="text-small">
-                      <span class="text-action-dark">
-                        Бесплатная доставка до Нур-Султана, примерно
-                        <span class="font-weight-bold">4 дня</span>.
-                      </span>
-                      <span class="text-black-secondary">
-                        Подробнее об условиях доставке
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="sidebar product-page-sidebar product-page-sidebar--added"
-              >
-                <p
-                  class="text-small text-black-secondary font-weight-bold text-uppercase mbp-10"
-                >
-                  В корзину
-                </p>
-                <p class="text-subtitle mbp-5">Элитный матрас «SULTAN»</p>
-                <div class="mbp-10">
-                  <div class="product-page-sidebar__actions-panel">
-                    <div
-                      class="product-page-sidebar__actions-panel-rate rating-stars"
-                    >
-                      <span class="rating-stars__star-wrap">
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star"></i>
-                      </span>
-                      <span class="text-small text-black-secondary">
-                        7 отзывов
-                      </span>
-                    </div>
-                    <div class="product-page-sidebar__actions-panel-controls">
-                      <a
-                        href="#"
-                        class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__favorite-btn"
-                      >
-                        <i class="icon-icon_favorite"></i>
-                      </a>
-                      <a
-                        href="#"
-                        class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__compare-btn"
-                      >
-                        <i class="icon-icon_compare"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="mbp-10">
-                  <div class="product-page-sidebar__price">
-                    <div
-                      class="product-page-sidebar__price-discount text-black-subtext"
-                    >
-                      300 000 ₸
-                    </div>
-                    <div class="text-title text-attention">
-                      300 000 ₸
-                    </div>
-                  </div>
-                  <div
-                    class="product-page-sidebar__out-of-stock text-black-secondary"
-                  >
-                    Товара нет в наличии
-                  </div>
-                </div>
-                <div class="product-page-sidebar__control-panel mbp-20">
-                  <a
-                    href="#"
-                    class="btn btn-outline-main product-page-sidebar__notify-btn w-100"
-                  >
-                    Сообщить о поступлении товара
-                  </a>
-                  <div class="product-page-sidebar__added-btn-wrap mbp-10">
                     <a
                       href="#"
-                      class="btn btn-main product-page-sidebar__added-btn"
+                      class="btn btn-outline-main product-page-sidebar__phone-btn w-100"
                     >
-                      <span>Перейти в корзину</span>
-                      <i class="icon-icon_cart"></i>
+                      Купить по телефону
                     </a>
-                    <div class="quantity-control">
-                      <a
-                        class="quantity-control__btn quantity-control__minus-btn"
-                        href="#"
-                        >-
-                      </a>
-                      <input
-                        class="quantity-control__input"
-                        type="number"
-                        value="1"
-                        disabled
-                      />
-                      <a
-                        class="quantity-control__btn quantity-control__plus-btn"
-                        href="#"
-                        >+
-                      </a>
-                    </div>
                   </div>
-                  <a
-                    href="#"
-                    class="btn btn-main product-page-sidebar__add-btn w-100 mbp-10"
-                  >
-                    В корзину <i class="icon-icon_cart"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="btn btn-outline-main product-page-sidebar__phone-btn w-100"
-                  >
-                    Купить по телефону
-                  </a>
-                </div>
-                <div class="product-page-sidebar__attributes">
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_ok_1 text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Есть в наличии</div>
-                    </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_credit text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Доступна рассрочка!</div>
-                      <div class="text-black-secondary">
-                        Как получить рассрочку?
+                  <div class="product-page-sidebar__attributes">
+                    <div class="product-page-sidebar__attributes-item">
+                      <i class="icon-icon_ok_1 text-action-dark"></i>
+                      <div class="text-small">
+                        <div class="text-action-dark">Есть в наличии</div>
                       </div>
                     </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_bed text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Доступен тест-драйв</div>
-                      <div class="text-black-secondary">
-                        Как проходит тест-драйв?
+                    <div class="product-page-sidebar__attributes-item">
+                      <i class="icon-icon_credit text-action-dark"></i>
+                      <div class="text-small">
+                        <div class="text-action-dark">Доступна рассрочка!</div>
+                        <div class="text-black-secondary">
+                          Как получить рассрочку?
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_delivery_1 text-action-dark"></i>
-                    <div class="text-small">
-                      <span class="text-action-dark">
-                        Бесплатная доставка до Нур-Султана, примерно
-                        <span class="font-weight-bold">4 дня</span>.
-                      </span>
-                      <span class="text-black-secondary">
-                        Подробнее об условиях доставке
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="sidebar product-page-sidebar product-page-sidebar--favorite"
-              >
-                <p
-                  class="text-small text-black-secondary font-weight-bold text-uppercase mbp-10"
-                >
-                  В корзину
-                </p>
-                <p class="text-subtitle mbp-5">Элитный матрас «SULTAN»</p>
-                <div class="mbp-10">
-                  <div class="product-page-sidebar__actions-panel">
-                    <div
-                      class="product-page-sidebar__actions-panel-rate rating-stars"
-                    >
-                      <span class="rating-stars__star-wrap">
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star active"></i>
-                        <i class="rating-stars__star icon-icon_star"></i>
-                      </span>
-                      <span class="text-small text-black-secondary">
-                        7 отзывов
-                      </span>
-                    </div>
-                    <div class="product-page-sidebar__actions-panel-controls">
-                      <a
-                        href="#"
-                        class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__favorite-btn"
-                      >
-                        <i class="icon-icon_favorite"></i>
-                      </a>
-                      <a
-                        href="#"
-                        class="product-page-sidebar__actions-panel-control-btn product-page-sidebar__compare-btn"
-                      >
-                        <i class="icon-icon_compare"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="mbp-10">
-                  <div class="product-page-sidebar__price">
-                    <div
-                      class="product-page-sidebar__price-discount text-black-subtext"
-                    >
-                      300 000 ₸
-                    </div>
-                    <div class="text-title text-attention">
-                      300 000 ₸
-                    </div>
-                  </div>
-                  <div
-                    class="product-page-sidebar__out-of-stock text-black-secondary"
-                  >
-                    Товара нет в наличии
-                  </div>
-                </div>
-                <div class="product-page-sidebar__control-panel mbp-20">
-                  <a
-                    href="#"
-                    class="btn btn-outline-main product-page-sidebar__notify-btn w-100"
-                  >
-                    Сообщить о поступлении товара
-                  </a>
-                  <div class="product-page-sidebar__added-btn-wrap mbp-10">
-                    <a
-                      href="#"
-                      class="btn btn-main product-page-sidebar__added-btn"
-                    >
-                      <span>Перейти в корзину</span>
-                      <i class="icon-icon_cart"></i>
-                    </a>
-                    <div class="quantity-control">
-                      <a
-                        class="quantity-control__btn quantity-control__minus-btn"
-                        href="#"
-                        >-
-                      </a>
-                      <input
-                        class="quantity-control__input"
-                        type="number"
-                        value="1"
-                        disabled
-                      />
-                      <a
-                        class="quantity-control__btn quantity-control__plus-btn"
-                        href="#"
-                        >+
-                      </a>
-                    </div>
-                  </div>
-                  <a
-                    href="#"
-                    class="btn btn-main product-page-sidebar__add-btn w-100 mbp-10"
-                  >
-                    В корзину <i class="icon-icon_cart"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="btn btn-outline-main product-page-sidebar__phone-btn w-100"
-                  >
-                    Купить по телефону
-                  </a>
-                </div>
-                <div class="product-page-sidebar__attributes">
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_ok_1 text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Есть в наличии</div>
-                    </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_credit text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Доступна рассрочка!</div>
-                      <div class="text-black-secondary">
-                        Как получить рассрочку?
+                    <div class="product-page-sidebar__attributes-item">
+                      <i class="icon-icon_bed text-action-dark"></i>
+                      <div class="text-small">
+                        <div class="text-action-dark">Доступен тест-драйв</div>
+                        <div class="text-black-secondary">
+                          Как проходит тест-драйв?
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_bed text-action-dark"></i>
-                    <div class="text-small">
-                      <div class="text-action-dark">Доступен тест-драйв</div>
-                      <div class="text-black-secondary">
-                        Как проходит тест-драйв?
+                    <div class="product-page-sidebar__attributes-item">
+                      <i class="icon-icon_delivery_1 text-action-dark"></i>
+                      <div class="text-small">
+                        <span class="text-action-dark">
+                          Бесплатная доставка до Нур-Султана, примерно
+                          <span class="font-weight-bold">4 дня</span>.
+                        </span>
+                        <span class="text-black-secondary">
+                          Подробнее об условиях доставке
+                        </span>
                       </div>
-                    </div>
-                  </div>
-                  <div class="product-page-sidebar__attributes-item">
-                    <i class="icon-icon_delivery_1 text-action-dark"></i>
-                    <div class="text-small">
-                      <span class="text-action-dark">
-                        Бесплатная доставка до Нур-Султана, примерно
-                        <span class="font-weight-bold">4 дня</span>.
-                      </span>
-                      <span class="text-black-secondary">
-                        Подробнее об условиях доставке
-                      </span>
                     </div>
                   </div>
                 </div>
@@ -3461,14 +3052,9 @@
           >
             <iframe
               class="embed-responsive-item"
-              src="https://www.youtube.com/embed/ScMzIvxBSi4"
-              allowfullscreen
-            ></iframe>
-            <!-- <iframe
-              class="embed-responsive-item"
               src=""
               allowfullscreen
-            ></iframe> -->
+            ></iframe>
           </div>
         </div>
         <div class="overlay-cdk__content-feed-container">
@@ -3566,6 +3152,10 @@
     <script src="js/components.min.js"></script>
     <script src="libs/swiper.min.js"></script>
     <script src="libs/hammer.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
