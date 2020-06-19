@@ -288,6 +288,44 @@
                     58 товаров
                   </span>
                 </h1>
+                <section class="mbp-50">
+                  <div class="cart-tab d-none">
+                    <div class="cart-table">
+                      <div class="cart-table__item">
+                        <div class="cart-table__item-image">
+                          image
+                        </div>
+                        <div class="cart-table__item-main">
+                          main
+                        </div>
+                        <div class="cart-table__item-actions">
+                          actions
+                        </div>
+                        <div class="cart-table__item-weight">
+                          weight
+                        </div>
+                        <div class="cart-table__item-price">
+                          price
+                        </div>
+                        <div class="cart-table__item-quantity">
+                          quantity
+                        </div>
+                        <div class="cart-table__item-total">
+                          total
+                        </div>
+                        <div class="cart-table__item-divider"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-tab">
+                    <h3 class="text-subtitle text-black-subtext mbp-20">
+                      Выберите способ доставки
+                    </h3>
+                    <h3 class="text-subtitle text-black-subtext mbp-20">
+                      Уточните данные для доставки
+                    </h3>
+                  </div>
+                </section>
                 <section class="d-none d-md-block mbp-50">
                   <h3 class="text-subtitle text-black-subtext mbp-20">
                     Вас также может заинтересовать
@@ -1079,14 +1117,55 @@
               </div>
             </div>
             <div class="d-none d-lg-block col-lg-2 h-100">
-              <div class="sidebar">
-                <p
-                  class="text-small text-black-secondary font-weight-bold text-uppercase mbp-10"
+              <div class="sidebar cart-page-sidebar">
+                <div
+                  class="cart-page-sidebar__header d-flex justify-content-between mbp-10"
                 >
-                  В корзину
-                </p>
-                <div class="product-page-sidebar__attributes">
-                  <div class="product-page-sidebar__attributes-item">
+                  <div
+                    class="cart-page-sidebar__title text-small text-black-secondary font-weight-bold text-uppercase"
+                  >
+                    В корзину
+                  </div>
+                  <div
+                    class="cart-page-sidebar__weight text-small text-black-secondary"
+                  >
+                    Вес:
+                    <span class="cart-page-sidebar__weight-value">
+                      ~57,1 кг
+                    </span>
+                  </div>
+                </div>
+                <div class="cart-page-sidebar__price">
+                  <div class="d-flex justify-content-between">
+                    <div class="text-small text-black-subtext">8 товаров</div>
+                    <div class="text-normal text-black font-weight-bold">
+                      1 000 000 ₸
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-between">
+                    <div class="text-small text-black-subtext">К оплате</div>
+                    <div class="text-subtitle text-black font-weight-bold">
+                      740 820 ₸
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <a class="text-action" href="#">Добавить промокод</a>
+                </div>
+                <div class="product-page-sidebar__control-panel mbp-20">
+                  <a
+                    href="#"
+                    class="btn btn-main product-page-sidebar__checkout w-100 mbp-10"
+                  >
+                    Оформить заказ
+                  </a>
+                  <div class="text-center text-small text-black-secondary">
+                    Номер заказа: 485265
+                  </div>
+                </div>
+                <div class="cart-page-sidebar__attributes">
+                  <div class="cart-page-sidebar__attributes-item">
                     <i class="icon-icon_credit text-action-dark"></i>
                     <div class="text-small">
                       <div class="text-action-dark">Доступна рассрочка!</div>
@@ -1095,7 +1174,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="product-page-sidebar__attributes-item">
+                  <div class="cart-page-sidebar__attributes-item">
                     <i class="icon-icon_bed text-action-dark"></i>
                     <div class="text-small">
                       <div class="text-action-dark">Доступен тест-драйв</div>
@@ -1104,7 +1183,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="product-page-sidebar__attributes-item">
+                  <div class="cart-page-sidebar__attributes-item">
                     <i class="icon-icon_delivery_1 text-action-dark"></i>
                     <div class="text-small">
                       <span class="text-action-dark">
