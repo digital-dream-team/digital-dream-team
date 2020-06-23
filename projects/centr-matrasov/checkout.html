@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Grid</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="css/components.min.css" />
     <link rel="stylesheet" href="libs/swiper.min.css" />
     <link rel="stylesheet" href="libs/slick.css" />
@@ -15,13 +15,6 @@
     <link rel="stylesheet" href="css/media.min.css" />
   </head>
   <body>
-    <section class="bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10"><a href="components.html">Компоненты</a></div>
-        </div>
-      </div>
-    </section>
     <!-- inject:header:html -->
     <header class="main-header">
   <div class="main-header__top">
@@ -536,69 +529,419 @@
 </header>
 
     <!-- endinject -->
-    <main class="main-container" style="min-height: 1200px;">
+    <main class="main-container">
       <div class="container h-100">
         <div class="main-container__content-wrap h-100">
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-top-spot"></div>
+            </div>
+          </div>
           <div class="row h-100">
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
+            <div class="col-lg-8">
+              <div class="main-container__content">
+                <h1 class="text-title text-main mbp-20">
+                  Оплата
+                </h1>
+                <section class="mbp-50">
+                  <div class="cart-tab">
+                    <h3 class="text-subtitle text-black-subtext mbp-20">
+                      Выберите способ доставки
+                    </h3>
+                    <form class="address-form">
+                      <div class="address-form__delivery-types-wrap mbp-50">
+                        <div class="address-form__delivery-types">
+                          <div class="custom-control custom-radio">
+                            <input
+                              type="radio"
+                              id="radio-delivery_home"
+                              name="delivery_type"
+                              class="custom-control-input"
+                              value="type_home"
+                              checked
+                            />
+                            <label
+                              class="custom-control-label"
+                              for="radio-delivery_home"
+                            >
+                              Доставка на дом
+                            </label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input
+                              type="radio"
+                              id="radio-delivery__pickup"
+                              name="delivery_type"
+                              class="custom-control-input"
+                              value="type_pickup"
+                            />
+                            <label
+                              class="custom-control-label"
+                              for="radio-delivery__pickup"
+                            >
+                              Доставка в пункт самовывоза (бесплатно)
+                            </label>
+                          </div>
+                        </div>
+                        <div
+                          class="address-form__delivery-type-hint address-form__delivery-type-hint--1"
+                        >
+                          <p
+                            class="text-small text-uppercase font-weight-bold text-black-secondary mbp-10"
+                          >
+                            Обратите внимание
+                          </p>
+                          <p>
+                            Доставка курьером доступна только в городах, в
+                            которых расположены наши филиалы. Во все прочие
+                            города доставка оплачивается отдельно.
+                          </p>
+                          <p>
+                            Более подробно об условиях доставки можно прочитать
+                            <a href="#">здесь</a>.
+                          </p>
+                        </div>
+                      </div>
+                      <h3 class="text-subtitle text-black-subtext mbp-20">
+                        Уточните данные для доставки
+                      </h3>
+                      <p
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                      >
+                        Получатель
+                      </p>
+                      <div class="address-form__user-info">
+                        <div class="form-group mbp-20">
+                          <label for="user_name">ФИО получателя</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="user_name"
+                            name="name"
+                            placeholder="Досымов Ержан Кемелевич"
+                          />
+                        </div>
+                        <div class="form-group mbp-20">
+                          <label for="user_name">Номер телефона</label>
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="user_phone"
+                            name="phone"
+                            placeholder="+7 777 123 4567"
+                          />
+                          <small
+                            >Желательно мобильный. Необходимо
+                            подтверждение</small
+                          >
+                        </div>
+                        <div class="form-group mbp-40">
+                          <label for="user_name">Электронная почта</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="user_email"
+                            name="email"
+                            placeholder="name@mail.ru"
+                          />
+                          <small>
+                            Мы не рассылаем спам. На почту будут приходить
+                            отчеты по вашему заказу
+                          </small>
+                        </div>
+                        <p
+                          class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                        >
+                          Адрес доставки
+                        </p>
+                        <div class="form-group mbp-20">
+                          <label for="user_city">Город</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="user_city"
+                            name="city"
+                            placeholder="Алматы"
+                          />
+                          <small>
+                            От города зависит стоимость доставки.
+                            <a href="#">Подробнее об условиях доставки</a>
+                          </small>
+                        </div>
+                        <div class="form-group mbp-20">
+                          <label for="user_street">Улица</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="user_street"
+                            name="street"
+                            placeholder="ул. Иманова"
+                          />
+                        </div>
+                        <div class="address-form__grid">
+                          <div class="address-form__grid-50">
+                            <div class="form-group">
+                              <label for="user_house">Дом (строение)</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_house"
+                                name="house"
+                                placeholder="9Б"
+                              />
+                            </div>
+                          </div>
+                          <div class="address-form__grid-50">
+                            <div class="form-group">
+                              <label for="user_apartment">Квартира</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_apartment"
+                                name="apartment"
+                                placeholder="49"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="address-form__grid mbp-20">
+                          <div class="address-form__grid-33">
+                            <div class="form-group">
+                              <label for="user_porch">Подъезд</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_porch"
+                                name="porch"
+                                placeholder="2"
+                              />
+                            </div>
+                          </div>
+                          <div class="address-form__grid-33">
+                            <div class="form-group">
+                              <label for="user_floor">Этаж</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_floor"
+                                name="floor"
+                                placeholder="9"
+                              />
+                            </div>
+                          </div>
+                          <div class="address-form__grid-33">
+                            <div class="form-group">
+                              <label for="user_intercom">Домофон</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_intercom"
+                                name="intercom"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="user_commentary">Комментарий</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="user_commentary"
+                            name="commentary"
+                            placeholder="Есть ли у вас особые пожелания?"
+                          />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </section>
+                <section>
+                  <div class="d-flex flex-column flex-md-row">
+                    <div class="benefits-card text-center">
+                      <i
+                        class="benefits-card__icon icon-icon_delivery_2 text-action-dark"
+                      ></i>
+                      <p class="text-subtitle">
+                        Доставка по всему Казахстану
+                      </p>
+                      <p class="text-subtext">
+                        Наши салоны и пункты самовывоза расположены в 13 городах
+                        по всему Казахстану.
+                      </p>
+                      <a href="#" class="text-small text-action"
+                        >Подробнее об условиях доставки
+                      </a>
+                    </div>
+                    <div class="benefits-card text-center">
+                      <i
+                        class="benefits-card__icon icon-icon_cart text-action-dark"
+                      ></i>
+                      <p class="text-subtitle">
+                        Покупайте <br />
+                        не выходя из дома
+                      </p>
+                      <p class="text-subtext">
+                        Вам больше не нужно обходить магазины города! Все
+                        необзодимое для здорового сна у вас в кармане.
+                      </p>
+                      <a href="#" class="text-small text-action">
+                        Как выбрать матрас?
+                      </a>
+                    </div>
+                    <div class="benefits-card text-center">
+                      <i
+                        class="benefits-card__icon icon-icon_security text-action-dark"
+                      ></i>
+                      <p class="text-subtitle">
+                        Безопасная <br />
+                        онлайн оплата
+                      </p>
+                      <p class="text-subtext">
+                        Можете оплатить любой картой Visa или MasterCard онлайн
+                        или при доставке в пункте самовывоза
+                      </p>
+                      <a href="#" class="text-small text-action">
+                        Подробнее об условиях онлайн оплаты
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section class="mbp-50">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="banner-card banner-card--1">
+                        <p class="banner-card__title text-subtitle">
+                          У вас возникли вопросы?
+                        </p>
+                        <div class="banner-card__content">
+                          <p class="text-black-subtext">
+                            Звоните в наш call-центр, вы ответим на все ваши
+                            вопросы.
+                          </p>
+                          <p>
+                            <span
+                              class="text-small text-black-subtext font-weight-bold"
+                              >с 9:00 до 18:00</span
+                            >
+                            <span class="online-status-badge">
+                              <i class="online-status-badge__icon"></i>
+                              Сейчас онлайн
+                            </span>
+                          </p>
+                        </div>
+                        <a href="#" class="text-title text-main mb-0">
+                          +7 777 458 4569
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="banner-card banner-card--2">
+                        <p class="banner-card__title text-subtitle">
+                          Хотите заказать матрас нестандартной формы или
+                          размера?
+                        </p>
+                        <div class="banner-card__content">
+                          <p class="text-black-subtext">
+                            Мы можем произвести матрас точно по вашим замерам!
+                          </p>
+                        </div>
+                        <a href="#" class="text-small text-action mb-0">
+                          Заказать нестандартный матрас
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
+            <div class="d-none d-lg-block col-lg-2 h-100">
+              <div class="sidebar cart-page-sidebar">
+                <div
+                  class="cart-page-sidebar__header d-flex justify-content-between mbp-10"
+                >
+                  <div
+                    class="cart-page-sidebar__title text-small text-black-secondary font-weight-bold text-uppercase"
+                  >
+                    В корзину
+                  </div>
+                  <div
+                    class="cart-page-sidebar__weight text-small text-black-secondary"
+                  >
+                    Вес:
+                    <span class="cart-page-sidebar__weight-value">
+                      ~57,1 кг
+                    </span>
+                  </div>
+                </div>
+                <div class="cart-page-sidebar__price">
+                  <div class="d-flex justify-content-between">
+                    <div class="text-small text-black-subtext">8 товаров</div>
+                    <div class="text-normal text-black font-weight-bold">
+                      1 000 000 ₸
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-between">
+                    <div class="text-small text-black-subtext">К оплате</div>
+                    <div class="text-subtitle text-black font-weight-bold">
+                      740 820 ₸
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <a class="text-action" href="#">Добавить промокод</a>
+                </div>
+                <div class="product-page-sidebar__control-panel mbp-20">
+                  <a
+                    href="#"
+                    class="btn btn-main product-page-sidebar__checkout w-100 mbp-10"
+                  >
+                    Оформить заказ
+                  </a>
+                  <div class="text-center text-small text-black-secondary">
+                    Номер заказа: 485265
+                  </div>
+                </div>
+                <div class="cart-page-sidebar__attributes">
+                  <div class="cart-page-sidebar__attributes-item">
+                    <i class="icon-icon_credit text-action-dark"></i>
+                    <div class="text-small">
+                      <div class="text-action-dark">Доступна рассрочка!</div>
+                      <div class="text-black-secondary">
+                        Как получить рассрочку?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-page-sidebar__attributes-item">
+                    <i class="icon-icon_bed text-action-dark"></i>
+                    <div class="text-small">
+                      <div class="text-action-dark">Доступен тест-драйв</div>
+                      <div class="text-black-secondary">
+                        Как проходит тест-драйв?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-page-sidebar__attributes-item">
+                    <i class="icon-icon_delivery_1 text-action-dark"></i>
+                    <div class="text-small">
+                      <span class="text-action-dark">
+                        Бесплатная доставка до Нур-Султана, примерно
+                        <span class="font-weight-bold">4 дня</span>.
+                      </span>
+                      <span class="text-black-secondary">
+                        Подробнее об условиях доставке
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
-            </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
-            </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
-            </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
-            </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
-            </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
-            </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
-            </div>
-            <div
-              class="col-md-1 bg-primary border"
-              style="background-clip: content-box;"
-            >
-              col
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-bottom-spot"></div>
             </div>
           </div>
         </div>

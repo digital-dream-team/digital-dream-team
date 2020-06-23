@@ -8,13 +8,9 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Product</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="libs/swiper.min.css" />
     <link rel="stylesheet" href="css/components.min.css" />
+    <link rel="stylesheet" href="libs/swiper.min.css" />
+    <link rel="stylesheet" href="libs/slick.css" />
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/media.min.css" />
   </head>
@@ -104,15 +100,7 @@
             </form>
           </div>
         </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler drawer-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -273,6 +261,271 @@
       </div>
     </div>
   </div>
+  <noindex>
+    <div id="mobileDrawer" class="mobile-drawer">
+      <div class="mobile-drawer__content-wrap">
+        <div class="mobile-drawer__content">
+          <div class="mobile-drawer__content-header">
+            <div class="d-flex justify-content-between mbp-10">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white text-small p-0"
+                    href="#"
+                    id="drawer_cityDropdown"
+                    role="dutton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="icon-icon_location"></i>
+                    Нур-Султан
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="drawer_cityDropdown"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav flex-row language-switcher">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-small language-switcher__item active"
+                    href="#"
+                  >
+                    Рус
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-small language-switcher__item"
+                    href="#"
+                  >
+                    Қаз
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="navbar-nav flex-row flex-wrap align-items-center mbp-20">
+              <li class="nav-item">
+                <a class="nav-link text-white text-small p-0" href="#">
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+              </li>
+              <li class="nav-item">
+                <span>&nbsp;</span>
+                <span class="text-small text-white-high p-0">
+                  с 9:00 до 18:00
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="online-status-badge text-white-low">
+                  <i class="online-status-badge__icon"></i>
+                  Сейчас онлайн
+                </span>
+              </li>
+            </ul>
+            <div>
+              <a class="btn btn-main-light w-100" href="#">
+                Войти в личный кабинет
+              </a>
+            </div>
+          </div>
+          <div class="mobile-drawer__content-footer">
+            <div class="mobile-drawer__search">
+              <form action="/" class="search-form">
+                <div class="form-group m-0">
+                  <input
+                    type="text"
+                    class="form-control form-control-sm search-form__input"
+                    placeholder="Поиск по сайту"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-main-light search-form__btn"
+                  >
+                    <i class="icon-icon_search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="accordions-wrap accordions-switching mbp-30">
+              <div class="accordion">
+                <a class="accordion__toggle text-subtitle text-white" href="#">
+                  <span>Матрасы</span>
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <ul class="accordion__content navbar-nav">
+                  <li>
+                    <a class="text-white-high" href="#">Ортопедические</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Анатомические</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Элитные</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Детские</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Пружинные</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Надувные</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion">
+                <a class="accordion__toggle text-subtitle text-white" href="#">
+                  <span>Мебель</span>
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <ul class="accordion__content navbar-nav">
+                  <li>
+                    <a class="text-white-high" href="#">Кровати</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Диван-кровати</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Тумбы</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Трюмо</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Кресла</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Пуфы</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Банкетки</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Раскладушки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion">
+                <a class="accordion__toggle text-subtitle text-white" href="#">
+                  <span>Аксессуары</span>
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <ul class="accordion__content navbar-nav">
+                  <li>
+                    <a class="text-white-high" href="#">Подушки</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Топперы</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Наматрасники</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Текстиль</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Светильники</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Гаджеты</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Напольные вешалки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion">
+                <a class="accordion__toggle text-subtitle text-white" href="#">
+                  <span>Услуги</span>
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <ul class="accordion__content navbar-nav">
+                  <li>
+                    <a class="text-white-high" href="#">Доставка и сборка</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Обслуживание</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Выезд консультанта</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Тест-драйв</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Рассрочка и кредит</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Транспортные услуги</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#"
+                      >Заказ матраса нестандартного размера</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <ul class="navbar-nav mobile-drawer__small-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Покупателю
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Адреса салонов
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Пункты самовывоза
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="mobile-drawer__social-links mbp-15">
+                <p
+                  class="mobile-drawer__social-links-title text-white-low text-small text-uppercase font-weight-bold"
+                >
+                  Мы в социальных сетях
+                </p>
+                <a class="mobile-drawer__social-link" href="#">
+                  <i class="icon-icon_yu"></i>
+                </a>
+                <a class="mobile-drawer__social-link" href="#">
+                  <i class="icon-icon_fb"></i>
+                </a>
+                <a class="mobile-drawer__social-link" href="#">
+                  <i class="icon-icon_ig"></i>
+                </a>
+              </div>
+              <div class="text-small text-white-low">
+                © 2020 Компания «Центр Матрасов». Все права защищены
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </noindex>
 </header>
 
     <!-- endinject -->
@@ -3178,12 +3431,9 @@
 
     <!-- endinject -->
     <script src="js/components.min.js"></script>
+    <script src="libs/slick.min.js"></script>
     <script src="libs/swiper.min.js"></script>
     <script src="libs/hammer.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
