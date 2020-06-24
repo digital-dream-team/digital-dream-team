@@ -33,14 +33,14 @@
         <div class="main-header__top-content-center">
           <div class="main-header__small-bar">
             <ul
-              class="navbar-nav d-inline-flex flex-md-row align-items-md-center mrp-md-30"
+              class="navbar-nav d-inline-flex flex-lg-row align-items-lg-center mrp-lg-30"
             >
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle text-white text-small p-0"
                   href="#"
                   id="cityDropdown"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -53,12 +53,30 @@
                   <a class="dropdown-item" href="#">Another action</a>
                 </div>
               </li>
-              <li class="nav-item mrp-10">
+              <li class="nav-item dropdown mrp-10">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="phoneDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+                <div class="dropdown-menu" aria-labelledby="phoneDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+              <!-- <li class="nav-item mrp-10">
                 <a class="nav-link text-white text-small p-0" href="#">
                   <i class="icon-icon_whatsapp"></i>
                   +7 777 458 4569
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item d-none d-lg-block header-osb-fix">
                 <span class="text-small text-white-high p-0">
                   с 9:00 до 18:00
@@ -70,7 +88,7 @@
               </li>
             </ul>
             <ul
-              class="navbar-nav d-inline-flex flex-md-row align-items-md-center language-switcher"
+              class="navbar-nav d-inline-flex flex-lg-row align-items-lg-center language-switcher"
             >
               <li class="nav-item">
                 <a
@@ -116,7 +134,7 @@
           >
             <div class="main-header__small-bar">
               <ul
-                class="navbar-nav flex-md-row align-items-md-center justify-lg-content-end"
+                class="navbar-nav flex-lg-row align-items-lg-center justify-lg-content-end"
               >
                 <li class="nav-item">
                   <a class="nav-link text-white-high text-small p-0" href="#">
@@ -174,13 +192,13 @@
       <div class="row">
         <div class="col-10 text-white">
           <nav class="main-header__categories-nav">
-            <ul class="navbar-nav flex-md-row align-items-md-center">
+            <ul class="navbar-nav flex-lg-row align-items-lg-center">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_1"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -197,7 +215,7 @@
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_2"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -214,7 +232,7 @@
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_3"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -231,7 +249,7 @@
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_4"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -248,7 +266,7 @@
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_5"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -269,58 +287,62 @@
   <noindex>
     <div id="mobileDrawer" class="mobile-drawer">
       <div class="mobile-drawer__content-wrap">
+        <button class="mobile-drawer__close-btn">
+          <i class="demo-icon icon-icon_close_1"></i>
+        </button>
         <div class="mobile-drawer__content">
           <div class="mobile-drawer__content-header">
-            <div class="d-flex justify-content-between mbp-10">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle text-white text-small p-0"
-                    href="#"
-                    id="drawer_cityDropdown"
-                    role="dutton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <i class="icon-icon_location"></i>
-                    Нур-Султан
-                  </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="drawer_cityDropdown"
-                  >
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </div>
-                </li>
-              </ul>
-              <ul class="navbar-nav flex-row language-switcher">
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-small language-switcher__item active"
-                    href="#"
-                  >
-                    Рус
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-small language-switcher__item"
-                    href="#"
-                  >
-                    Қаз
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <ul class="navbar-nav flex-row flex-wrap align-items-center mbp-20">
+            <ul class="navbar-nav mbp-10">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="drawer_cityDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_location"></i>
+                  Нур-Султан
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="drawer_cityDropdown"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap align-items-center mbp-10">
               <li class="nav-item">
                 <a class="nav-link text-white text-small p-0" href="#">
                   <i class="icon-icon_whatsapp"></i>
                   +7 777 458 4569
                 </a>
               </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="drawer_phoneDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="drawer_phoneDropdown"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li> -->
               <li class="nav-item">
                 <span>&nbsp;</span>
                 <span class="text-small text-white-high p-0">
@@ -332,6 +354,21 @@
                   <i class="online-status-badge__icon"></i>
                   Сейчас онлайн
                 </span>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row language-switcher mbp-20">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-small language-switcher__item active"
+                  href="#"
+                >
+                  Рус
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-small language-switcher__item" href="#">
+                  Қаз
+                </a>
               </li>
             </ul>
             <div>
@@ -1813,7 +1850,7 @@
                   </div>
                 </section>
                 <section>
-                  <div class="d-flex flex-column flex-md-row">
+                  <div class="d-flex flex-column flex-lg-row">
                     <div class="benefits-card text-center">
                       <i
                         class="benefits-card__icon icon-icon_delivery_2 text-action-dark"
@@ -1865,7 +1902,7 @@
                 </section>
                 <section class="mbp-50">
                   <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                       <div class="banner-card banner-card--1">
                         <p class="banner-card__title text-subtitle">
                           У вас возникли вопросы?
@@ -1891,7 +1928,7 @@
                         </a>
                       </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                       <div class="banner-card banner-card--2">
                         <p class="banner-card__title text-subtitle">
                           Хотите заказать матрас нестандартной формы или
@@ -1912,116 +1949,147 @@
               </div>
             </div>
             <div class="d-none d-lg-block col-lg-2 h-100">
-              <div class="sidebar cart-page-sidebar">
-                <div class="cart-page-sidebar__top-wrap">
-                  <div class="cart-page-sidebar__top">
-                    <div
-                      class="cart-page-sidebar__header d-flex justify-content-between mbp-20"
-                    >
+              <div class="sidebar-initial-spot">
+                <div class="sidebar cart-page-sidebar">
+                  <div class="cart-page-sidebar__top-wrap">
+                    <div class="cart-page-sidebar__top">
                       <div
-                        class="cart-page-sidebar__title text-small text-black-secondary font-weight-bold text-uppercase"
+                        class="cart-page-sidebar__header d-flex justify-content-between mbp-20"
                       >
-                        В корзину
-                      </div>
-                      <div
-                        class="cart-page-sidebar__weight text-small text-black-secondary"
-                      >
-                        Вес:
-                        <span class="cart-page-sidebar__weight-value">
-                          ~57,1 кг
-                        </span>
-                      </div>
-                    </div>
-                    <div class="cart-page-sidebar__price mbp-20">
-                      <div
-                        class="d-flex justify-content-between cart-page-sidebar__price-subtotal"
-                      >
-                        <div class="text-small text-black-subtext">
-                          8 товаров
+                        <div
+                          class="cart-page-sidebar__title text-small text-black-secondary font-weight-bold text-uppercase"
+                        >
+                          В корзину
                         </div>
                         <div
-                          class="text-normal text-black font-weight-bold cart-page-sidebar__price-subtotal-value"
+                          class="cart-page-sidebar__weight text-small text-black-secondary"
                         >
-                          1 000 000 ₸
+                          Вес:
+                          <span class="cart-page-sidebar__weight-value">
+                            ~57,1 кг
+                          </span>
                         </div>
                       </div>
-                      <div
-                        class="d-flex justify-content-between cart-page-sidebar__price-discount"
-                      >
-                        <div class="text-small text-black-subtext">
-                          Вы экономите
+                      <div class="cart-page-sidebar__price mbp-20">
+                        <div
+                          class="d-flex justify-content-between cart-page-sidebar__price-subtotal"
+                        >
+                          <div class="text-small text-black-subtext">
+                            8 товаров
+                          </div>
+                          <div
+                            class="text-normal text-black font-weight-bold cart-page-sidebar__price-subtotal-value"
+                          >
+                            1 000 000 ₸
+                          </div>
                         </div>
                         <div
-                          class="text-normal text-attention font-weight-bold cart-page-sidebar__price-discount-value"
+                          class="d-flex justify-content-between cart-page-sidebar__price-discount"
                         >
-                          -348 000 ₸
+                          <div class="text-small text-black-subtext">
+                            Вы экономите
+                          </div>
+                          <div
+                            class="text-normal text-attention font-weight-bold cart-page-sidebar__price-discount-value"
+                          >
+                            -348 000 ₸
+                          </div>
                         </div>
-                      </div>
-                      <hr class="cart-page-sidebar__divider" />
-                      <div
-                        class="d-flex justify-content-between align-items-center cart-page-sidebar__price-total"
-                      >
-                        <div class="text-small text-black-subtext">
-                          К оплате
-                        </div>
+                        <hr class="cart-page-sidebar__divider" />
                         <div
-                          class="text-subtitle text-black font-weight-bold cart-page-sidebar__price-subtotal-value"
+                          class="d-flex justify-content-between align-items-center cart-page-sidebar__price-total"
                         >
-                          740 820 ₸
+                          <div class="text-small text-black-subtext">
+                            К оплате
+                          </div>
+                          <div
+                            class="text-subtitle text-black font-weight-bold cart-page-sidebar__price-subtotal-value"
+                          >
+                            740 820 ₸
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="mbp-10">
-                      <a class="text-action" href="#">Добавить промокод</a>
-                    </div>
-                    <div class="cart-page-sidebar__control-panel mbp-20">
-                      <a
-                        href="#"
-                        class="btn btn-main cart-page-sidebar__checkout w-100 mbp-10"
-                      >
-                        Оформить заказ
-                      </a>
-                      <div class="text-center text-small text-black-secondary">
-                        Номер заказа: 485265
+                      <div class="mbp-10">
+                        <!-- При успехе добавить к форме класс cart-page-sidebar__coupon-form--success -->
+                        <!-- При ошибке добавить к форме класс cart-page-sidebar__coupon-form--invalid -->
+                        <form action="" class="cart-page-sidebar__coupon-form">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control form-control-sm cart-page-sidebar__coupon-form-input"
+                              placeholder="Промо-код"
+                              required
+                            />
+                            <button
+                              type="submit"
+                              class="text-small text-action cart-page-sidebar__coupon-form-submit"
+                            >
+                              Добавить <i class="icon-icon_arrows_1"></i>
+                            </button>
+                            <span
+                              class="text-small cart-page-sidebar__coupon-form-success-msg"
+                            >
+                              Подтверждено <i class="icon-icon_ok_1"></i>
+                            </span>
+                            <small
+                              class="cart-page-sidebar__coupon-form-error-msg"
+                            >
+                              Такое промо-кода не существует
+                            </small>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="cart-page-sidebar__control-panel mbp-20">
+                        <a
+                          href="#"
+                          class="btn btn-main cart-page-sidebar__checkout w-100 mbp-10"
+                        >
+                          Оформить заказ
+                        </a>
+                        <div
+                          class="text-center text-small text-black-secondary"
+                        >
+                          Номер заказа: 485265
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="cart-page-sidebar__bottom-wrap">
-                  <div class="cart-page-sidebar__bottom">
-                    <div class="cart-page-sidebar__attributes">
-                      <div class="cart-page-sidebar__attributes-item">
-                        <i class="icon-icon_credit text-action-dark"></i>
-                        <div class="text-small">
-                          <div class="text-action-dark">
-                            Доступна рассрочка!
-                          </div>
-                          <div class="text-black-secondary">
-                            Как получить рассрочку?
-                          </div>
-                        </div>
-                      </div>
-                      <div class="cart-page-sidebar__attributes-item">
-                        <i class="icon-icon_bed text-action-dark"></i>
-                        <div class="text-small">
-                          <div class="text-action-dark">
-                            Доступен тест-драйв
-                          </div>
-                          <div class="text-black-secondary">
-                            Как проходит тест-драйв?
+                  <div class="cart-page-sidebar__bottom-wrap">
+                    <div class="cart-page-sidebar__bottom">
+                      <div class="cart-page-sidebar__attributes">
+                        <div class="cart-page-sidebar__attributes-item">
+                          <i class="icon-icon_credit text-action-dark"></i>
+                          <div class="text-small">
+                            <div class="text-action-dark">
+                              Доступна рассрочка!
+                            </div>
+                            <div class="text-black-secondary">
+                              Как получить рассрочку?
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="cart-page-sidebar__attributes-item">
-                        <i class="icon-icon_delivery_1 text-action-dark"></i>
-                        <div class="text-small">
-                          <span class="text-action-dark">
-                            Бесплатная доставка до Нур-Султана, примерно
-                            <span class="font-weight-bold">4 дня</span>.
-                          </span>
-                          <span class="text-black-secondary">
-                            Подробнее об условиях доставке
-                          </span>
+                        <div class="cart-page-sidebar__attributes-item">
+                          <i class="icon-icon_bed text-action-dark"></i>
+                          <div class="text-small">
+                            <div class="text-action-dark">
+                              Доступен тест-драйв
+                            </div>
+                            <div class="text-black-secondary">
+                              Как проходит тест-драйв?
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-page-sidebar__attributes-item">
+                          <i class="icon-icon_delivery_1 text-action-dark"></i>
+                          <div class="text-small">
+                            <span class="text-action-dark">
+                              Бесплатная доставка до Нур-Султана, примерно
+                              <span class="font-weight-bold">4 дня</span>.
+                            </span>
+                            <span class="text-black-secondary">
+                              Подробнее об условиях доставке
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2060,7 +2128,7 @@
     <div class="container">
       <nav class="main-footer__categories-nav">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Матрасы
             </a>
@@ -2085,7 +2153,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Мебель
             </a>
@@ -2119,7 +2187,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Аксессуары
             </a>
@@ -2147,7 +2215,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Услуги
             </a>
@@ -2177,7 +2245,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Популярные категории
             </a>
@@ -2206,7 +2274,7 @@
   <div class="main-footer__bottom bg-main-dark">
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-lg-2">
           <div class="main-footer__logo-wrap">
             <a href="#">
               <img class="w-100" src="assets/logo.png" alt="logo" />
@@ -2229,7 +2297,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-2 offset-md-1">
+        <div class="col-lg-2 offset-lg-1">
           <p class="text-subtitle title-line">
             <span class="bg-main-dark">О нас</span>
           </p>
@@ -2259,7 +2327,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-2 offset-md-1">
+        <div class="col-lg-2 offset-lg-1">
           <p class="text-subtitle title-line">
             <span class="bg-main-dark">Покупателю</span>
           </p>
@@ -2295,9 +2363,9 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-1 offset-md-1">
+        <div class="col-lg-1 offset-lg-1">
           <p class="text-subtitle">&nbsp;</p>
-          <hr class="d-block d-md-none text main-footer__divider" />
+          <hr class="d-block d-lg-none text main-footer__divider" />
           <nav class="text-small">
             <ul class="navbar-nav justify-content-between">
               <li class="main-footer__nav-small-item w-100">
@@ -2315,7 +2383,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-2 mt-5 mt-md-n5 mb-5 mb-md-0">
+        <div class="col-lg-2 mt-5 mt-lg-n5 mb-5 mb-lg-0">
           <div class="text-small text-white-low">
             © 2020 Компания «Центр Матрасов». Все права защищены
           </div>
@@ -2347,7 +2415,7 @@
             <p class="text-subtitle text-black-subtext">
               Статьи и видео-обзоры
             </p>
-            <a class="d-none d-md-block" href="#">Смотреть все материалы</a>
+            <a class="d-none d-lg-block" href="#">Смотреть все материалы</a>
           </div>
           <div class="overlay-cdk__content-feed-grid mobile-slider">
             <div class="overlay-cdk__content-feed-grid-item">
@@ -2427,7 +2495,7 @@
               </p>
             </div>
           </div>
-          <a class="d-block d-md-none" href="#">Смотреть все материалы</a>
+          <a class="d-block d-lg-none" href="#">Смотреть все материалы</a>
         </div>
       </div>
     </div>

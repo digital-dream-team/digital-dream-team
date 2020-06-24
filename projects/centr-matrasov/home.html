@@ -33,14 +33,14 @@
         <div class="main-header__top-content-center">
           <div class="main-header__small-bar">
             <ul
-              class="navbar-nav d-inline-flex flex-md-row align-items-md-center mrp-md-30"
+              class="navbar-nav d-inline-flex flex-lg-row align-items-lg-center mrp-lg-30"
             >
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle text-white text-small p-0"
                   href="#"
                   id="cityDropdown"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -53,12 +53,30 @@
                   <a class="dropdown-item" href="#">Another action</a>
                 </div>
               </li>
-              <li class="nav-item mrp-10">
+              <li class="nav-item dropdown mrp-10">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="phoneDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+                <div class="dropdown-menu" aria-labelledby="phoneDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+              <!-- <li class="nav-item mrp-10">
                 <a class="nav-link text-white text-small p-0" href="#">
                   <i class="icon-icon_whatsapp"></i>
                   +7 777 458 4569
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item d-none d-lg-block header-osb-fix">
                 <span class="text-small text-white-high p-0">
                   с 9:00 до 18:00
@@ -70,7 +88,7 @@
               </li>
             </ul>
             <ul
-              class="navbar-nav d-inline-flex flex-md-row align-items-md-center language-switcher"
+              class="navbar-nav d-inline-flex flex-lg-row align-items-lg-center language-switcher"
             >
               <li class="nav-item">
                 <a
@@ -116,7 +134,7 @@
           >
             <div class="main-header__small-bar">
               <ul
-                class="navbar-nav flex-md-row align-items-md-center justify-lg-content-end"
+                class="navbar-nav flex-lg-row align-items-lg-center justify-lg-content-end"
               >
                 <li class="nav-item">
                   <a class="nav-link text-white-high text-small p-0" href="#">
@@ -174,13 +192,13 @@
       <div class="row">
         <div class="col-10 text-white">
           <nav class="main-header__categories-nav">
-            <ul class="navbar-nav flex-md-row align-items-md-center">
+            <ul class="navbar-nav flex-lg-row align-items-lg-center">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_1"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -197,7 +215,7 @@
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_2"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -214,7 +232,7 @@
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_3"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -231,7 +249,7 @@
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_4"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -248,7 +266,7 @@
                   class="nav-link dropdown-toggle text-white p-0"
                   href="#"
                   id="categoriesNav_5"
-                  role="dutton"
+                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -269,58 +287,62 @@
   <noindex>
     <div id="mobileDrawer" class="mobile-drawer">
       <div class="mobile-drawer__content-wrap">
+        <button class="mobile-drawer__close-btn">
+          <i class="demo-icon icon-icon_close_1"></i>
+        </button>
         <div class="mobile-drawer__content">
           <div class="mobile-drawer__content-header">
-            <div class="d-flex justify-content-between mbp-10">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle text-white text-small p-0"
-                    href="#"
-                    id="drawer_cityDropdown"
-                    role="dutton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <i class="icon-icon_location"></i>
-                    Нур-Султан
-                  </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="drawer_cityDropdown"
-                  >
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </div>
-                </li>
-              </ul>
-              <ul class="navbar-nav flex-row language-switcher">
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-small language-switcher__item active"
-                    href="#"
-                  >
-                    Рус
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-small language-switcher__item"
-                    href="#"
-                  >
-                    Қаз
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <ul class="navbar-nav flex-row flex-wrap align-items-center mbp-20">
+            <ul class="navbar-nav mbp-10">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="drawer_cityDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_location"></i>
+                  Нур-Султан
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="drawer_cityDropdown"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap align-items-center mbp-10">
               <li class="nav-item">
                 <a class="nav-link text-white text-small p-0" href="#">
                   <i class="icon-icon_whatsapp"></i>
                   +7 777 458 4569
                 </a>
               </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="drawer_phoneDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="drawer_phoneDropdown"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li> -->
               <li class="nav-item">
                 <span>&nbsp;</span>
                 <span class="text-small text-white-high p-0">
@@ -332,6 +354,21 @@
                   <i class="online-status-badge__icon"></i>
                   Сейчас онлайн
                 </span>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row language-switcher mbp-20">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-small language-switcher__item active"
+                  href="#"
+                >
+                  Рус
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-small language-switcher__item" href="#">
+                  Қаз
+                </a>
               </li>
             </ul>
             <div>
@@ -583,10 +620,178 @@
                   </div>
                 </section>
                 <section class="mbp-50">
-                  <h3 class="text-subtitle text-black-subtext mbp-20">
-                    Популярные товары
-                  </h3>
-                  <div class="products-grid mobile-slider">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="text-subtitle text-black-subtext mbp-20">
+                      Популярные товары
+                    </h3>
+                    <a class="d-none d-lg-block" href="#">
+                      Смотреть все товары
+                    </a>
+                  </div>
+                  <div class="products-grid products-grid--c-5 mobile-slider">
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="products-grid__item">
                       <div class="product-card-wrap">
                         <div class="product-card product-card--sm-big">
@@ -1240,13 +1445,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="d-block d-md-none" href="#">
+                  <a class="d-block d-lg-none" href="#">
                     Смотреть все товары
                   </a>
                 </section>
                 <div class="row mbp-50">
                   <div class="col-lg-5">
-                    <div class="banner-full">
+                    <div class="banner-full mbp-10">
                       <a href="#">
                         <img
                           class="banner-full__image"
@@ -1257,7 +1462,7 @@
                     </div>
                   </div>
                   <div class="col-lg-5">
-                    <div class="banner-full">
+                    <div class="banner-full mbp-10">
                       <a href="#">
                         <img
                           class="banner-full__image"
@@ -1269,10 +1474,178 @@
                   </div>
                 </div>
                 <section class="mbp-50">
-                  <h3 class="text-subtitle text-black-subtext mbp-20">
-                    Новые поступления
-                  </h3>
-                  <div class="products-grid mobile-slider">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="text-subtitle text-black-subtext mbp-20">
+                      Новые поступления
+                    </h3>
+                    <a class="d-none d-lg-block" href="#">
+                      Смотреть все новинки
+                    </a>
+                  </div>
+                  <div class="products-grid products-grid--c-5 mobile-slider">
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="products-grid__item">
                       <div class="product-card-wrap">
                         <div class="product-card product-card--sm-big">
@@ -1926,15 +2299,101 @@
                       </div>
                     </div>
                   </div>
-                  <a class="d-block d-md-none" href="#">
+                  <a class="d-block d-lg-none" href="#">
                     Смотреть все новинки
                   </a>
                 </section>
                 <section class="mbp-50">
-                  <h3 class="text-subtitle text-black-subtext mbp-20">
-                    Статьи и видео-обзоры
-                  </h3>
-                  <a class="d-block d-md-none" href="#">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="text-subtitle text-black-subtext mbp-20">
+                      Статьи и видео-обзоры
+                    </h3>
+                    <a class="d-none d-lg-block" href="#">
+                      Смотреть все материалы
+                    </a>
+                  </div>
+                  <div class="blog-posts-grid mobile-slider">
+                    <div
+                      class="blog-posts-grid__item-wrap blog-posts-grid__video-item"
+                    >
+                      <div class="blog-posts-grid__item">
+                        <div class="blog-posts-grid__item-thumbnail-wrap">
+                          <a
+                            class="open-video-popup"
+                            href="https://www.youtube.com/embed/ScMzIvxBSi4"
+                          >
+                            <img
+                              class="blog-posts-grid__item-thumbnail"
+                              src="assets/product-video.png"
+                              alt="pic"
+                            />
+                          </a>
+                        </div>
+                        <div class="blog-posts-grid__item-content">
+                          <a href="#" class="blog-posts-grid__item-title">
+                            <span class="badge-label">Видео</span>
+                            Выбираем матрас. Обзор ортопедических матрасов
+                          </a>
+                          <div class="blog-posts-grid__item-text">
+                            Модель матраса Армос Way создана для того, чтобы
+                            обеспечить его владельцам
+                          </div>
+                          <a
+                            href="https://www.youtube.com/embed/ScMzIvxBSi4"
+                            class="blog-posts-grid__item-video-btn btn btn-outline-action open-video-popup"
+                          >
+                            <span class="mrp-10">Смотреть видео (9:21)</span>
+                            <i class="icon-icon_play"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="blog-posts-grid__item-wrap">
+                      <div class="blog-posts-grid__item">
+                        <div class="blog-posts-grid__item-thumbnail-wrap">
+                          <a href="#">
+                            <img
+                              class="blog-posts-grid__item-thumbnail"
+                              src="assets/blog-1.png"
+                              alt="pic"
+                            />
+                          </a>
+                        </div>
+                        <div class="blog-posts-grid__item-content">
+                          <a href="#" class="blog-posts-grid__item-title">
+                            Выбираем матрас. Обзор ортопедических матрасов
+                          </a>
+                          <div class="blog-posts-grid__item-text">
+                            Модель матраса Армос Way создана для того, чтобы
+                            обеспечить его владельцам
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="blog-posts-grid__item-wrap">
+                      <div class="blog-posts-grid__item">
+                        <div class="blog-posts-grid__item-thumbnail-wrap">
+                          <a href="#">
+                            <img
+                              class="blog-posts-grid__item-thumbnail"
+                              src="assets/blog-1.png"
+                              alt="pic"
+                            />
+                          </a>
+                        </div>
+                        <div class="blog-posts-grid__item-content">
+                          <a href="#" class="blog-posts-grid__item-title">
+                            Выбираем матрас. Обзор ортопедических матрасов
+                          </a>
+                          <div class="blog-posts-grid__item-text">
+                            Модель матраса Армос Way создана для того, чтобы
+                            обеспечить его владельцам
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="d-block d-lg-none" href="#">
                     Смотреть все материалы
                   </a>
                 </section>
@@ -1963,7 +2422,7 @@
                   </div>
                 </section>
                 <section>
-                  <div class="d-flex flex-column flex-md-row">
+                  <div class="d-flex flex-column flex-lg-row">
                     <div class="benefits-card text-center">
                       <i
                         class="benefits-card__icon icon-icon_delivery_2 text-action-dark"
@@ -2015,7 +2474,7 @@
                 </section>
                 <section class="mbp-50">
                   <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                       <div class="banner-card banner-card--1">
                         <p class="banner-card__title text-subtitle">
                           У вас возникли вопросы?
@@ -2041,7 +2500,7 @@
                         </a>
                       </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                       <div class="banner-card banner-card--2">
                         <p class="banner-card__title text-subtitle">
                           Хотите заказать матрас нестандартной формы или
@@ -2062,7 +2521,7 @@
                 <section class="static-seo">
                   <div class="static-seo__text">
                     <div class="row">
-                      <div class="col-md-5">
+                      <div class="col-lg-5">
                         <p
                           class="text-small text-black-secondary font-weight-bold text-uppercase"
                         >
@@ -2098,7 +2557,7 @@
                           </p>
                         </div>
                       </div>
-                      <div class="col-md-5">
+                      <div class="col-lg-5">
                         <p
                           class="text-small text-black-secondary font-weight-bold text-uppercase"
                         >
@@ -2136,7 +2595,7 @@
                     </div>
                   </div>
                   <a
-                    class="text-action-light d-inline-block d-md-none static-seo__toggle"
+                    class="text-action-light d-inline-block d-lg-none static-seo__toggle"
                     href="#"
                   >
                     Читать полностью
@@ -2159,7 +2618,7 @@
     <div class="container">
       <nav class="main-footer__categories-nav">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Матрасы
             </a>
@@ -2184,7 +2643,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Мебель
             </a>
@@ -2218,7 +2677,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Аксессуары
             </a>
@@ -2246,7 +2705,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Услуги
             </a>
@@ -2276,7 +2735,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <a class="main-footer__nav-title text-subtitle text-white" href="#">
               Популярные категории
             </a>
@@ -2305,7 +2764,7 @@
   <div class="main-footer__bottom bg-main-dark">
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-lg-2">
           <div class="main-footer__logo-wrap">
             <a href="#">
               <img class="w-100" src="assets/logo.png" alt="logo" />
@@ -2328,7 +2787,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-2 offset-md-1">
+        <div class="col-lg-2 offset-lg-1">
           <p class="text-subtitle title-line">
             <span class="bg-main-dark">О нас</span>
           </p>
@@ -2358,7 +2817,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-2 offset-md-1">
+        <div class="col-lg-2 offset-lg-1">
           <p class="text-subtitle title-line">
             <span class="bg-main-dark">Покупателю</span>
           </p>
@@ -2394,9 +2853,9 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-1 offset-md-1">
+        <div class="col-lg-1 offset-lg-1">
           <p class="text-subtitle">&nbsp;</p>
-          <hr class="d-block d-md-none text main-footer__divider" />
+          <hr class="d-block d-lg-none text main-footer__divider" />
           <nav class="text-small">
             <ul class="navbar-nav justify-content-between">
               <li class="main-footer__nav-small-item w-100">
@@ -2414,7 +2873,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-2 mt-5 mt-md-n5 mb-5 mb-md-0">
+        <div class="col-lg-2 mt-5 mt-lg-n5 mb-5 mb-lg-0">
           <div class="text-small text-white-low">
             © 2020 Компания «Центр Матрасов». Все права защищены
           </div>
@@ -2446,7 +2905,7 @@
             <p class="text-subtitle text-black-subtext">
               Статьи и видео-обзоры
             </p>
-            <a class="d-none d-md-block" href="#">Смотреть все материалы</a>
+            <a class="d-none d-lg-block" href="#">Смотреть все материалы</a>
           </div>
           <div class="overlay-cdk__content-feed-grid mobile-slider">
             <div class="overlay-cdk__content-feed-grid-item">
@@ -2526,7 +2985,7 @@
               </p>
             </div>
           </div>
-          <a class="d-block d-md-none" href="#">Смотреть все материалы</a>
+          <a class="d-block d-lg-none" href="#">Смотреть все материалы</a>
         </div>
       </div>
     </div>
