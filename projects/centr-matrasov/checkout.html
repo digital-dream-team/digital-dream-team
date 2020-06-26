@@ -577,9 +577,41 @@
           <div class="row h-100">
             <div class="col-lg-8">
               <div class="main-container__content">
-                <h1 class="text-title text-main mbp-20">
+                <!-- <h1 class="text-title text-main mbp-20">
                   Оплата
-                </h1>
+                </h1> -->
+                <a
+                  class="text-small text-action d-block d-lg-none mbp-10 back-btn"
+                  href="#"
+                >
+                  <i class="icon-icon_arrows_1"></i>
+                  Вернуться назад
+                </a>
+                <div class="stepper-header stepper-header--static">
+                  <a
+                    class="stepper-header__step stepper-header__step--static"
+                    href="#"
+                  >
+                    Корзина
+                  </a>
+                  <div class="stepper-header__divider d-none d-lg-block">
+                    <span class="stepper-header__divider-arrow-body"></span>
+                    <i class="icon-icon_next"></i>
+                  </div>
+                  <a
+                    class="stepper-header__step active d-none d-lg-block"
+                    href="#"
+                  >
+                    Адрес и способ доставки
+                  </a>
+                  <div class="stepper-header__divider d-none d-lg-block">
+                    <span class="stepper-header__divider-arrow-body"></span>
+                    <i class="icon-icon_next"></i>
+                  </div>
+                  <a class="stepper-header__step d-none d-lg-block" href="#">
+                    Оформление заказа
+                  </a>
+                </div>
                 <section class="mbp-50">
                   <div class="cart-tab">
                     <h3 class="text-subtitle text-black-subtext mbp-20">
@@ -637,6 +669,25 @@
                             Более подробно об условиях доставки можно прочитать
                             <a href="#">здесь</a>.
                           </p>
+                          <p class="mbp-10">
+                            Также вы дополнительно можете заказать вывоз вашего
+                            старого матраса:
+                          </p>
+                          <div class="custom-control custom-checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox-take_out_old"
+                              name="take_out_old"
+                              class="custom-control-input"
+                              value="type_pickup"
+                            />
+                            <label
+                              class="custom-control-label"
+                              for="checkbox-take_out_old"
+                            >
+                              Вывести старый матрас
+                            </label>
+                          </div>
                         </div>
                       </div>
                       <h3 class="text-subtitle text-black-subtext mbp-20">
@@ -895,82 +946,154 @@
             </div>
             <div class="d-none d-lg-block col-lg-2 h-100">
               <div class="sidebar-initial-spot">
-                <div class="sidebar cart-page-sidebar">
-                  <div
-                    class="cart-page-sidebar__header d-flex justify-content-between mbp-10"
-                  >
-                    <div
-                      class="cart-page-sidebar__title text-small text-black-secondary font-weight-bold text-uppercase"
-                    >
-                      В корзину
-                    </div>
-                    <div
-                      class="cart-page-sidebar__weight text-small text-black-secondary"
-                    >
-                      Вес:
-                      <span class="cart-page-sidebar__weight-value">
-                        ~57,1 кг
-                      </span>
-                    </div>
-                  </div>
-                  <div class="cart-page-sidebar__price">
-                    <div class="d-flex justify-content-between">
-                      <div class="text-small text-black-subtext">8 товаров</div>
-                      <div class="text-normal text-black font-weight-bold">
-                        1 000 000 ₸
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="d-flex justify-content-between">
-                      <div class="text-small text-black-subtext">К оплате</div>
-                      <div class="text-subtitle text-black font-weight-bold">
-                        740 820 ₸
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <a class="text-action" href="#">Добавить промокод</a>
-                  </div>
-                  <div class="product-page-sidebar__control-panel mbp-20">
-                    <a
-                      href="#"
-                      class="btn btn-main product-page-sidebar__checkout w-100 mbp-10"
-                    >
-                      Оформить заказ
-                    </a>
-                    <div class="text-center text-small text-black-secondary">
-                      Номер заказа: 485265
-                    </div>
-                  </div>
-                  <div class="cart-page-sidebar__attributes">
-                    <div class="cart-page-sidebar__attributes-item">
-                      <i class="icon-icon_credit text-action-dark"></i>
-                      <div class="text-small">
-                        <div class="text-action-dark">Доступна рассрочка!</div>
-                        <div class="text-black-secondary">
-                          Как получить рассрочку?
+                <div class="sidebar-initial-spot">
+                  <div class="sidebar cart-page-sidebar">
+                    <div class="cart-page-sidebar__top-wrap">
+                      <div class="cart-page-sidebar__top">
+                        <div
+                          class="cart-page-sidebar__header d-flex justify-content-between mbp-20"
+                        >
+                          <div
+                            class="cart-page-sidebar__title text-small text-black-secondary font-weight-bold text-uppercase"
+                          >
+                            В корзину
+                          </div>
+                          <div
+                            class="cart-page-sidebar__weight text-small text-black-secondary"
+                          >
+                            Вес:
+                            <span class="cart-page-sidebar__weight-value">
+                              ~57,1 кг
+                            </span>
+                          </div>
+                        </div>
+                        <div class="cart-page-sidebar__price mbp-20">
+                          <div
+                            class="d-flex justify-content-between cart-page-sidebar__price-subtotal"
+                          >
+                            <div class="text-small text-black-subtext">
+                              8 товаров
+                            </div>
+                            <div
+                              class="text-normal text-black font-weight-bold cart-page-sidebar__price-subtotal-value"
+                            >
+                              1 000 000 ₸
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between cart-page-sidebar__price-discount"
+                          >
+                            <div class="text-small text-black-subtext">
+                              Вы экономите
+                            </div>
+                            <div
+                              class="text-normal text-attention font-weight-bold cart-page-sidebar__price-discount-value"
+                            >
+                              -348 000 ₸
+                            </div>
+                          </div>
+                          <hr class="cart-page-sidebar__divider" />
+                          <div
+                            class="d-flex justify-content-between align-items-center cart-page-sidebar__price-total"
+                          >
+                            <div class="text-small text-black-subtext">
+                              К оплате
+                            </div>
+                            <div
+                              class="text-subtitle text-black font-weight-bold cart-page-sidebar__price-subtotal-value"
+                            >
+                              740 820 ₸
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mbp-10">
+                          <!-- При успехе добавить к форме класс cart-page-sidebar__coupon-form--success -->
+                          <!-- При ошибке добавить к форме класс cart-page-sidebar__coupon-form--invalid -->
+                          <form
+                            action=""
+                            class="cart-page-sidebar__coupon-form"
+                          >
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control form-control-sm cart-page-sidebar__coupon-form-input"
+                                placeholder="Промо-код"
+                                required
+                              />
+                              <button
+                                type="submit"
+                                class="text-small text-action cart-page-sidebar__coupon-form-submit"
+                              >
+                                Добавить <i class="icon-icon_arrows_1"></i>
+                              </button>
+                              <span
+                                class="text-small cart-page-sidebar__coupon-form-success-msg"
+                              >
+                                Подтверждено <i class="icon-icon_ok_1"></i>
+                              </span>
+                              <small
+                                class="cart-page-sidebar__coupon-form-error-msg"
+                              >
+                                Такое промо-кода не существует
+                              </small>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="cart-page-sidebar__control-panel mbp-20">
+                          <a
+                            href="#"
+                            class="btn btn-main cart-page-sidebar__checkout w-100 mbp-10"
+                          >
+                            Оформить заказ
+                          </a>
+                          <div
+                            class="text-center text-small text-black-secondary"
+                          >
+                            Номер заказа: 485265
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="cart-page-sidebar__attributes-item">
-                      <i class="icon-icon_bed text-action-dark"></i>
-                      <div class="text-small">
-                        <div class="text-action-dark">Доступен тест-драйв</div>
-                        <div class="text-black-secondary">
-                          Как проходит тест-драйв?
+                    <div class="cart-page-sidebar__bottom-wrap">
+                      <div class="cart-page-sidebar__bottom">
+                        <div class="cart-page-sidebar__attributes">
+                          <div class="cart-page-sidebar__attributes-item">
+                            <i class="icon-icon_credit text-action-dark"></i>
+                            <div class="text-small">
+                              <div class="text-action-dark">
+                                Доступна рассрочка!
+                              </div>
+                              <div class="text-black-secondary">
+                                Как получить рассрочку?
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cart-page-sidebar__attributes-item">
+                            <i class="icon-icon_bed text-action-dark"></i>
+                            <div class="text-small">
+                              <div class="text-action-dark">
+                                Доступен тест-драйв
+                              </div>
+                              <div class="text-black-secondary">
+                                Как проходит тест-драйв?
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cart-page-sidebar__attributes-item">
+                            <i
+                              class="icon-icon_delivery_1 text-action-dark"
+                            ></i>
+                            <div class="text-small">
+                              <span class="text-action-dark">
+                                Бесплатная доставка до Нур-Султана, примерно
+                                <span class="font-weight-bold">4 дня</span>.
+                              </span>
+                              <span class="text-black-secondary">
+                                Подробнее об условиях доставке
+                              </span>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="cart-page-sidebar__attributes-item">
-                      <i class="icon-icon_delivery_1 text-action-dark"></i>
-                      <div class="text-small">
-                        <span class="text-action-dark">
-                          Бесплатная доставка до Нур-Султана, примерно
-                          <span class="font-weight-bold">4 дня</span>.
-                        </span>
-                        <span class="text-black-secondary">
-                          Подробнее об условиях доставке
-                        </span>
                       </div>
                     </div>
                   </div>
