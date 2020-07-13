@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cart thanks</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/components.min.css" />
+    <link rel="stylesheet" href="libs/swiper.min.css" />
+    <link rel="stylesheet" href="libs/slick.css" />
+    <link rel="stylesheet" href="libs/glider.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/media.min.css" />
+  </head>
+  <body>
+    <!-- inject:header:html -->
+    <header class="main-header">
+  <div class="main-header__top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <div class="main-header__logo-wrap">
+          <a href="../index.html">
+            <img class="w-100" src="assets/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="main-header__top-content-center">
+          <div class="main-header__small-bar">
+            <ul
+              class="navbar-nav d-inline-flex flex-lg-row align-items-lg-center mrp-lg-30"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="cityDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_location"></i>
+                  Нур-Султан
+                </a>
+                <div class="dropdown-menu" aria-labelledby="cityDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mrp-10">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="phoneDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+                <div class="dropdown-menu" aria-labelledby="phoneDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+              <!-- <li class="nav-item mrp-10">
+                <a class="nav-link text-white text-small p-0" href="#">
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+              </li> -->
+              <li class="nav-item d-none d-lg-block header-osb-fix">
+                <span class="text-small text-white-high p-0">
+                  с 9:00 до 18:00
+                </span>
+                <span class="online-status-badge text-white-low">
+                  <i class="online-status-badge__icon"></i>
+                  Сейчас онлайн
+                </span>
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav d-inline-flex flex-lg-row align-items-lg-center language-switcher"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link text-small language-switcher__item active"
+                  href="#"
+                >
+                  Рус
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-small language-switcher__item" href="#">
+                  Қаз
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block">
+            <form action="/" class="search-form">
+              <div class="form-group m-0">
+                <input
+                  type="text"
+                  class="form-control search-form__input"
+                  placeholder="Поиск по сайту"
+                />
+                <button
+                  type="button"
+                  class="btn btn-main-light search-form__btn"
+                >
+                  <i class="icon-icon_search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button class="navbar-toggler drawer-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="main-header__top-content-right">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <div class="main-header__small-bar">
+              <ul
+                class="navbar-nav flex-lg-row align-items-lg-center justify-lg-content-end"
+              >
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Адреса салонов
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Пункты самовывоза
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-nav-panel-wrap">
+            <ul class="main-nav-panel">
+              <li class="main-nav-panel__item">
+                <a href="#">
+                  <i class="icon-icon_user"></i>
+                  <span>Войти</span>
+                </a>
+              </li>
+              <li class="main-nav-panel__item">
+                <a href="#">
+                  <i class="icon-icon_compare"></i>
+                  <span>Сравнить</span>
+                </a>
+              </li>
+              <li class="main-nav-panel__item">
+                <a href="#">
+                  <i class="icon-icon_favorite_2"></i>
+                  <span>Избранное</span>
+                </a>
+              </li>
+              <li class="main-nav-panel__item has-badge">
+                <a href="#">
+                  <i class="icon-icon_cart"></i>
+                  <span>Корзина</span>
+                  <span class="has-badge__item">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="main-header__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 text-white">
+          <nav class="main-header__categories-nav">
+            <ul class="navbar-nav flex-lg-row align-items-lg-center">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white p-0"
+                  href="#"
+                  id="categoriesNav_1"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Матрасы
+                </a>
+                <div class="dropdown-menu" aria-labelledby="categoriesNav_1">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white p-0"
+                  href="#"
+                  id="categoriesNav_2"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Мебель
+                </a>
+                <div class="dropdown-menu" aria-labelledby="categoriesNav_2">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white p-0"
+                  href="#"
+                  id="categoriesNav_3"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Аксессуары
+                </a>
+                <div class="dropdown-menu" aria-labelledby="categoriesNav_3">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white p-0"
+                  href="#"
+                  id="categoriesNav_4"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Услуги
+                </a>
+                <div class="dropdown-menu" aria-labelledby="categoriesNav_4">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown ml-auto">
+                <a
+                  class="nav-link dropdown-toggle text-white p-0"
+                  href="#"
+                  id="categoriesNav_5"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Покупателю
+                </a>
+                <div class="dropdown-menu" aria-labelledby="categoriesNav_5">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <noindex>
+    <div id="mobileDrawer" class="mobile-drawer">
+      <button class="mobile-drawer__close-btn">
+        <i class="demo-icon icon-icon_close_1"></i>
+      </button>
+      <div class="mobile-drawer__content-wrap">
+        <div class="mobile-drawer__content">
+          <div class="mobile-drawer__content-header">
+            <ul class="navbar-nav mbp-10">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="drawer_cityDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_location"></i>
+                  Нур-Султан
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="drawer_cityDropdown"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap align-items-center mbp-10">
+              <li class="nav-item">
+                <a class="nav-link text-white text-small p-0" href="#">
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white text-small p-0"
+                  href="#"
+                  id="drawer_phoneDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="icon-icon_whatsapp"></i>
+                  +7 777 458 4569
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="drawer_phoneDropdown"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+              </li> -->
+              <li class="nav-item">
+                <span>&nbsp;</span>
+                <span class="text-small text-white-high p-0">
+                  с 9:00 до 18:00
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="online-status-badge text-white-low">
+                  <i class="online-status-badge__icon"></i>
+                  Сейчас онлайн
+                </span>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row language-switcher mbp-20">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-small language-switcher__item active"
+                  href="#"
+                >
+                  Рус
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-small language-switcher__item" href="#">
+                  Қаз
+                </a>
+              </li>
+            </ul>
+            <div>
+              <a class="btn btn-main-light w-100" href="#">
+                Войти в личный кабинет
+              </a>
+            </div>
+          </div>
+          <div class="mobile-drawer__content-footer">
+            <div class="mobile-drawer__search">
+              <form action="/" class="search-form">
+                <div class="form-group m-0">
+                  <input
+                    type="text"
+                    class="form-control form-control-sm search-form__input"
+                    placeholder="Поиск по сайту"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-main-light search-form__btn"
+                  >
+                    <i class="icon-icon_search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="accordions-wrap accordions-switching mbp-30">
+              <div class="accordion">
+                <a class="accordion__toggle text-subtitle text-white" href="#">
+                  <span>Матрасы</span>
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <ul class="accordion__content navbar-nav">
+                  <li>
+                    <a class="text-white-high" href="#">Ортопедические</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Анатомические</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Элитные</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Детские</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Пружинные</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Надувные</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion">
+                <a class="accordion__toggle text-subtitle text-white" href="#">
+                  <span>Мебель</span>
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <ul class="accordion__content navbar-nav">
+                  <li>
+                    <a class="text-white-high" href="#">Кровати</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Диван-кровати</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Тумбы</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Зеркала</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Трюмо</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Кресла</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Пуфы</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Банкетки</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Раскладушки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion">
+                <a class="accordion__toggle text-subtitle text-white" href="#">
+                  <span>Аксессуары</span>
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <ul class="accordion__content navbar-nav">
+                  <li>
+                    <a class="text-white-high" href="#">Подушки</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Топперы</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Наматрасники</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Текстиль</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Светильники</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Гаджеты</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Напольные вешалки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion">
+                <a class="accordion__toggle text-subtitle text-white" href="#">
+                  <span>Услуги</span>
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <ul class="accordion__content navbar-nav">
+                  <li>
+                    <a class="text-white-high" href="#">Доставка и сборка</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Обслуживание</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Выезд консультанта</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Тест-драйв</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Рассрочка и кредит</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#">Транспортные услуги</a>
+                  </li>
+                  <li>
+                    <a class="text-white-high" href="#"
+                      >Заказ матраса нестандартного размера</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <ul class="navbar-nav mobile-drawer__small-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Покупателю
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Адреса салонов
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Пункты самовывоза
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-high text-small p-0" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="mobile-drawer__social-links mbp-15">
+                <p
+                  class="mobile-drawer__social-links-title text-white-low text-small text-uppercase font-weight-bold"
+                >
+                  Мы в социальных сетях
+                </p>
+                <a class="mobile-drawer__social-link" href="#">
+                  <i class="icon-icon_yu"></i>
+                </a>
+                <a class="mobile-drawer__social-link" href="#">
+                  <i class="icon-icon_fb"></i>
+                </a>
+                <a class="mobile-drawer__social-link" href="#">
+                  <i class="icon-icon_ig"></i>
+                </a>
+              </div>
+              <div class="text-small text-white-low">
+                © 2020 Компания «Центр Матрасов». Все права защищены
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </noindex>
+</header>
+
+    <!-- endinject -->
+    <main class="main-container">
+      <div class="container h-100">
+        <div class="main-container__content-wrap h-100">
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-top-spot"></div>
+            </div>
+          </div>
+          <div class="row h-100">
+            <div class="col-lg-10">
+              <div class="main-container__content">
+                <section class="mbp-50">
+                  <div class="text-left text-lg-center">
+                    <h1 class="text-title text-main mbp-20">
+                      Спасибо за покупку!
+                    </h1>
+                    <div class="static-page-message-text mbp-20">
+                      <p class="mbp-40">
+                        Ваш заказ 02-200004569 принят в обработку! Скоро с вами
+                        свяжутся наши менеджера, чтобы сообщить детали
+                      </p>
+                      <p>
+                        Отслеживать статус своего заказа вы можете в личном
+                        кабинете
+                      </p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-center flex-wrap flex-lg-nowrap"
+                    >
+                      <a
+                        class="btn btn-outline-action w-100 w-lg-auto mr-0 mrp-lg-10 mbp-10"
+                        href="#"
+                      >
+                        Продолжить покупки
+                      </a>
+                      <a
+                        class="btn btn-outline-action w-100 w-lg-auto mbp-10"
+                        href="#"
+                      >
+                        Войти в личный кабинет
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <h3
+                    class="text-subtitle text-black-subtext mbp-20 text-left text-lg-center"
+                  >
+                    Возможно вас еще заинтересуют эти товары
+                  </h3>
+                  <div class="products-grid products-grid--c-5 mobile-slider">
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                В корзине
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="d-block d-lg-none mtp-30" href="#">
+                    Смотреть все товары
+                  </a>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-bottom-spot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- inject:footer:html -->
+    <footer class="main-footer">
+  <div class="main-footer__top bg-main">
+    <div class="container">
+      <nav class="main-footer__categories-nav">
+        <div class="row">
+          <div class="col-lg-2">
+            <a class="main-footer__nav-title text-subtitle text-white" href="#">
+              Матрасы
+            </a>
+            <ul class="navbar-nav main-footer__nav-menu">
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Ортопедические</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Анатомические</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Элитные</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Детские</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Пружинные</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Надувные</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <a class="main-footer__nav-title text-subtitle text-white" href="#">
+              Мебель
+            </a>
+            <ul class="navbar-nav main-footer__nav-menu">
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Кровати</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Диван-кровати</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Тумбы</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Зеркала</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Трюмо</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Кресла</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Пуфы</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Банкетки</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Раскладушки</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <a class="main-footer__nav-title text-subtitle text-white" href="#">
+              Аксессуары
+            </a>
+            <ul class="navbar-nav main-footer__nav-menu">
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Подушки</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Топперы </a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Наматрасники</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Текстиль</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Светильники</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Гаджеты</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Напольные вешалки</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <a class="main-footer__nav-title text-subtitle text-white" href="#">
+              Услуги
+            </a>
+            <ul class="navbar-nav main-footer__nav-menu">
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Доставка и сборка</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Обслуживание</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Выезд консультанта</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Тест-драйв</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Рассрочка и кредит</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Транспортные услуги</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#"
+                  >Заказ матраса нестандартного размера</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <a class="main-footer__nav-title text-subtitle text-white" href="#">
+              Популярные категории
+            </a>
+            <ul class="navbar-nav main-footer__nav-menu">
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Малазийская мебель</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Товары для детей</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Элитные матрасы</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Сделано в Казахстане</a>
+              </li>
+              <li class="main-footer__nav-big-item">
+                <a class="text-white-high" href="#">Постельное белье</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="main-footer__bottom bg-main-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="main-footer__logo-wrap">
+            <a href="#">
+              <img class="w-100" src="assets/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="main-footer__social-links">
+            <p
+              class="main-footer__social-links-title text-white-low text-small text-uppercase font-weight-bold"
+            >
+              Мы в социальных сетях
+            </p>
+            <a class="main-footer__social-link" href="#">
+              <i class="icon-icon_yu"></i>
+            </a>
+            <a class="main-footer__social-link" href="#">
+              <i class="icon-icon_fb"></i>
+            </a>
+            <a class="main-footer__social-link" href="#">
+              <i class="icon-icon_ig"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <p class="text-subtitle title-line">
+            <span class="bg-main-dark">О нас</span>
+          </p>
+          <nav class="text-small">
+            <ul class="navbar-nav flex-row flex-wrap justify-content-between">
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">О Компании</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Адреса салонов</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Производство</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Вакансии</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Партнерам</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Оптовым покупателям</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <p class="text-subtitle title-line">
+            <span class="bg-main-dark">Покупателю</span>
+          </p>
+          <nav class="text-small">
+            <ul class="navbar-nav flex-row flex-wrap justify-content-between">
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Как выбрать матрас</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Гарантия</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Как оформить заказ</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Эксплуатация</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Способы оплаты</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Советы экспертов</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Видеообзоры</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Доставка</a>
+              </li>
+              <li class="main-footer__nav-small-item">
+                <a class="text-white-high" href="#">Новости</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-1 offset-lg-1">
+          <p class="text-subtitle">&nbsp;</p>
+          <hr class="d-block d-lg-none text main-footer__divider" />
+          <nav class="text-small">
+            <ul class="navbar-nav justify-content-between">
+              <li class="main-footer__nav-small-item w-100">
+                <a class="text-white-high" href="#">Правила и условия</a>
+              </li>
+              <li class="main-footer__nav-small-item w-100">
+                <a class="text-white-high" href="#">Карта сайта</a>
+              </li>
+              <li class="main-footer__nav-small-item w-100">
+                <a class="text-white-high" href="#">Вопросы и ответы</a>
+              </li>
+              <li class="main-footer__nav-small- w-100">
+                <a class="text-white-high" href="#">Сертификаты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2 mt-5 mt-lg-n5 mb-5 mb-lg-0">
+          <div class="text-small text-white-low">
+            © 2020 Компания «Центр Матрасов». Все права защищены
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<noindex>
+  <div id="videoPopupOverlay" class="overlay-cdk">
+    <button class="overlay-cdk__close-btn">
+      <i class="demo-icon icon-icon_close_1"></i>
+    </button>
+    <div class="overlay-cdk__content-wrap container">
+      <div class="overlay-cdk__content">
+        <div class="overlay-cdk__content-video-wrap">
+          <div
+            class="overlay-cdk__content-video embed-responsive embed-responsive-16by9"
+          >
+            <iframe
+              class="embed-responsive-item"
+              src=""
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="overlay-cdk__content-feed-container">
+          <div class="overlay-cdk__content-feed-header">
+            <p class="text-subtitle text-black-subtext">
+              Статьи и видео-обзоры
+            </p>
+            <a class="d-none d-lg-block" href="#">Смотреть все материалы</a>
+          </div>
+          <div class="overlay-cdk__content-feed-grid mobile-slider">
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                <span class="badge-label">Видео</span>
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+            <div class="overlay-cdk__content-feed-grid-item">
+              <a href="#">
+                <img
+                  src="assets/blog-1.png"
+                  class="overlay-cdk__content-feed-grid-item-image"
+                />
+              </a>
+              <a href="#" class="overlay-cdk__content-feed-grid-item-title">
+                Как выбрать матрас?
+              </a>
+              <p class="overlay-cdk__content-feed-grid-item-text">
+                Матрас приедет к Вам в вакуумной скрутке. Благодаря хорошей
+                упругости материалов после вскрытия упаковки...
+              </p>
+            </div>
+          </div>
+          <a class="d-block d-lg-none" href="#">Смотреть все материалы</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</noindex>
+
+    <!-- endinject -->
+    <script src="js/components.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="libs/glider.min.js"></script>
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
