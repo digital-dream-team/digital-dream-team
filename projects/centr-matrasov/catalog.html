@@ -645,9 +645,16 @@
                   <i class="icon-icon_whatsapp"></i>
                   +7 777 458 4569
                 </a>
-                <div class="dropdown-menu" aria-labelledby="phoneDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
+                <div
+                  class="dropdown-menu dropdown-phone-menu"
+                  aria-labelledby="phoneDropdown"
+                >
+                  <a class="dropdown-phone-menu__item" href="#">
+                    Позвонить <i class="icon-icon_phone"></i>
+                  </a>
+                  <a class="dropdown-phone-menu__item" href="#">
+                    Написать в WhatsApp <i class="icon-icon_whatsapp"></i>
+                  </a>
                 </div>
               </li>
               <!-- <li class="nav-item mrp-10">
@@ -1163,7 +1170,7 @@
           <div class="row h-100">
             <div class="d-none d-lg-block col-lg-2 h-100">
               <div class="sidebar-initial-spot">
-                <div class="sidebar">
+                <div class="sidebar position-relative">
                   sidebar
                 </div>
               </div>
@@ -4321,6 +4328,17 @@
           </div>
           <a class="d-block d-lg-none" href="#">Смотреть все материалы</a>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mapPopupOverlay" class="overlay-cdk">
+    <button class="overlay-cdk__close-btn">
+      <i class="demo-icon icon-icon_close_1"></i>
+    </button>
+    <div class="overlay-cdk__content-wrap container">
+      <div class="overlay-cdk__content">
+        <iframe class="map-iframe" src="" frameborder="0"></iframe>
       </div>
     </div>
   </div>
