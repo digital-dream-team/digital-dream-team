@@ -743,7 +743,7 @@
           <div class="main-nav-panel-wrap">
             <ul class="main-nav-panel">
               <li class="main-nav-panel__item">
-                <a href="#">
+                <a class="open-auth-popup" href="#">
                   <i class="icon-icon_user"></i>
                   <span>Войти</span>
                 </a>
@@ -1573,7 +1573,7 @@
               </li>
             </ul>
             <div>
-              <a class="btn btn-main-light w-100" href="#">
+              <a class="btn btn-main-light w-100 open-auth-popup" href="#">
                 Войти в личный кабинет
               </a>
             </div>
@@ -2580,7 +2580,6 @@
       </div>
     </div>
   </div>
-
   <div id="mapPopupOverlay" class="overlay-cdk">
     <button class="overlay-cdk__close-btn">
       <i class="demo-icon icon-icon_close_1"></i>
@@ -2591,6 +2590,137 @@
           <iframe src="" frameborder="0"></iframe>
         </div>
       </div>
+    </div>
+  </div>
+  <div id="authPopupOverlay" class="overlay-cdk">
+    <button class="overlay-cdk__close-btn">
+      <i class="demo-icon icon-icon_close_1"></i>
+    </button>
+    <div class="overlay-cdk__content-auth overlay-cdk__content-login active">
+      <p class="text-subtitle mbp-20">Войти</p>
+      <form action="/">
+        <div class="form-group mbp-20">
+          <label for="login_phone">Номер телефона</label>
+          <input
+            type="text"
+            class="form-control"
+            id="login_phone"
+            name="name"
+            placeholder="Телефон"
+            autocomplete="tel"
+          />
+          <!-- Если нужен хинт -->
+          <!-- <small>Хинт</small> -->
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <!-- При ошибке добавить к form-group класс form-group--invalid -->
+        <!-- При успехе (и желании) добавить к form-group класс form-group--success -->
+        <div class="form-group mbp-20">
+          <label for="login_password">Пароль</label>
+          <input
+            type="password"
+            class="form-control"
+            id="login_password"
+            name="name"
+            placeholder="Пароль"
+            autocomplete="current-password"
+          />
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <div class="mbp-20">
+          <a class="switch-auth-popup__reset-password" href="#">Забыл пароль</a>
+        </div>
+        <div class="mbp-20">
+          <button
+            class="btn btn-main font-weight-bold overlay-cdk__content-auth-btn"
+            type="submit"
+          >
+            Войти <i class="icon-icon_arrows_2"></i>
+          </button>
+        </div>
+        <div>
+          <a class="switch-auth-popup__registration" href="#">
+            Зарегистрироваться
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="overlay-cdk__content-auth overlay-cdk__content-registration">
+      <p class="text-subtitle mbp-20">Регистрация</p>
+      <form action="/">
+        <div class="form-group mbp-20">
+          <label for="login_phone">Номер телефона</label>
+          <input
+            type="text"
+            class="form-control"
+            id="login_phone"
+            name="name"
+            placeholder="Телефон"
+            autocomplete="tel"
+          />
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <div class="form-group mbp-20">
+          <label for="login_password">Пароль</label>
+          <input
+            type="password"
+            class="form-control"
+            id="login_password"
+            name="name"
+            placeholder="Пароль"
+            autocomplete="new-password"
+          />
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <div class="mbp-20">
+          <button
+            class="btn btn-main font-weight-bold overlay-cdk__content-auth-btn"
+            type="submit"
+          >
+            Зарегистрироваться
+          </button>
+        </div>
+        <div>
+          <a class="switch-auth-popup__login" href="#">
+            У меня уже есть аккаунт
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="overlay-cdk__content-auth overlay-cdk__content-reset-password">
+      <p class="text-subtitle mbp-20">Восстановление</p>
+      <form action="/">
+        <div class="form-group mbp-20">
+          <label for="login_phone">Номер телефона</label>
+          <input
+            type="text"
+            class="form-control"
+            id="login_phone"
+            name="name"
+            placeholder="Телефон"
+            autocomplete="tel"
+          />
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <div class="mbp-20">
+          <button
+            class="btn btn-main font-weight-bold overlay-cdk__content-auth-btn"
+            type="submit"
+          >
+            Получить пароль
+          </button>
+        </div>
+        <div>
+          <a class="switch-auth-popup__login" href="#"
+            >У меня уже есть аккаунт</a
+          >
+        </div>
+      </form>
     </div>
   </div>
 </noindex>
