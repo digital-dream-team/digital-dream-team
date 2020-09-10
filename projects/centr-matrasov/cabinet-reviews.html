@@ -4464,6 +4464,7 @@
             name="name"
             placeholder="Телефон"
             autocomplete="tel"
+            required
           />
           <!-- Если нужен хинт -->
           <!-- <small>Хинт</small> -->
@@ -4481,6 +4482,7 @@
             name="name"
             placeholder="Пароль"
             autocomplete="current-password"
+            required
           />
           <small class="form-group__error-msg">Ошибка</small>
           <small class="form-group__success-msg">Успех</small>
@@ -4515,6 +4517,7 @@
             name="name"
             placeholder="Телефон"
             autocomplete="tel"
+            required
           />
           <small class="form-group__error-msg">Ошибка</small>
           <small class="form-group__success-msg">Успех</small>
@@ -4528,6 +4531,8 @@
             name="name"
             placeholder="Пароль"
             autocomplete="new-password"
+            required
+            minlength="6"
           />
           <small class="form-group__error-msg">Ошибка</small>
           <small class="form-group__success-msg">Успех</small>
@@ -4559,6 +4564,7 @@
             name="name"
             placeholder="Телефон"
             autocomplete="tel"
+            required
           />
           <small class="form-group__error-msg">Ошибка</small>
           <small class="form-group__success-msg">Успех</small>
@@ -4572,9 +4578,9 @@
           </button>
         </div>
         <div>
-          <a class="switch-auth-popup__login" href="#"
-            >У меня уже есть аккаунт</a
-          >
+          <a class="switch-auth-popup__login" href="#">
+            У меня уже есть аккаунт
+          </a>
         </div>
       </form>
     </div>
