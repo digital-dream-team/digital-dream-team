@@ -8,6 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/fontello.min.css" />
@@ -66,7 +67,11 @@
             />
             <span><b>tatsorb</b>@mail.ru</span>
           </a>
-          <a href="#" class="dd-button dd-button--filled">Написать</a>
+          <a
+            href="#"
+            class="dd-button dd-button--filled open-contact-form-popup"
+            >Написать</a
+          >
         </div>
       </div>
       <div class="navbar-toggler-wrap navbar-light d-block d-sm-none">
@@ -180,125 +185,163 @@
 
     <!-- endinject -->
     <main class="main-content">
-      <section class="section section--hero" style=" background-image: url(assets/hero_slide_1.png);">
+      <section
+        class="section section--hero"
+        style="background-image: url(assets/hero_slide_1.png)"
+      >
         <div class="container h-100">
-        <!-- Swiper -->
-        <div class="hero-swiper-wrap">
-          <div class="hero-swiper swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="hero-swiper__subtitle">
-                  Активированный
+          <!-- Swiper -->
+          <div class="hero-swiper-wrap">
+            <div class="hero-swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero-swiper__subtitle">Активированный</div>
+                  <div class="hero-swiper__title"><span>У</span>голь</div>
+                  <div class="hero-swiper__content">
+                    Чистая вода, <br />
+                    чистая планета
+                  </div>
+                  <div>
+                    <a href="#" class="dd-button dd-button--light"
+                      >Весь ассортимент</a
+                    >
+                  </div>
                 </div>
-                <div class="hero-swiper__title">
-                  <span>У</span>голь
+                <div class="swiper-slide">
+                  <div class="hero-swiper__subtitle">Гарантия</div>
+                  <div class="hero-swiper__title"><span>К</span>ачества</div>
+                  <div class="hero-swiper__content">
+                    Чистая вода, <br />
+                    чистая планета
+                  </div>
+                  <div>
+                    <a href="#" class="dd-button dd-button--light"
+                      >Весь ассортимент</a
+                    >
+                  </div>
                 </div>
-                <div class="hero-swiper__content">
-                  Чистая вода, <br /> чистая планета
+                <div class="swiper-slide">
+                  <div class="hero-swiper__subtitle">Оптимальный</div>
+                  <div class="hero-swiper__title"><span>В</span>ыбор</div>
+                  <div class="hero-swiper__content">
+                    Чистая вода, <br />
+                    чистая планета
+                  </div>
+                  <div>
+                    <a href="#" class="dd-button dd-button--light"
+                      >Весь ассортимент</a
+                    >
+                  </div>
                 </div>
-                <div>
-                  <a href="#" class="dd-button dd-button--light">Весь ассортимент</a>
+                <div class="swiper-slide">
+                  <div class="hero-swiper__title"><span>К</span>онсуль-</div>
+                  <div class="hero-swiper__title">тация</div>
+                  <div class="hero-swiper__content">
+                    Чистая вода, <br />
+                    чистая планета
+                  </div>
+                  <div>
+                    <a href="#" class="dd-button dd-button--light"
+                      >Весь ассортимент</a
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="hero-swiper__subtitle">
-                  Гарантия
-                </div>
-                <div class="hero-swiper__title">
-                  <span>К</span>ачества
-                </div>
-                <div class="hero-swiper__content">
-                  Чистая вода, <br /> чистая планета
-                </div>
-                <div>
-                  <a href="#" class="dd-button dd-button--light">Весь ассортимент</a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="hero-swiper__subtitle">
-                  Оптимальный
-                </div>
-                <div class="hero-swiper__title">
-                  <span>В</span>ыбор
-                </div>
-                <div class="hero-swiper__content">
-                  Чистая вода, <br /> чистая планета
-                </div>
-                <div>
-                  <a href="#" class="dd-button dd-button--light">Весь ассортимент</a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="hero-swiper__title">
-                  <span>К</span>онсуль-
-                </div>
-                <div class="hero-swiper__title">
-                  тация
-                </div>
-                <div class="hero-swiper__content">
-                  Чистая вода, <br /> чистая планета
-                </div>
-                <div>
-                  <a href="#" class="dd-button dd-button--light">Весь ассортимент</a>
+              <div class="hero-swiper__pagination-wrap">
+                <div class="swiper-pagination"></div>
+                <div class="hero-swiper__pagination-number">
+                  <span class="hero-swiper__pagination-number-val">01</span>.
                 </div>
               </div>
             </div>
-            <div class="hero-swiper__pagination-wrap">
-              <div class="swiper-pagination">
+            <div class="hero-swiper__overlay">
+              <div class="hero-swiper__overlay-item contented">
+                <a
+                  class="hero-swiper__overlay-item-link"
+                  data-slide="1"
+                  href="#"
+                  ><span>01.</span>Активированный уголь</a
+                >
               </div>
-              <div class="hero-swiper__pagination-number"><span class="hero-swiper__pagination-number-val">01</span>.</div>
+              <div class="hero-swiper__overlay-item contented">
+                <a
+                  class="hero-swiper__overlay-item-link"
+                  data-slide="2"
+                  href="#"
+                  ><span>02.</span>Гарантия качества</a
+                >
+              </div>
+              <div class="hero-swiper__overlay-item contented">
+                <a
+                  class="hero-swiper__overlay-item-link"
+                  data-slide="3"
+                  href="#"
+                  ><span>03.</span>Оптимальный выбор</a
+                >
+              </div>
+              <div class="hero-swiper__overlay-item contented">
+                <a
+                  class="hero-swiper__overlay-item-link"
+                  data-slide="4"
+                  href="#"
+                  ><span>04.</span>Консультация</a
+                >
+              </div>
+              <div class="hero-swiper__overlay-item"></div>
+              <div
+                class="hero-swiper__overlay-item hero-swiper__overlay-item--small"
+              ></div>
             </div>
           </div>
-          <div class="hero-swiper__overlay">
-            <div class="hero-swiper__overlay-item contented">
-              <a class='hero-swiper__overlay-item-link' data-slide="1" href="#"><span>01.</span>Активированный уголь</a>
-            </div>
-            <div class="hero-swiper__overlay-item contented" >
-              <a class='hero-swiper__overlay-item-link' data-slide="2" href="#"><span>02.</span>Гарантия качества</a>
-            </div>
-            <div class="hero-swiper__overlay-item contented" >
-              <a class='hero-swiper__overlay-item-link' data-slide="3" href="#"><span>03.</span>Оптимальный выбор</a>
-            </div>
-            <div class="hero-swiper__overlay-item contented">
-              <a class='hero-swiper__overlay-item-link' data-slide="4" href="#"><span>04.</span>Консультация</a>
-            </div>
-            <div class="hero-swiper__overlay-item">
-            </div>
-            <div class="hero-swiper__overlay-item hero-swiper__overlay-item--small">
-            </div>
-          </div>
-        </div>
         </div>
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section-title text-center mb-5"><span>Н</span>аша продукция</h2>
+          <h2 class="section-title text-center mb-5">
+            <span>Н</span>аша продукция
+          </h2>
           <div class="row">
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(1).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(1).png"
+                      alt="product"
+                    />
                   </div>
-                  <p class="product-card__title">Активированный берёзовый уголь</p>
+                  <p class="product-card__title">
+                    Активированный берёзовый уголь
+                  </p>
                 </a>
               </div>
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(2).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(2).png"
+                      alt="product"
+                    />
                   </div>
-                  <p class="product-card__title">Активированный каменный уголь</p>
+                  <p class="product-card__title">
+                    Активированный каменный уголь
+                  </p>
                 </a>
               </div>
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(3).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(3).png"
+                      alt="product"
+                    />
                   </div>
                   <p class="product-card__title">Кокосовые угли</p>
                 </a>
@@ -306,9 +349,13 @@
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(4).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(4).png"
+                      alt="product"
+                    />
                   </div>
                   <p class="product-card__title">Сорбенты</p>
                 </a>
@@ -316,9 +363,13 @@
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(5).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(5).png"
+                      alt="product"
+                    />
                   </div>
                   <p class="product-card__title">Антрациты</p>
                 </a>
@@ -326,9 +377,13 @@
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(6).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(6).png"
+                      alt="product"
+                    />
                   </div>
                   <p class="product-card__title">Карбюризатор</p>
                 </a>
@@ -336,9 +391,13 @@
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(7).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(7).png"
+                      alt="product"
+                    />
                   </div>
                   <p class="product-card__title">Сульфоуголь</p>
                 </a>
@@ -346,9 +405,13 @@
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(8).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(8).png"
+                      alt="product"
+                    />
                   </div>
                   <p class="product-card__title">Шунгит</p>
                 </a>
@@ -356,9 +419,13 @@
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(9).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(9).png"
+                      alt="product"
+                    />
                   </div>
                   <p class="product-card__title">Хлорная известь</p>
                 </a>
@@ -366,9 +433,13 @@
             </div>
             <div class="col-6 col-md-20">
               <div class="product-card">
-                <a href="#"> 
+                <a href="#">
                   <div class="product-card__image-wrap">
-                    <img class="product-card__image" src="assets/product(10).png" alt="product" />
+                    <img
+                      class="product-card__image"
+                      src="assets/product(10).png"
+                      alt="product"
+                    />
                   </div>
                   <p class="product-card__title">Полиоксихлорид алюминия</p>
                 </a>
@@ -377,19 +448,35 @@
           </div>
         </div>
       </section>
-      <section class="section" style="background-image: url(assets/home_bg_1.png);">
+      <section
+        class="section"
+        style="background-image: url(assets/home_bg_1.png)"
+      >
         <div class="container">
-          <h2 class="section-title section-title--light  text-center"><span>С</span>фера применения</h2>
-          <h3 class="section-subtitle section-subtitle--light text-center mb-5">активированного угля</h3>
-          <div class="row ">
+          <h2 class="section-title section-title--light text-center">
+            <span>С</span>фера применения
+          </h2>
+          <h3 class="section-subtitle section-subtitle--light text-center mb-5">
+            активированного угля
+          </h3>
+          <div class="row">
             <div class="col-md-3">
-              <div class="scope-card" style="background-image: url('assets/scope(1).png');">
+              <div
+                class="scope-card"
+                style="background-image: url('assets/scope(1).png')"
+              >
                 <div class="scope-card__body">
                   <div class="scope-card__title">
-                    Очистка <br /> <b>технической</b> <br /> воды
+                    Очистка <br />
+                    <b>технической</b> <br />
+                    воды
                   </div>
-                  <div class='scope-card__separator-wrap'>
-                    <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                  <div class="scope-card__separator-wrap">
+                    <img
+                      src="assets/separator.png"
+                      alt="separator"
+                      class="news-card__separator"
+                    />
                   </div>
                   <div>
                     <a class="dd-button" href="#">Подробнее</a>
@@ -398,13 +485,22 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div class="scope-card" style="background-image: url('assets/scope(2).png');">
+              <div
+                class="scope-card"
+                style="background-image: url('assets/scope(2).png')"
+              >
                 <div class="scope-card__body">
                   <div class="scope-card__title">
-                    Очистка <br /> <b>питьевой</b> <br /> воды
+                    Очистка <br />
+                    <b>питьевой</b> <br />
+                    воды
                   </div>
-                  <div class='scope-card__separator-wrap'>
-                    <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                  <div class="scope-card__separator-wrap">
+                    <img
+                      src="assets/separator.png"
+                      alt="separator"
+                      class="news-card__separator"
+                    />
                   </div>
                   <div>
                     <a class="dd-button" href="#">Подробнее</a>
@@ -413,13 +509,22 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div class="scope-card" style="background-image: url('assets/scope(3).png');">
+              <div
+                class="scope-card"
+                style="background-image: url('assets/scope(3).png')"
+              >
                 <div class="scope-card__body">
                   <div class="scope-card__title">
-                    Очистка <br /> <b>сточной</b> <br /> воды
+                    Очистка <br />
+                    <b>сточной</b> <br />
+                    воды
                   </div>
-                  <div class='scope-card__separator-wrap'>
-                    <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                  <div class="scope-card__separator-wrap">
+                    <img
+                      src="assets/separator.png"
+                      alt="separator"
+                      class="news-card__separator"
+                    />
                   </div>
                   <div>
                     <a class="dd-button" href="#">Подробнее</a>
@@ -428,13 +533,22 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div class="scope-card" style="background-image: url('assets/scope(4).png');">
+              <div
+                class="scope-card"
+                style="background-image: url('assets/scope(4).png')"
+              >
                 <div class="scope-card__body">
                   <div class="scope-card__title">
-                    Очистка <br /> <b>ликеро-водочной</b> <br /> продукции
+                    Очистка <br />
+                    <b>ликеро-водочной</b> <br />
+                    продукции
                   </div>
-                  <div class='scope-card__separator-wrap'>
-                    <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                  <div class="scope-card__separator-wrap">
+                    <img
+                      src="assets/separator.png"
+                      alt="separator"
+                      class="news-card__separator"
+                    />
                   </div>
                   <div>
                     <a class="dd-button" href="#">Подробнее</a>
@@ -445,13 +559,24 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <div class="scope-card" style="background-image: url('assets/scope(5).png');">
+              <div
+                class="scope-card"
+                style="background-image: url('assets/scope(5).png')"
+              >
                 <div class="scope-card__body">
                   <div class="scope-card__title">
-                    Осветление <br /> <b>жидкостей <br /> и растворов</b>
+                    Осветление <br />
+                    <b
+                      >жидкостей <br />
+                      и растворов</b
+                    >
                   </div>
-                  <div class='scope-card__separator-wrap'>
-                    <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                  <div class="scope-card__separator-wrap">
+                    <img
+                      src="assets/separator.png"
+                      alt="separator"
+                      class="news-card__separator"
+                    />
                   </div>
                   <div>
                     <a class="dd-button" href="#">Подробнее</a>
@@ -460,13 +585,24 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="scope-card" style="background-image: url('assets/scope(6).png');">
+              <div
+                class="scope-card"
+                style="background-image: url('assets/scope(6).png')"
+              >
                 <div class="scope-card__body">
                   <div class="scope-card__title">
-                    Изготовление <br /> <b>металлических <br /> изделий</b>
+                    Изготовление <br />
+                    <b
+                      >металлических <br />
+                      изделий</b
+                    >
                   </div>
-                  <div class='scope-card__separator-wrap'>
-                    <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                  <div class="scope-card__separator-wrap">
+                    <img
+                      src="assets/separator.png"
+                      alt="separator"
+                      class="news-card__separator"
+                    />
                   </div>
                   <div>
                     <a class="dd-button" href="#">Подробнее</a>
@@ -475,13 +611,21 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="scope-card" style="background-image: url('assets/scope(7).png');">
+              <div
+                class="scope-card"
+                style="background-image: url('assets/scope(7).png')"
+              >
                 <div class="scope-card__body">
                   <div class="scope-card__title">
-                    Очистка <br /> <b>воздуха и газов</b>
+                    Очистка <br />
+                    <b>воздуха и газов</b>
                   </div>
-                  <div class='scope-card__separator-wrap'>
-                    <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                  <div class="scope-card__separator-wrap">
+                    <img
+                      src="assets/separator.png"
+                      alt="separator"
+                      class="news-card__separator"
+                    />
                   </div>
                   <div>
                     <a class="dd-button" href="#">Подробнее</a>
@@ -492,28 +636,36 @@
           </div>
         </div>
       </section>
-      <section class="section section--halfed" style="background-image: url(assets/about_bg.png); background-position: right center;">
+      <section
+        class="section section--halfed"
+        style="
+          background-image: url(assets/about_bg.png);
+          background-position: right center;
+        "
+      >
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div class="pr-0 pr-md-5">
                 <h2 class="section-title mb-5"><span>О</span> компании</h2>
                 <ol class="dd-ol">
-                  <li class="dd-ol__item">Отгрузка товара по территории России
-                    от 3-х дней</li>
-                  <li class="dd-ol__item">Продукция соответствует действующим 
-                    стандартам, о чем свидетельствуют 
-                    приложенные сертификаты</li>
-                  <li class="dd-ol__item">В штате работает команда 
-                    профессиональных менеджеров, 
-                    подбирающих выгодные условия
-                    сотрудничества</li>
-                  <li class="dd-ol__item">Доставка по всей России и странам СНГ
-                    (Беларусь, Казахстан) проверенными 
-                    транспортными компаниями, 
-                    автомобилями из собственного автопарка,
-                    железнодорожным транспортом и
-                    попутными машинами</li>
+                  <li class="dd-ol__item">
+                    Отгрузка товара по территории России от 3-х дней
+                  </li>
+                  <li class="dd-ol__item">
+                    Продукция соответствует действующим стандартам, о чем
+                    свидетельствуют приложенные сертификаты
+                  </li>
+                  <li class="dd-ol__item">
+                    В штате работает команда профессиональных менеджеров,
+                    подбирающих выгодные условия сотрудничества
+                  </li>
+                  <li class="dd-ol__item">
+                    Доставка по всей России и странам СНГ (Беларусь, Казахстан)
+                    проверенными транспортными компаниями, автомобилями из
+                    собственного автопарка, железнодорожным транспортом и
+                    попутными машинами
+                  </li>
                 </ol>
               </div>
             </div>
@@ -521,26 +673,41 @@
           </div>
         </div>
       </section>
-      <section class="section" style="background-image: url(assets/home_bg_2.png);">
+      <section
+        class="section"
+        style="background-image: url(assets/home_bg_2.png)"
+      >
         <div class="container">
-          <h2 class="section-title section-title--light text-center mb-5"><span>Н</span>овости</h2>
+          <h2 class="section-title section-title--light text-center mb-5">
+            <span>Н</span>овости
+          </h2>
           <div class="news-swiper-wrap">
             <div class="news-swiper swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="news-card">
                     <div class="news-card__image-wrap">
-                      <img src="assets/news(1).png" alt="news" class="news-card__image">
+                      <img
+                        src="assets/news(1).png"
+                        alt="news"
+                        class="news-card__image"
+                      />
                     </div>
                     <div class="news-card__body">
                       <div class="news-card__title">
-                        Участие в международной выставке “Экватек-2020” 
+                        Участие в международной выставке “Экватек-2020”
                       </div>
                       <div class="news-card__content">
-                        С 8 по 10 сентября в Москве в “Крокус Экспо” прошла 14 международная выставка “Экватек-2020”. Компания “Татсорб” приняла участие в выставке.
+                        С 8 по 10 сентября в Москве в “Крокус Экспо” прошла 14
+                        международная выставка “Экватек-2020”. Компания
+                        “Татсорб” приняла участие в выставке.
                       </div>
-                      <div class='news-card__separator-wrap'>
-                        <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                      <div class="news-card__separator-wrap">
+                        <img
+                          src="assets/separator.png"
+                          alt="separator"
+                          class="news-card__separator"
+                        />
                       </div>
                       <div>
                         <a class="dd-button" href="#">Подробнее</a>
@@ -551,48 +718,28 @@
                 <div class="swiper-slide">
                   <div class="news-card">
                     <div class="news-card__image-wrap">
-                      <img src="assets/news(2).png" alt="news" class="news-card__image">
+                      <img
+                        src="assets/news(2).png"
+                        alt="news"
+                        class="news-card__image"
+                      />
                     </div>
                     <div class="news-card__body">
                       <div class="news-card__title">
-                        “Татсорб” отгружает уголь на
-                        социально-значимые объекты
+                        “Татсорб” отгружает уголь на социально-значимые объекты
                         республики Татарстан
                       </div>
                       <div class="news-card__content">
-                        Компания “Татсорб” своевременно 
-                        поставляет уголь на социально-
-                        значимые объекты. С начала года 
-                        отгружено более 40 тонн угля.
+                        Компания “Татсорб” своевременно поставляет уголь на
+                        социально- значимые объекты. С начала года отгружено
+                        более 40 тонн угля.
                       </div>
-                      <div class='news-card__separator-wrap'>
-                        <img src="assets/separator.png" alt="separator" class="news-card__separator">
-                      </div>
-                      <div>
-                        <a class="dd-button" href="#">Подробнее</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="news-card">
-                    <div class="news-card__image-wrap">
-                      <img src="assets/news(3).png" alt="news" class="news-card__image">
-                    </div>
-                    <div class="news-card__body">
-                      <div class="news-card__title">
-                        “Татсорб” признан надежным
-                        поставщиком 2019 года
-                      </div>
-                      <div class="news-card__content">
-                        Компания “Татсорб” была признана 
-                        лучшим поставщиком 2019 года в 
-                        номинации “Производство 
-                        активированного угля”. Завод получил
-                        почетный диплом.
-                      </div>
-                      <div class='news-card__separator-wrap'>
-                        <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                      <div class="news-card__separator-wrap">
+                        <img
+                          src="assets/separator.png"
+                          alt="separator"
+                          class="news-card__separator"
+                        />
                       </div>
                       <div>
                         <a class="dd-button" href="#">Подробнее</a>
@@ -603,17 +750,27 @@
                 <div class="swiper-slide">
                   <div class="news-card">
                     <div class="news-card__image-wrap">
-                      <img src="assets/news(1).png" alt="news" class="news-card__image">
+                      <img
+                        src="assets/news(3).png"
+                        alt="news"
+                        class="news-card__image"
+                      />
                     </div>
                     <div class="news-card__body">
                       <div class="news-card__title">
-                        Участие в международной выставке “Экватек-2020” 
+                        “Татсорб” признан надежным поставщиком 2019 года
                       </div>
                       <div class="news-card__content">
-                        С 8 по 10 сентября в Москве в “Крокус Экспо” прошла 14 международная выставка “Экватек-2020”. Компания “Татсорб” приняла участие в выставке.
+                        Компания “Татсорб” была признана лучшим поставщиком 2019
+                        года в номинации “Производство активированного угля”.
+                        Завод получил почетный диплом.
                       </div>
-                      <div class='news-card__separator-wrap'>
-                        <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                      <div class="news-card__separator-wrap">
+                        <img
+                          src="assets/separator.png"
+                          alt="separator"
+                          class="news-card__separator"
+                        />
                       </div>
                       <div>
                         <a class="dd-button" href="#">Подробнее</a>
@@ -624,17 +781,58 @@
                 <div class="swiper-slide">
                   <div class="news-card">
                     <div class="news-card__image-wrap">
-                      <img src="assets/news(1).png" alt="news" class="news-card__image">
+                      <img
+                        src="assets/news(1).png"
+                        alt="news"
+                        class="news-card__image"
+                      />
                     </div>
                     <div class="news-card__body">
                       <div class="news-card__title">
-                        Участие в международной выставке “Экватек-2020” 
+                        Участие в международной выставке “Экватек-2020”
                       </div>
                       <div class="news-card__content">
-                        С 8 по 10 сентября в Москве в “Крокус Экспо” прошла 14 международная выставка “Экватек-2020”. Компания “Татсорб” приняла участие в выставке.
+                        С 8 по 10 сентября в Москве в “Крокус Экспо” прошла 14
+                        международная выставка “Экватек-2020”. Компания
+                        “Татсорб” приняла участие в выставке.
                       </div>
-                      <div class='news-card__separator-wrap'>
-                        <img src="assets/separator.png" alt="separator" class="news-card__separator">
+                      <div class="news-card__separator-wrap">
+                        <img
+                          src="assets/separator.png"
+                          alt="separator"
+                          class="news-card__separator"
+                        />
+                      </div>
+                      <div>
+                        <a class="dd-button" href="#">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="news-card">
+                    <div class="news-card__image-wrap">
+                      <img
+                        src="assets/news(1).png"
+                        alt="news"
+                        class="news-card__image"
+                      />
+                    </div>
+                    <div class="news-card__body">
+                      <div class="news-card__title">
+                        Участие в международной выставке “Экватек-2020”
+                      </div>
+                      <div class="news-card__content">
+                        С 8 по 10 сентября в Москве в “Крокус Экспо” прошла 14
+                        международная выставка “Экватек-2020”. Компания
+                        “Татсорб” приняла участие в выставке.
+                      </div>
+                      <div class="news-card__separator-wrap">
+                        <img
+                          src="assets/separator.png"
+                          alt="separator"
+                          class="news-card__separator"
+                        />
                       </div>
                       <div>
                         <a class="dd-button" href="#">Подробнее</a>
@@ -650,7 +848,13 @@
           </div>
         </div>
       </section>
-      <section class="section section--halfed" style="background-image: url(assets/benefits_truck.png), url(assets/t_bg.png); background-position: left center">
+      <section
+        class="section section--halfed"
+        style="
+          background-image: url(assets/benefits_truck.png), url(assets/t_bg.png);
+          background-position: left center;
+        "
+      >
         <div class="container">
           <div class="row">
             <div class="col-md-6"></div>
@@ -658,45 +862,65 @@
               <div class="pl-0 pl-md-5">
                 <h2 class="section-title mb-5"><span>П</span>реимущества</h2>
                 <ol class="dd-ol">
-                  <li class="dd-ol__item">Отгрузка товара по территории России
-                    от 3-х дней</li>
-                  <li class="dd-ol__item">Продукция соответствует действующим 
-                    стандартам, о чем свидетельствуют 
-                    приложенные сертификаты</li>
-                  <li class="dd-ol__item">В штате работает команда 
-                    профессиональных менеджеров, 
-                    подбирающих выгодные условия
-                    сотрудничества</li>
-                  <li class="dd-ol__item">Доставка по всей России и странам СНГ
-                    (Беларусь, Казахстан) проверенными 
-                    транспортными компаниями, 
-                    автомобилями из собственного автопарка,
-                    железнодорожным транспортом и
-                    попутными машинами</li>
+                  <li class="dd-ol__item">
+                    Отгрузка товара по территории России от 3-х дней
+                  </li>
+                  <li class="dd-ol__item">
+                    Продукция соответствует действующим стандартам, о чем
+                    свидетельствуют приложенные сертификаты
+                  </li>
+                  <li class="dd-ol__item">
+                    В штате работает команда профессиональных менеджеров,
+                    подбирающих выгодные условия сотрудничества
+                  </li>
+                  <li class="dd-ol__item">
+                    Доставка по всей России и странам СНГ (Беларусь, Казахстан)
+                    проверенными транспортными компаниями, автомобилями из
+                    собственного автопарка, железнодорожным транспортом и
+                    попутными машинами
+                  </li>
                 </ol>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section" style="background-image: url(assets/home_bg_3.png);">
+      <section
+        class="section"
+        style="background-image: url(assets/home_bg_3.png)"
+      >
         <div class="container">
-          <h2 class="section-title section-title--light text-center mb-5"><span>И</span>стория компании</h2>
+          <h2 class="section-title section-title--light text-center mb-5">
+            <span>И</span>стория компании
+          </h2>
           <div class="row">
             <div class="col-md-3">
               <div class="pr-0 pr-md-3 text-center mb-5">
-                <img src="assets/logo_light.png" alt="logo">
+                <img src="assets/logo_light.png" alt="logo" />
               </div>
             </div>
             <div class="col-md-9">
               <p class="text-light">
-                Компания «ТАТСОРБ» с 2015 года занимается производством и поставками промышленной химии. Реализуем активированные угли, сульфоуголь, гидроантрацит, хлорную известь, противоморозные добавки и другие материалы. Эти продукты востребованы в качестве химического сырья в промышленных производствах, лабораториях, процессах водоподготовки, органического синтеза. 
+                Компания «ТАТСОРБ» с 2015 года занимается производством и
+                поставками промышленной химии. Реализуем активированные угли,
+                сульфоуголь, гидроантрацит, хлорную известь, противоморозные
+                добавки и другие материалы. Эти продукты востребованы в качестве
+                химического сырья в промышленных производствах, лабораториях,
+                процессах водоподготовки, органического синтеза.
               </p>
               <p class="text-light">
-                Организация производит свыше 1000 тонн готовой продукции в месяц. За время работы было реализовано более 50000 тонн химических реагентов. Товары изготавливаются по инновационным технологиям и имеют сертификаты соответствия. 
+                Организация производит свыше 1000 тонн готовой продукции в
+                месяц. За время работы было реализовано более 50000 тонн
+                химических реагентов. Товары изготавливаются по инновационным
+                технологиям и имеют сертификаты соответствия.
               </p>
               <p class="text-light">
-                В ассортименте компании свыше 1000 позиций промхимии. Она применяется в деревообрабатывающей, текстильной, радиотехнической, микробиологической, нефтяной, кожевенной, легкой, металлургической отраслях промышленности, в строительстве, сельском хозяйстве, животноводстве, на транспортных предприятиях и в прочих сферах.
+                В ассортименте компании свыше 1000 позиций промхимии. Она
+                применяется в деревообрабатывающей, текстильной,
+                радиотехнической, микробиологической, нефтяной, кожевенной,
+                легкой, металлургической отраслях промышленности, в
+                строительстве, сельском хозяйстве, животноводстве, на
+                транспортных предприятиях и в прочих сферах.
               </p>
             </div>
           </div>
@@ -709,49 +933,49 @@
           </h2>
           <div class="row justify-content-center">
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (1).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(1).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (2).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(2).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (3).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(3).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (4).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(4).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (5).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(5).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (6).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(6).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (7).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(7).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (8).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(8).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"> <img src="assets/client (9).png" alt="client" /></a>
+              <a href="#"> <img src="assets/client(9).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"><img src="assets/client (10).png" alt="client" /></a>
+              <a href="#"><img src="assets/client(10).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"><img src="assets/client (11).png" alt="client" /></a>
+              <a href="#"><img src="assets/client(11).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"><img src="assets/client (12).png" alt="client" /></a>
+              <a href="#"><img src="assets/client(12).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"><img src="assets/client (13).png" alt="client" /></a>
+              <a href="#"><img src="assets/client(13).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"><img src="assets/client (14).png" alt="client" /></a>
+              <a href="#"><img src="assets/client(14).png" alt="client" /></a>
             </div>
             <div class="align-self-center text-center col-6 col-md-20 mb-5">
-              <a href="#"><img src="assets/client (15).png" alt="client" /></a>
+              <a href="#"><img src="assets/client(15).png" alt="client" /></a>
             </div>
           </div>
         </div>
@@ -766,16 +990,39 @@
               <div class="certificate-card">
                 <div class="certificate-card__image-wrap">
                   <a href="#">
-                    <img class="certificate-card__image" src="assets/cert(1).png" alt="cert">
-                    <img class="certificate-card__image-preview" src="assets/cert_preview.png" alt="cert preview">
+                    <img
+                      class="certificate-card__image"
+                      src="assets/cert(1).png"
+                      alt="cert"
+                    />
+                    <img
+                      class="certificate-card__image-preview"
+                      src="assets/cert_preview.png"
+                      alt="cert preview"
+                    />
                   </a>
-                  <img class="certificate-card__pdf-ico" src="assets/pdf_ico.png" alt="pdf icon">
-                  <img class="certificate-card__resize-ico" src="assets/size_big_ico.png" alt="pdf icon">
+                  <img
+                    class="certificate-card__pdf-ico"
+                    src="assets/pdf_ico.png"
+                    alt="pdf icon"
+                  />
+                  <img
+                    class="certificate-card__resize-ico"
+                    src="assets/size_big_ico.png"
+                    alt="pdf icon"
+                  />
                 </div>
-                <div class="certificate-card__brackets-wrap"><img src="assets/brackets_ico.png" alt="brackets" class="certificate-card__brackets"></div>
+                <div class="certificate-card__brackets-wrap">
+                  <img
+                    src="assets/brackets_ico.png"
+                    alt="brackets"
+                    class="certificate-card__brackets"
+                  />
+                </div>
                 <div class="certificate-card__content">
                   <p>
-                    Перечень рекомендуемых мероприятий по улучшению условий труда
+                    Перечень рекомендуемых мероприятий по улучшению условий
+                    труда
                   </p>
                 </div>
               </div>
@@ -784,16 +1031,105 @@
               <div class="certificate-card">
                 <div class="certificate-card__image-wrap">
                   <a href="#">
-                    <img class="certificate-card__image" src="assets/cert(2).png" alt="cert">
-                    <img class="certificate-card__image-preview" src="assets/cert_preview.png" alt="cert preview">
+                    <img
+                      class="certificate-card__image"
+                      src="assets/cert(2).png"
+                      alt="cert"
+                    />
+                    <img
+                      class="certificate-card__image-preview"
+                      src="assets/cert_preview.png"
+                      alt="cert preview"
+                    />
                   </a>
-                  <img class="certificate-card__pdf-ico" src="assets/pdf_ico.png" alt="pdf icon">
-                  <img class="certificate-card__resize-ico" src="assets/size_big_ico.png" alt="pdf icon">
+                  <img
+                    class="certificate-card__pdf-ico"
+                    src="assets/pdf_ico.png"
+                    alt="pdf icon"
+                  />
+                  <img
+                    class="certificate-card__resize-ico"
+                    src="assets/size_big_ico.png"
+                    alt="pdf icon"
+                  />
                 </div>
-                <div class="certificate-card__brackets-wrap"><img src="assets/brackets_ico.png" alt="brackets" class="certificate-card__brackets"></div>
+                <div class="certificate-card__brackets-wrap">
+                  <img
+                    src="assets/brackets_ico.png"
+                    alt="brackets"
+                    class="certificate-card__brackets"
+                  />
+                </div>
+                <div class="certificate-card__content">
+                  <p>ИСО</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-20">
+              <div class="certificate-card">
+                <div class="certificate-card__image-wrap">
+                  <a href="#">
+                    <img
+                      class="certificate-card__image"
+                      src="assets/cert(3).png"
+                      alt="cert"
+                    />
+                    <img
+                      class="certificate-card__image-preview"
+                      src="assets/cert_preview.png"
+                      alt="cert preview"
+                    />
+                  </a>
+                  <img
+                    class="certificate-card__pdf-ico"
+                    src="assets/pdf_ico.png"
+                    alt="pdf icon"
+                  />
+                  <img
+                    class="certificate-card__resize-ico"
+                    src="assets/size_big_ico.png"
+                    alt="pdf icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-20">
+              <div class="certificate-card">
+                <div class="certificate-card__image-wrap">
+                  <a href="#">
+                    <img
+                      class="certificate-card__image"
+                      src="assets/cert(4).png"
+                      alt="cert"
+                    />
+                    <img
+                      class="certificate-card__image-preview"
+                      src="assets/cert_preview.png"
+                      alt="cert preview"
+                    />
+                  </a>
+                  <img
+                    class="certificate-card__pdf-ico"
+                    src="assets/pdf_ico.png"
+                    alt="pdf icon"
+                  />
+                  <img
+                    class="certificate-card__resize-ico"
+                    src="assets/size_big_ico.png"
+                    alt="pdf icon"
+                  />
+                </div>
+                <div class="certificate-card__brackets-wrap">
+                  <img
+                    src="assets/brackets_ico.png"
+                    alt="brackets"
+                    class="certificate-card__brackets"
+                  />
+                </div>
                 <div class="certificate-card__content">
                   <p>
-                    ИСО
+                    Сводная ведомость результатов проведения специальной оценки
+                    условий труда
                   </p>
                 </div>
               </div>
@@ -802,47 +1138,32 @@
               <div class="certificate-card">
                 <div class="certificate-card__image-wrap">
                   <a href="#">
-                    <img class="certificate-card__image" src="assets/cert(3).png" alt="cert">
-                    <img class="certificate-card__image-preview" src="assets/cert_preview.png" alt="cert preview">
+                    <img
+                      class="certificate-card__image"
+                      src="assets/cert(5).png"
+                      alt="cert"
+                    />
+                    <img
+                      class="certificate-card__image-preview"
+                      src="assets/cert_preview.png"
+                      alt="cert preview"
+                    />
                   </a>
-                  <img class="certificate-card__pdf-ico" src="assets/pdf_ico.png" alt="pdf icon">
-                  <img class="certificate-card__resize-ico" src="assets/size_big_ico.png" alt="pdf icon">
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-20">
-              <div class="certificate-card">
-                <div class="certificate-card__image-wrap">
-                  <a href="#">
-                    <img class="certificate-card__image" src="assets/cert(4).png" alt="cert">
-                    <img class="certificate-card__image-preview" src="assets/cert_preview.png" alt="cert preview">
-                  </a>
-                  <img class="certificate-card__pdf-ico" src="assets/pdf_ico.png" alt="pdf icon">
-                  <img class="certificate-card__resize-ico" src="assets/size_big_ico.png" alt="pdf icon">
-                </div>
-                <div class="certificate-card__brackets-wrap"><img src="assets/brackets_ico.png" alt="brackets" class="certificate-card__brackets"></div>
-                <div class="certificate-card__content">
-                  <p>
-                    Сводная ведомость результатов
-                    проведения специальной
-                    оценки условий труда
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-20">
-              <div class="certificate-card">
-                <div class="certificate-card__image-wrap">
-                  <a href="#">
-                    <img class="certificate-card__image" src="assets/cert(5).png" alt="cert">
-                    <img class="certificate-card__image-preview" src="assets/cert_preview.png" alt="cert preview">
-                  </a>
-                  <img class="certificate-card__pdf-ico" src="assets/pdf_ico.png" alt="pdf icon">
-                  <img class="certificate-card__resize-ico" src="assets/size_big_ico.png" alt="pdf icon">
+                  <img
+                    class="certificate-card__pdf-ico"
+                    src="assets/pdf_ico.png"
+                    alt="pdf icon"
+                  />
+                  <img
+                    class="certificate-card__resize-ico"
+                    src="assets/size_big_ico.png"
+                    alt="pdf icon"
+                  />
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </section>
     </main>
     <!-- inject:footer:html -->
@@ -1048,6 +1369,163 @@
     </div>
   </div>
 </footer>
+<!-- Add class active to overlay-cdk to open popup -->
+<div id="thanksPopup" class="overlay-cdk">
+  <div class="thank-you-popup">
+    <button class="overlay-cdk__close-btn thank-you-popup__close-btn">✖</button>
+    <div class="thank-you-popup__title">Спасибо!</div>
+    <div class="thank-you-popup__content">
+      Мы свяжемся с Вами в ближайшее время
+    </div>
+  </div>
+</div>
+<div id="contactFormPopup" class="overlay-cdk">
+  <div class="contact-form-popup">
+    <button class="contact-form-popup__close-btn overlay-cdk__close-btn">
+      ✖
+    </button>
+    <div class="contact-form-popup__title">Связь с нами</div>
+    <div class="contact-form-popup__content">
+      <form action="/" class="contact-form">
+        <div>
+          <input
+            class="contact-form__input"
+            type="text"
+            placeholder="Имя..."
+            autocomplete="name"
+          />
+        </div>
+        <div>
+          <input
+            class="contact-form__input"
+            type="tel"
+            placeholder="Телефон..."
+            autocomplete="tel"
+          />
+        </div>
+        <div>
+          <textarea
+            class="contact-form__textarea"
+            placeholder="Сообщение"
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit" class="dd-button px-3">
+            Отправить сообщение
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="howToOrderPopup" class="overlay-cdk">
+  <div class="how-to-order-popup">
+    <button class="how-to-order-popup__close-btn overlay-cdk__close-btn">
+      ✖
+    </button>
+    <div class="how-to-order-popup__title">Как оформить заказ</div>
+    <div class="how-to-order-popup__content">
+      <p><b>1.</b> Вы оставляете заявку через форму;</p>
+      <p><b>2.</b> При возникновении вопросов перезванивает менеджер;</p>
+      <p><b>3.</b> Выставляется КП или счет;</p>
+      <p><b>4.</b> Получаете заказ;</p>
+      <p>
+        <b>
+          Для заказа материала изначально необходима от Вас следующая
+          информация:
+        </b>
+      </p>
+      <p>1. Реквизиты компании;</p>
+      <p>2. Контакты;</p>
+      <p>3. Объем и марка материалов;</p>
+      <p>4. Город доставки при необходимости расчета с доставкой.</p>
+      <p>На сайте указаны оптовые цены.</p>
+      <p>
+        <a href="#">Скачать прайс лист.</a>
+      </p>
+      <p>
+        Для уточнения розничных цен Вам необходимо отправить заявку на почту.
+      </p>
+    </div>
+  </div>
+</div>
+<div id="contactUsPopup" class="overlay-cdk">
+  <div class="contact-us-popup">
+    <button class="contact-us-popup__close-btn overlay-cdk__close-btn">
+      ✖
+    </button>
+    <div class="contact-us-popup__title">Связь с нами</div>
+    <div class="contact-us-popup__content">
+      <p>Телефоны для связи с нами</p>
+      <p class="big m-0">
+        <a class="no-style" href="tel:">8 (800) 500-65-76</a>
+      </p>
+      <p class="big">
+        <a class="no-style" href="tel:">8 (843) 216-56-56</a>
+      </p>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <p class="m-0">Наш почтовый ящик</p>
+          <p class="big">
+            <a class="no-style" href="mailto:">tatsorb@mail.ru</a>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <a class="dd-button open-contact-form-popup" href="#">Написать</a>
+        </div>
+      </div>
+      <p>Наш адрес</p>
+      <p class="big m-0">Казань, улица Рахимова, 59Ж</p>
+      <p>Работаем Пн-Пт с 8:30-17:30</p>
+    </div>
+    <div>
+      <img src="assets/contact_map.png" alt="map" />
+    </div>
+  </div>
+</div>
+<div id="deliveryPopup" class="overlay-cdk">
+  <div class="delivery-popup">
+    <button class="delivery-popup__close-btn overlay-cdk__close-btn">✖</button>
+    <div class="delivery-popup__title">Доставка</div>
+    <div class="delivery-popup__content">
+      <p>
+        <b>Наша компания предлагает различные недорогие способы доставки!</b>
+      </p>
+      <p>Доставка продукции осуществляется следующими способами:</p>
+      <p>
+        <b>Транспортными компаниями</b> (для расчета доставки обращаться к
+        менеджерам с заявкой на почту). Отгрузка в ТК "Кашалот"(КИТ), "Деловые
+        линии" и DPD производится ежедневно. До терминалов в г. Казани довозим
+        БЕСПЛАТНО!
+      </p>
+      <p>
+        <b>Собственным транспортом</b>
+      </p>
+      <p>
+        <b>Попутной машиной</b> (доставку рассчитываем индивидуально, недорогая
+        доставка больших объемов)
+      </p>
+      <p class="m-0">
+        <b>Ж/Д контейнерами:</b>
+      </p>
+      <p class="m-0">Для расчета доставки ж/д контейнерами необходимо:</p>
+      <p class="m-0">1. Станция назначения (название станции, код станции)</p>
+      <p>2. Принимает ли данная станция 20-40 фут. контейнеры</p>
+      <p>
+        <b>Информация для самовывоза со склада:</b>
+      </p>
+      <p class="m-0">
+        После оплаты материала при самовывозе необходимо предупредить о дне
+        приезда на склад заранее за один день.
+      </p>
+      <p class="m-0">
+        Склад находится не по юридическому адресу, для получения схемы проезда
+        необходимо написать Вашему менеджеру.
+      </p>
+      <p class="m-0">Время работы склада: с 10:00-17:00</p>
+    </div>
+  </div>
+</div>
 
     <!-- endinject -->
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
