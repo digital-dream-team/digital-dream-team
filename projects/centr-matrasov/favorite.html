@@ -1798,6 +1798,13 @@
                             >Анатомические <span>23</span>
                           </a>
                         </li>
+                        <li class="sidebar-category-nav__inner-nav-item">
+                          <a
+                            class="sidebar-category-nav__inner-nav-item-link"
+                            href="#"
+                            >Анатомические <span>23</span>
+                          </a>
+                        </li>
                       </ul>
                     </li>
                     <li class="sidebar-category-nav__item">
@@ -3810,7 +3817,7 @@
           <p class="text-subtitle title-line">
             <span class="bg-main-dark">О нас</span>
           </p>
-          <nav class="text-small">
+          <nav class="text-small mbp-25">
             <ul class="navbar-nav flex-row flex-wrap justify-content-between">
               <li class="main-footer__nav-small-item">
                 <a class="text-white-high" href="#">О Компании</a>
@@ -3835,6 +3842,12 @@
               </li>
             </ul>
           </nav>
+          <div class="text-small text-white-low">
+            <span>Сайт разработан —</span>
+            <a href="#">
+              <img src="assets/PeopleSoft.png" alt="peoplesoft" />
+            </a>
+          </div>
         </div>
         <div class="col-lg-2 offset-lg-1">
           <p class="text-subtitle title-line">
@@ -3892,7 +3905,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-lg-2 mt-5 mt-lg-n5 mb-5 mb-lg-0">
+        <div class="col-lg-2 mt-5 mt-lg-5 mb-5 mb-lg-0">
           <div class="text-small text-white-low">
             © 2020 Компания «Центр Матрасов». Все права защищены
           </div>
@@ -4154,6 +4167,125 @@
           <a class="switch-auth-popup__login" href="#">
             У меня уже есть аккаунт
           </a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="phoneFormPopupOverlay" class="overlay-cdk">
+    <button class="overlay-cdk__close-btn">
+      <i class="demo-icon icon-icon_close_1"></i>
+    </button>
+    <div class="overlay-cdk__content-phone">
+      <p class="text-subtitle mbp-20">Купить по телефону</p>
+      <form action="#">
+        <div class="form-group mbp-20">
+          <label for="phone_form_name">Ваше имя</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phone_form_name"
+            name="name"
+            placeholder="Имя"
+            autocomplete="name"
+            required
+          />
+          <!-- Если нужен хинт -->
+          <!-- <small>Хинт</small> -->
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <!-- При ошибке добавить к form-group класс form-group--invalid -->
+        <!-- При успехе (и желании) добавить к form-group класс form-group--success -->
+        <div class="form-group mbp-20">
+          <label for="phone_form_phone">Номер телефона</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone_form_phone"
+            name="phone"
+            placeholder="Телефон"
+            autocomplete="tel"
+            required
+          />
+          <!-- Если нужен хинт -->
+          <!-- <small>Хинт</small> -->
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <div class="mbp-20">
+          <button
+            class="btn btn-main font-weight-bold overlay-cdk__content-phone-btn"
+            type="submit"
+          >
+            Заказать звонок менеджера <i class="icon-icon_arrows_2"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="customMattressFormPopupOverlay" class="overlay-cdk">
+    <button class="overlay-cdk__close-btn">
+      <i class="demo-icon icon-icon_close_1"></i>
+    </button>
+    <div class="overlay-cdk__content-custom-mattress">
+      <p class="text-subtitle mbp-20">Заказать нестандартный матрас</p>
+      <form action="#">
+        <div class="form-group mbp-20">
+          <label for="custom_mattress_form_name">Ваше имя</label>
+          <input
+            type="text"
+            class="form-control"
+            id="custom_mattress_form_name"
+            name="name"
+            placeholder="Имя"
+            autocomplete="name"
+            required
+          />
+          <!-- Если нужен хинт -->
+          <!-- <small>Хинт</small> -->
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <!-- При ошибке добавить к form-group класс form-group--invalid -->
+        <!-- При успехе (и желании) добавить к form-group класс form-group--success -->
+        <div class="form-group mbp-20">
+          <label for="custom_mattress_form_phone">Номер телефона</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="custom_mattress_form_phone"
+            name="phone"
+            placeholder="Телефон"
+            autocomplete="tel"
+            required
+          />
+          <!-- Если нужен хинт -->
+          <!-- <small>Хинт</small> -->
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <div class="form-group mbp-20">
+          <label for="custom_mattress_form_comments">Комментарий</label>
+          <textarea
+            class="form-control"
+            name="comments"
+            id="custom_mattress_form_comments"
+            placeholder="Опишите, какой именно матрас вам нужен?"
+            cols="30"
+            rows="4"
+          ></textarea>
+          <!-- Если нужен хинт -->
+          <!-- <small>Хинт</small> -->
+          <small class="form-group__error-msg">Ошибка</small>
+          <small class="form-group__success-msg">Успех</small>
+        </div>
+        <div class="mbp-20">
+          <button
+            class="btn btn-main font-weight-bold overlay-cdk__content-custom-mattress-btn"
+            type="submit"
+          >
+            Заказать звонок менеджера <i class="icon-icon_arrows_2"></i>
+          </button>
         </div>
       </form>
     </div>
