@@ -88,6 +88,52 @@
         </svg>
       </div>
     </div>
+    <header class="main-header d-none">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">
+            <img src="assets/full-logo.svg" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainHeaderNavbar">
+            <ul class="navbar-nav align-items-lg-center ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Команда</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link open-contact-popup"
+                  href="javascript:void(0)"
+                >
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link store-link store-link-first" href="#">
+                  <img src="assets/app-store-btn.svg" alt="App store button" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link store-link" href="#">
+                  <img
+                    src="assets/google-play-btn.svg"
+                    alt="Google play button"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main class="main-content">
       <div class="floating-circles">
         <img
@@ -106,7 +152,6 @@
           class="floating-circle-3"
         />
       </div>
-
       <section class="section section-hero">
         <div class="container position-relative">
           <div class="section-hero__composit-title-container">
@@ -134,11 +179,11 @@
               </h2>
               <div class="d-flex flex-wrap">
                 <a href="#" class="store-btn mrp-10 mrp-lg-10 delay-3">
-                  <img src="assets/app-store-btn.png" alt="App store button" />
+                  <img src="assets/app-store-btn.svg" alt="App store button" />
                 </a>
                 <a href="#" class="store-btn delay-4">
                   <img
-                    src="assets/google-play-btn.png"
+                    src="assets/google-play-btn.svg"
                     alt="Google play button"
                   />
                 </a>
@@ -146,20 +191,16 @@
             </div>
             <div class="section-hero__phones-wrap">
               <div class="section-hero__phones">
-                <div class="section-hero__phones-item-wrap delay-1">
-                  <img
-                    src="assets/hero-p1.png"
-                    alt="phone 1"
-                    class="section-hero__phones-item-1"
-                  />
-                </div>
-                <div class="section-hero__phones-item-wrap delay-2">
-                  <img
-                    src="assets/hero-p2.png"
-                    alt="phone 2"
-                    class="section-hero__phones-item-2 delay-2"
-                  />
-                </div>
+                <img
+                  src="assets/hero-p1.png"
+                  alt="phone 1"
+                  class="section-hero__phones-item-1"
+                />
+                <img
+                  src="assets/hero-p2.png"
+                  alt="phone 2"
+                  class="section-hero__phones-item-2 delay-2"
+                />
               </div>
             </div>
           </div>
@@ -196,13 +237,13 @@
                 >
                   <a href="#" class="store-btn mrp-10">
                     <img
-                      src="assets/app-store-btn.png"
+                      src="assets/app-store-btn.svg"
                       alt="App store button"
                     />
                   </a>
                   <a href="#" class="store-btn">
                     <img
-                      src="assets/google-play-btn.png"
+                      src="assets/google-play-btn.svg"
                       alt="Google play button"
                     />
                   </a>
@@ -216,550 +257,89 @@
               >
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">Список недоступен</div>
-                  <!-- <div class="swiper-slide">
-                    <div class="play-card-wrap">
-                      <div class="play-card">
-                        <div class="play-card__image-wrap">
-                          <img
-                            src="assets/card-1.png"
-                            alt="play"
-                            class="play-card__image"
-                          />
-                          <div class="play-card__image-labels">
-                            <div class="play-card__image-label">16+</div>
-                            <div class="play-card__image-label">Бесплатно</div>
-                            <div
-                              class="play-card__image-label play-card__image-label--hot"
-                            >
-                              Хит!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="play-card__body">
-                          <div class="play-card__body-header">
-                            <div class="play-card__body-meta-container">
-                              <div class="play-card__body-meta">
-                                <i class="icon-timer"></i>
-                                <span>72 минут</span>
-                              </div>
-                              <div class="play-card__body-meta">
-                                <i class="icon-insert"></i>
-                                <span>71 mb</span>
-                              </div>
-                            </div>
-                            <div class="play-card__body-director">
-                              <span class="play-card__body-director-position">
-                                Режиссер:
-                              </span>
-                              <span class="play-card__body-director-name">
-                                Нурбек Эген
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-title">
-                            Природа всегда знает как лучше
-                          </div>
-                          <div class="play-card__body-route">
-                            <div class="play-card__body-route-from">
-                              <span class="play-card__body-route-title">
-                                от
-                              </span>
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Карагачёвая роща
-                              </span>
-                            </div>
-                            <div class="play-card__body-route-separator">
-                              <i class="icon-arrow-right"></i>
-                            </div>
-                            <div class="play-card__body-route-to">
-                              <span class="play-card__body-route-title">
-                                до
-                              </span>
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Конно-спортивная улица
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-controls">
-                            <a class="play-card__btn open-play-popup" href="#">
-                              Подробнее о спектакле
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <!-- Play slide structure START
                   <div class="swiper-slide">
                     <div class="play-card-wrap">
-                      <div class="play-card">
-                        <div class="play-card__image-wrap">
-                          <img
-                            src="assets/card-1.png"
-                            alt="play"
-                            class="play-card__image"
-                          />
-                          <div class="play-card__image-labels">
-                            <div class="play-card__image-label">16+</div>
-                            <div class="play-card__image-label">Бесплатно</div>
-                            <div
-                              class="play-card__image-label play-card__image-label--hot"
-                            >
-                              Хит!
+                      <a class="open-play-popup" data-id="1">
+                        <div class="play-card">
+                          <div class="play-card__image-wrap">
+                            <img
+                              src="assets/card-1.png"
+                              alt="play"
+                              class="play-card__image"
+                            />
+                            <div class="play-card__image-labels">
+                              <div class="play-card__image-label">Age</div>
+                              <div class="play-card__image-label">Price</div>
+                              <div
+                                class="play-card__image-label play-card__image-label--hot"
+                              >
+                                Хит!
+                              </div>
+                            </div>
+                          </div>
+                          <div class="play-card__body">
+                            <div class="play-card__body-header">
+                              <div class="play-card__body-meta-container">
+                                <div class="play-card__body-meta">
+                                  <i class="icon-timer"></i>
+                                  <span>MINUTE минут</span>
+                                </div>
+                                <div class="play-card__body-meta">
+                                  <i class="icon-insert"></i>
+                                  <span>SIZE mb</span>
+                                </div>
+                              </div>
+                              <div class="play-card__body-director">
+                                <span class="play-card__body-director-position">
+                                  Режиссер:
+                                </span>
+                                <span class="play-card__body-director-name">
+                                  DIRECTOR_NAME
+                                </span>
+                              </div>
+                            </div>
+                            <div class="play-card__body-title">
+                              TITLE
+                            </div>
+                            <div class="play-card__body-route">
+                              <div class="play-card__body-route-from">
+                                <span class="play-card__body-route-title">
+                                  от
+                                </span>
+                                <span
+                                  class="play-card__body-route-name text-truncate"
+                                >
+                                  ROUTE_FROM
+                                </span>
+                              </div>
+                              <div class="play-card__body-route-separator">
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                              <div class="play-card__body-route-to">
+                                <span class="play-card__body-route-title">
+                                  до
+                                </span>
+                                <span
+                                  class="play-card__body-route-name text-truncate"
+                                >
+                                  ROUTE_TO
+                                </span>
+                              </div>
+                            </div>
+                            <div class="play-card__body-controls">
+                              <span class="play-card__btn">
+                                Подробнее о спектакле
+                              </span>
                             </div>
                           </div>
                         </div>
-                        <div class="play-card__body">
-                          <div class="play-card__body-header">
-                            <div class="play-card__body-meta-container">
-                              <div class="play-card__body-meta">
-                                <i class="icon-timer"></i>
-                                <span>72 минут</span>
-                              </div>
-                              <div class="play-card__body-meta">
-                                <i class="icon-insert"></i>
-                                <span>71 mb</span>
-                              </div>
-                            </div>
-                            <div class="play-card__body-director">
-                              <span class="play-card__body-director-position">
-                                Режиссер:
-                              </span>
-                              <span class="play-card__body-director-name">
-                                Нурбек Эген
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-title">
-                            Природа всегда знает как лучше
-                          </div>
-                          <div class="play-card__body-route">
-                            <div class="play-card__body-route-from">
-                              <span class="play-card__body-route-title"
-                                >от</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Карагачёвая роща
-                              </span>
-                            </div>
-                            <div class="play-card__body-route-separator">
-                              <i class="icon-arrow-right"></i>
-                            </div>
-                            <div class="play-card__body-route-to">
-                              <span class="play-card__body-route-title"
-                                >до</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Конно-спортивная улица
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-controls">
-                            <a class="play-card__btn open-play-popup" href="#">
-                              Подробнее о спектакле
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                      </a>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="play-card-wrap">
-                      <div class="play-card">
-                        <div class="play-card__image-wrap">
-                          <img
-                            src="assets/card-1.png"
-                            alt="play"
-                            class="play-card__image"
-                          />
-                          <div class="play-card__image-labels">
-                            <div class="play-card__image-label">16+</div>
-                            <div class="play-card__image-label">Бесплатно</div>
-                            <div
-                              class="play-card__image-label play-card__image-label--hot"
-                            >
-                              Хит!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="play-card__body">
-                          <div class="play-card__body-header">
-                            <div class="play-card__body-meta-container">
-                              <div class="play-card__body-meta">
-                                <i class="icon-timer"></i>
-                                <span>72 минут</span>
-                              </div>
-                              <div class="play-card__body-meta">
-                                <i class="icon-insert"></i>
-                                <span>71 mb</span>
-                              </div>
-                            </div>
-                            <div class="play-card__body-director">
-                              <span class="play-card__body-director-position">
-                                Режиссер:
-                              </span>
-                              <span class="play-card__body-director-name">
-                                Нурбек Эген
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-title">
-                            Природа всегда знает как лучше
-                          </div>
-                          <div class="play-card__body-route">
-                            <div class="play-card__body-route-from">
-                              <span class="play-card__body-route-title"
-                                >от</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Карагачёвая роща
-                              </span>
-                            </div>
-                            <div class="play-card__body-route-separator">
-                              <i class="icon-arrow-right"></i>
-                            </div>
-                            <div class="play-card__body-route-to">
-                              <span class="play-card__body-route-title"
-                                >до</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Конно-спортивная улица
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-controls">
-                            <a class="play-card__btn open-play-popup" href="#">
-                              Подробнее о спектакле
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="play-card-wrap">
-                      <div class="play-card">
-                        <div class="play-card__image-wrap">
-                          <img
-                            src="assets/card-1.png"
-                            alt="play"
-                            class="play-card__image"
-                          />
-                          <div class="play-card__image-labels">
-                            <div class="play-card__image-label">16+</div>
-                            <div class="play-card__image-label">Бесплатно</div>
-                            <div
-                              class="play-card__image-label play-card__image-label--hot"
-                            >
-                              Хит!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="play-card__body">
-                          <div class="play-card__body-header">
-                            <div class="play-card__body-meta-container">
-                              <div class="play-card__body-meta">
-                                <i class="icon-timer"></i>
-                                <span>72 минут</span>
-                              </div>
-                              <div class="play-card__body-meta">
-                                <i class="icon-insert"></i>
-                                <span>71 mb</span>
-                              </div>
-                            </div>
-                            <div class="play-card__body-director">
-                              <span class="play-card__body-director-position">
-                                Режиссер:
-                              </span>
-                              <span class="play-card__body-director-name">
-                                Нурбек Эген
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-title">
-                            Природа всегда знает как лучше
-                          </div>
-                          <div class="play-card__body-route">
-                            <div class="play-card__body-route-from">
-                              <span class="play-card__body-route-title"
-                                >от</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Карагачёвая роща
-                              </span>
-                            </div>
-                            <div class="play-card__body-route-separator">
-                              <i class="icon-arrow-right"></i>
-                            </div>
-                            <div class="play-card__body-route-to">
-                              <span class="play-card__body-route-title"
-                                >до</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Конно-спортивная улица
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-controls">
-                            <a class="play-card__btn open-play-popup" href="#">
-                              Подробнее о спектакле
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="play-card-wrap">
-                      <div class="play-card">
-                        <div class="play-card__image-wrap">
-                          <img
-                            src="assets/card-1.png"
-                            alt="play"
-                            class="play-card__image"
-                          />
-                          <div class="play-card__image-labels">
-                            <div class="play-card__image-label">16+</div>
-                            <div class="play-card__image-label">Бесплатно</div>
-                            <div
-                              class="play-card__image-label play-card__image-label--hot"
-                            >
-                              Хит!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="play-card__body">
-                          <div class="play-card__body-header">
-                            <div class="play-card__body-meta-container">
-                              <div class="play-card__body-meta">
-                                <i class="icon-timer"></i>
-                                <span>72 минут</span>
-                              </div>
-                              <div class="play-card__body-meta">
-                                <i class="icon-insert"></i>
-                                <span>71 mb</span>
-                              </div>
-                            </div>
-                            <div class="play-card__body-director">
-                              <span class="play-card__body-director-position">
-                                Режиссер:
-                              </span>
-                              <span class="play-card__body-director-name">
-                                Нурбек Эген
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-title">
-                            Природа всегда знает как лучше
-                          </div>
-                          <div class="play-card__body-route">
-                            <div class="play-card__body-route-from">
-                              <span class="play-card__body-route-title"
-                                >от</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Карагачёвая роща
-                              </span>
-                            </div>
-                            <div class="play-card__body-route-separator">
-                              <i class="icon-arrow-right"></i>
-                            </div>
-                            <div class="play-card__body-route-to">
-                              <span class="play-card__body-route-title"
-                                >до</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Конно-спортивная улица
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-controls">
-                            <a class="play-card__btn open-play-popup" href="#">
-                              Подробнее о спектакле
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="play-card-wrap">
-                      <div class="play-card">
-                        <div class="play-card__image-wrap">
-                          <img
-                            src="assets/card-1.png"
-                            alt="play"
-                            class="play-card__image"
-                          />
-                          <div class="play-card__image-labels">
-                            <div class="play-card__image-label">16+</div>
-                            <div class="play-card__image-label">Бесплатно</div>
-                            <div
-                              class="play-card__image-label play-card__image-label--hot"
-                            >
-                              Хит!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="play-card__body">
-                          <div class="play-card__body-header">
-                            <div class="play-card__body-meta-container">
-                              <div class="play-card__body-meta">
-                                <i class="icon-timer"></i>
-                                <span>72 минут</span>
-                              </div>
-                              <div class="play-card__body-meta">
-                                <i class="icon-insert"></i>
-                                <span>71 mb</span>
-                              </div>
-                            </div>
-                            <div class="play-card__body-director">
-                              <span class="play-card__body-director-position">
-                                Режиссер:
-                              </span>
-                              <span class="play-card__body-director-name">
-                                Нурбек Эген
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-title">
-                            Природа всегда знает как лучше
-                          </div>
-                          <div class="play-card__body-route">
-                            <div class="play-card__body-route-from">
-                              <span class="play-card__body-route-title"
-                                >от</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Карагачёвая роща
-                              </span>
-                            </div>
-                            <div class="play-card__body-route-separator">
-                              <i class="icon-arrow-right"></i>
-                            </div>
-                            <div class="play-card__body-route-to">
-                              <span class="play-card__body-route-title"
-                                >до</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Конно-спортивная улица
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-controls">
-                            <a class="play-card__btn open-play-popup" href="#">
-                              Подробнее о спектакле
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="play-card-wrap">
-                      <div class="play-card">
-                        <div class="play-card__image-wrap">
-                          <img
-                            src="assets/card-1.png"
-                            alt="play"
-                            class="play-card__image"
-                          />
-                          <div class="play-card__image-labels">
-                            <div class="play-card__image-label">16+</div>
-                            <div class="play-card__image-label">Бесплатно</div>
-                            <div
-                              class="play-card__image-label play-card__image-label--hot"
-                            >
-                              Хит!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="play-card__body">
-                          <div class="play-card__body-header">
-                            <div class="play-card__body-meta-container">
-                              <div class="play-card__body-meta">
-                                <i class="icon-timer"></i>
-                                <span>72 минут</span>
-                              </div>
-                              <div class="play-card__body-meta">
-                                <i class="icon-insert"></i>
-                                <span>71 mb</span>
-                              </div>
-                            </div>
-                            <div class="play-card__body-director">
-                              <span class="play-card__body-director-position">
-                                Режиссер:
-                              </span>
-                              <span class="play-card__body-director-name">
-                                Нурбек Эген
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-title">
-                            Природа всегда знает как лучше
-                          </div>
-                          <div class="play-card__body-route">
-                            <div class="play-card__body-route-from">
-                              <span class="play-card__body-route-title"
-                                >от</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Карагачёвая роща
-                              </span>
-                            </div>
-                            <div class="play-card__body-route-separator">
-                              <i class="icon-arrow-right"></i>
-                            </div>
-                            <div class="play-card__body-route-to">
-                              <span class="play-card__body-route-title"
-                                >до</span
-                              >
-                              <span
-                                class="play-card__body-route-name text-truncate"
-                              >
-                                Конно-спортивная улица
-                              </span>
-                            </div>
-                          </div>
-                          <div class="play-card__body-controls">
-                            <a class="play-card__btn open-play-popup" href="#">
-                              Подробнее о спектакле
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
+                  Play slide structure END -->
                 </div>
               </div>
-              <!-- Add Arrows -->
-              <!-- <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div> -->
             </div>
           </div>
         </div>
@@ -955,7 +535,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-team">
+      <section id="team" class="section section-team">
         <div class="container">
           <div class="card-section">
             <div class="section-team__description">
@@ -976,37 +556,7 @@
               <div class="team-swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">Список недоступен</div>
-                  <!-- <div class="swiper-slide">
-                    <div class="team-member-card-wrap">
-                      <div class="team-member-card">
-                        <div class="team-member-card__image-wrap">
-                          <img
-                            src="assets/member-1.png"
-                            alt="member"
-                            class="team-member-card__image"
-                          />
-                        </div>
-                        <div class="team-member-card__body">
-                          <div class="team-member-card__body-name">Name</div>
-                          <div class="team-member-card__body-position">
-                            Position
-                          </div>
-                          <div class="team-member-card__body-accolades">
-                            Accolades
-                          </div>
-                          <div class="team-member-card__body-socials">
-                            <a
-                              href="#"
-                              class="team-member-card__body-social-link"
-                              target="_blank"
-                            >
-                              facebook
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <!-- Team card structure START
                   <div class="swiper-slide">
                     <div class="team-member-card-wrap">
                       <div class="team-member-card">
@@ -1038,130 +588,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="team-member-card-wrap">
-                      <div class="team-member-card">
-                        <div class="team-member-card__image-wrap">
-                          <img
-                            src="assets/member-1.png"
-                            alt="member"
-                            class="team-member-card__image"
-                          />
-                        </div>
-                        <div class="team-member-card__body">
-                          <div class="team-member-card__body-name">Name</div>
-                          <div class="team-member-card__body-position">
-                            Position
-                          </div>
-                          <div class="team-member-card__body-accolades">
-                            Accolades
-                          </div>
-                          <div class="team-member-card__body-socials">
-                            <a
-                              href="#"
-                              class="team-member-card__body-social-link"
-                              target="_blank"
-                            >
-                              facebook
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="team-member-card-wrap">
-                      <div class="team-member-card">
-                        <div class="team-member-card__image-wrap">
-                          <img
-                            src="assets/member-1.png"
-                            alt="member"
-                            class="team-member-card__image"
-                          />
-                        </div>
-                        <div class="team-member-card__body">
-                          <div class="team-member-card__body-name">Name</div>
-                          <div class="team-member-card__body-position">
-                            Position
-                          </div>
-                          <div class="team-member-card__body-accolades">
-                            Accolades
-                          </div>
-                          <div class="team-member-card__body-socials">
-                            <a
-                              href="#"
-                              class="team-member-card__body-social-link"
-                              target="_blank"
-                            >
-                              facebook
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="team-member-card-wrap">
-                      <div class="team-member-card">
-                        <div class="team-member-card__image-wrap">
-                          <img
-                            src="assets/member-1.png"
-                            alt="member"
-                            class="team-member-card__image"
-                          />
-                        </div>
-                        <div class="team-member-card__body">
-                          <div class="team-member-card__body-name">Name</div>
-                          <div class="team-member-card__body-position">
-                            Position
-                          </div>
-                          <div class="team-member-card__body-accolades">
-                            Accolades
-                          </div>
-                          <div class="team-member-card__body-socials">
-                            <a
-                              href="#"
-                              class="team-member-card__body-social-link"
-                              target="_blank"
-                            >
-                              facebook
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="team-member-card-wrap">
-                      <div class="team-member-card">
-                        <div class="team-member-card__image-wrap">
-                          <img
-                            src="assets/member-1.png"
-                            alt="member"
-                            class="team-member-card__image"
-                          />
-                        </div>
-                        <div class="team-member-card__body">
-                          <div class="team-member-card__body-name">Name</div>
-                          <div class="team-member-card__body-position">
-                            Position
-                          </div>
-                          <div class="team-member-card__body-accolades">
-                            Accolades
-                          </div>
-                          <div class="team-member-card__body-socials">
-                            <a
-                              href="#"
-                              class="team-member-card__body-social-link"
-                              target="_blank"
-                            >
-                              facebook
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
+                  Team card structure END -->
                 </div>
               </div>
               <!-- Add Arrows -->
@@ -1185,7 +612,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-footer">
+      <section id="contacts" class="section section-footer">
         <div class="container position-relative">
           <div class="row">
             <div class="col-lg-4 order-2 order-md-1">
@@ -1253,7 +680,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 order-1 order-md-2 footer-download-container">
+            <div
+              class="col-sm-6 col-lg-4 order-1 order-md-2 footer-download-container"
+            >
               <p
                 class="footer-title delay-1"
                 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal "
@@ -1266,11 +695,11 @@
                 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal "
               >
                 <a href="#" class="store-btn mrp-10 mrp-lg-10">
-                  <img src="assets/app-store-btn.png" alt="App store button" />
+                  <img src="assets/app-store-btn.svg" alt="App store button" />
                 </a>
                 <a href="#" class="store-btn">
                   <img
-                    src="assets/google-play-btn.png"
+                    src="assets/google-play-btn.svg"
                     alt="Google play button"
                   />
                 </a>
@@ -1424,7 +853,7 @@
                     <div class="mbp-10">
                       <a href="#" class="store-btn">
                         <img
-                          src="assets/app-store-btn_black.png"
+                          src="assets/app-store-btn_black.svg"
                           alt="App store button"
                         />
                       </a>
@@ -1432,7 +861,7 @@
                     <div>
                       <a href="#" class="store-btn">
                         <img
-                          src="assets/google-play-btn_black.png"
+                          src="assets/google-play-btn_black.svg"
                           alt="Google play button"
                         />
                       </a>
@@ -1832,13 +1261,13 @@
               <div class="d-flex flex-wrap">
                 <a href="#" class="store-btn mrp-10 mrp-lg-10">
                   <img
-                    src="assets/app-store-btn_black.png"
+                    src="assets/app-store-btn_black.svg"
                     alt="App store button"
                   />
                 </a>
                 <a href="#" class="store-btn">
                   <img
-                    src="assets/google-play-btn_black.png"
+                    src="assets/google-play-btn_black.svg"
                     alt="Google play button"
                   />
                 </a>
