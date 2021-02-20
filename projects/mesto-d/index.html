@@ -94,10 +94,7 @@
           <a class="navbar-brand" href="#">
             <img src="assets/full-logo.svg" alt="logo" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-          >
+          <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mainHeaderNavbar">
@@ -209,7 +206,7 @@
       <section class="section section-shows position-relative">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-4 plays-text-wrap">
+            <div class="col-sm-12 col-md-6 col-lg-4 plays-text-wrap">
               <div class="plays-text rellax">
                 <h2
                   class="section__title mtp-20 mtp-lg-20"
@@ -765,7 +762,10 @@
     <!-- endinject -->
     <noindex>
       <div id="contactFormPopup" class="overlay-cdk">
-        <div class="overlay-cdk__content-contact-wrap">
+        <div class="overlay-cdk__content-wrap overlay-cdk__content-contact-wrap">
+          <button class="overlay-cdk__float-btn overlay-cdk__close-btn">
+            ✕
+          </button>
           <div class="overlay-cdk__content-contact">
             <div class="overlay-cdk__content-contact-image-wrap">
               <img
@@ -932,16 +932,19 @@
         </div>
       </div>
       <div id="thanksPopup" class="overlay-cdk">
-        <div class="overlay-cdk__content-contact-wrap">
-          <div class="overlay-cdk__content-contact">
-            <div class="overlay-cdk__content-contact-image-wrap">
+        <div class="overlay-cdk__content-wrap overlay-cdk__content-thanks-wrap">
+          <button class="overlay-cdk__float-btn overlay-cdk__close-btn">
+            ✕
+          </button>
+          <div class="overlay-cdk__content-thanks">
+            <div class="overlay-cdk__content-thanks-image-wrap">
               <img
                 src="assets/contact-popup-bg.png"
                 alt="bg"
-                class="overlay-cdk__content-contact-image"
+                class="overlay-cdk__content-thanks-image"
               />
             </div>
-            <div class="overlay-cdk__content-contact-body">
+            <div class="overlay-cdk__content-thanks-body">
               <p class="overlay-cdk__title text-center mbp-20">Спасибо</p>
               <div class="d-flex justify-content-center">
                 <button
@@ -956,7 +959,10 @@
         </div>
       </div>
       <div id="playPopup" class="overlay-cdk">
-        <div class="overlay-cdk__content-play-wrap">
+        <div class="overlay-cdk__content-wrap overlay-cdk__content-play-wrap">
+          <button class="overlay-cdk__float-btn overlay-cdk__close-btn">
+            ✕
+          </button>
           <div class="overlay-cdk__content-play">
             <div class="overlay-cdk__content-play-image-wrap">
               <img
@@ -1034,7 +1040,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <p class="overlay-cdk__small-title mbp-10">
                     Прослушать отрывок
                   </p>
@@ -1104,7 +1110,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <p class="overlay-cdk__small-title mbp-10">О чем?</p>
                   <p class="overlay-cdk__content-play-short-description mbp-10">
                     Парк отличный, почему бы не прогуляться, и не вспомнить
