@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Catalog - Каталог</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/components.min.css" />
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/media.min.css" />
+  </head>
+  <body>
+    <!-- inject:header:html -->
+    <noindex>
+  <div class="heads-up active">
+    <p class="heads-up__text">
+      <b>12 марта с 15:00 до 17:00</b> запланированы технические работы.
+      Телефоны не будут работать — не пугайтесь. По всем вопросам пишите на
+      е-мэйлы.
+    </p>
+  </div>
+</noindex>
+<header class="main-header">
+  <div class="main-header__bar-wrap">
+    <div class="container">
+      <div class="main-header__bar">
+        <div class="main-header__location-wrap">
+          <div class="main-header__location">
+            <i class="icon-location"></i>
+            <span>Казань</span>
+          </div>
+        </div>
+        <div class="main-header__countries-wrap">
+          <ul class="main-header__countries">
+            <li class="main-header__countries-item">
+              <a href="#" class="main-header__countries-item-link">
+                <img src="assets/rus.svg" alt="rus" />
+              </a>
+            </li>
+            <li class="main-header__countries-item">
+              <a href="#" class="main-header__countries-item-link">
+                <img src="assets/kazach.svg" alt="kazach" />
+              </a>
+            </li>
+            <li class="main-header__countries-item">
+              <a href="#" class="main-header__countries-item-link">
+                <img src="assets/tatar.svg" alt="tatar" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-header__socials-wrap">
+          <ul class="main-header__socials">
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-item-link">
+                <img src="assets/whatsApp.svg" alt="ws" />
+                <span>Написать в WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-header__content-wrap">
+    <div class="container">
+      <div class="main-header__content">
+        <div class="main-header__logo-wrap">
+          <a href="#">
+            <img class="main-header__logo" src="assets/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="main-header__search-wrap">
+          <form id="headerSearchInput" class="main-header__search" action="/">
+            <div class="main-header__search-input-wrap">
+              <input
+                class="main-header__search-input"
+                placeholder="Поиск"
+                type="text"
+              />
+            </div>
+            <button class="main-header__search-submit" type="submit">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="main-header__contacts-container">
+          <div class="main-header__contacts">
+            <div class="main-header__contacts-desc">
+              <!-- <i class="icon-clock"></i> -->
+              <img src="assets/ic_clock.svg" alt="clock" />
+            </div>
+            <div class="main-header__contacts-content">
+              <div>Пн-Пт</div>
+              <div>с 08:30 до 17:30</div>
+            </div>
+          </div>
+          <div class="main-header__contacts">
+            <div class="main-header__contacts-desc">
+              <!-- <i class="icon-mail"></i> -->
+              <img src="assets/ic_mail.svg" alt="mail" />
+            </div>
+            <div class="main-header__contacts-content">
+              <div>
+                <a href="mailto:info@him-kazan.ru">info@him-kazan.ru</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-header__contacts">
+            <div class="main-header__contacts-desc">
+              <!-- <i class="icon-phone"></i> -->
+              <img src="assets/ic_phone.svg" alt="phone" />
+            </div>
+            <div class="main-header__contacts-content">
+              <div>
+                <a href="tel:88003332625">
+                  8 (800) 333-26-25 (Звонок бесплатный)
+                </a>
+              </div>
+              <div>
+                <a href="tel:84951364812">8 (495) 136-48-12 (Москва)</a>
+              </div>
+              <div>
+                <a href="tel:848722461684">8 (4872) 246-16-84 (Казань)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-header__nav-wrap">
+    <div class="container">
+      <nav class="main-header__nav navbar-light">
+        <div class="main-header__catalog-btn-wrap">
+          <button class="main-header__catalog-btn toggle-catalog-menu">
+            <i class="main-header__catalog-btn-icon icon-burger"></i>
+            <span>Каталог</span>
+          </button>
+        </div>
+        <div class="main-header__menu-wrap">
+          <ul class="main-header__menu">
+            <li class="main-header__menu-item">
+              <a class="main-header__menu-item-link" href="#">О компании</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="main-header__menu-item-link" href="#">Статьи</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="main-header__menu-item-link" href="#">Благодарности</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="main-header__menu-item-link" href="#">Партнёрам</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="main-header__menu-item-link" href="#">Клиентам</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="main-header__menu-item-link" href="#">Реквизиты</a>
+            </li>
+            <li class="main-header__menu-item">
+              <a class="main-header__menu-item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="d-block d-lg-none navbar-toggler ml-auto border-0 toggle-mobile-slidebar"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <div class="main-header__catalog-menu">
+    <div class="container">
+      <div class="main-header__catalog-menu-header">
+        <div class="main-header__catalog-letters">
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="А"
+          >
+            А
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Б"
+          >
+            Б
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="В"
+          >
+            В
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Г"
+          >
+            Г
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Д"
+          >
+            Д
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Е"
+          >
+            Е
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Ё"
+          >
+            Ё
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Ж"
+          >
+            Ж
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="З"
+          >
+            З
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="И"
+          >
+            И
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="К"
+          >
+            К
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Л"
+          >
+            Л
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="М"
+          >
+            М
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Н"
+          >
+            Н
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="О"
+          >
+            О
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="П"
+          >
+            П
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Р"
+          >
+            Р
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="С"
+          >
+            С
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Т"
+          >
+            Т
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="У"
+          >
+            У
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Ф"
+          >
+            Ф
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Х"
+          >
+            Х
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Ц"
+          >
+            Ц
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Ч"
+          >
+            Ч
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Щ"
+          >
+            Щ
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Э"
+          >
+            Э
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Ю"
+          >
+            Ю
+          </button>
+          <button
+            class="main-header__catalog-letter filter-catalog-menu"
+            data-menu-value="Я"
+          >
+            Я
+          </button>
+        </div>
+      </div>
+      <div class="main-header__catalog-menu-body">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <div
+              class="main-header__catalog-menu-section catalog-menu-section"
+              data-menu-value="Х"
+            >
+              <div class="main-header__catalog-menu-section-title">
+                Хлорсодержащие препараты
+              </div>
+              <div class="main-header__catalog-menu-section-list">
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#"> Хлорная известь </a>
+                </li>
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#"> Хлорная известь </a>
+                </li>
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#"> Хлорная известь </a>
+                </li>
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#"> Хлорная известь </a>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div
+              class="main-header__catalog-menu-section catalog-menu-section"
+              data-menu-value="Р"
+            >
+              <div class="main-header__catalog-menu-section-title">
+                Реагенты для котельной и ТЭЦ
+              </div>
+              <div class="main-header__catalog-menu-section-list">
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#">Сульфоуголь</a>
+                </li>
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#">Катионит</a>
+                </li>
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#">Анионит</a>
+                </li>
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#">Гидразин гидрат</a>
+                </li>
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#">Средства против слива</a>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div
+              class="main-header__catalog-menu-section catalog-menu-section"
+              data-menu-value="Ц"
+            >
+              <div class="main-header__catalog-menu-section-title">Цеолиты</div>
+              <div class="main-header__catalog-menu-section-list">
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#">Синтетические</a>
+                </li>
+                <li class="main-header__catalog-menu-section-list-item">
+                  <a href="#">Природные</a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="slidebarContainer" class="main-header__mobile-slidebar-wrap">
+    <div class="main-header__mobile-slidebar">
+      <div class="main-header__mobile-slidebar-header">
+        <button
+          class="main-header__mobile-slidebar-close-btn close-mobile-slidebar"
+        >
+          <i class="icon-cross"></i>
+        </button>
+      </div>
+      <div class="main-header__search-wrap">
+        <form
+          id="headerMobileSearchInput"
+          class="main-header__search"
+          action="/"
+        >
+          <div class="main-header__search-input-wrap">
+            <input
+              class="main-header__search-input"
+              placeholder="Поиск"
+              type="text"
+            />
+          </div>
+          <button class="main-header__search-submit" type="submit">
+            <i class="icon-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="main-header__menu-wrap">
+        <ul class="main-header__menu">
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">О компании</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">Статьи</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">Благодарности</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">Партнёрам</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">Клиентам</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">Реквизиты</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-6">
+            <div class="main-header__contacts">
+              <div class="main-header__contacts-desc">
+                <!-- <i class="icon-clock"></i> -->
+                <img src="assets/ic_clock.svg" alt="clock" />
+              </div>
+              <div class="main-header__contacts-content">
+                <div>Пн-Пт</div>
+                <div>с 08:30 до 17:30</div>
+              </div>
+            </div>
+            <div class="main-header__contacts">
+              <div class="main-header__contacts-desc">
+                <!-- <i class="icon-mail"></i> -->
+                <img src="assets/ic_mail.svg" alt="mail" />
+              </div>
+              <div class="main-header__contacts-content">
+                <div>
+                  <a href="mailto:info@him-kazan.ru">info@him-kazan.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="main-header__contacts">
+              <div class="main-header__contacts-desc">
+                <!-- <i class="icon-phone"></i> -->
+                <img src="assets/ic_phone.svg" alt="phone" />
+              </div>
+              <div class="main-header__contacts-content">
+                <div>
+                  <a href="tel:88003332625">
+                    8 (800) 333-26-25 (Звонок бесплатный)
+                  </a>
+                </div>
+                <div>
+                  <a href="tel:84951364812">8 (495) 136-48-12 (Москва)</a>
+                </div>
+                <div>
+                  <a href="tel:848722461684">8 (4872) 246-16-84 (Казань)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- endinject -->
+    <main class="main-content">
+      <section class="section pt-5">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Каталог
+              </li>
+            </ol>
+          </nav>
+          <div class="section__header">
+            <h1>Каталог</h1>
+            <div class="section__header-download-btn-wrap">
+              <a href="#" class="section__header-download-btn">
+                <span>Скачать прайс-лист</span>
+                <i class="icon-download"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="catalog-page-menu">
+            <div class="catalog-page-menu__letters">
+              <a href="#" class="catalog-page-menu__letter">А</a>
+              <a href="#" class="catalog-page-menu__letter">Б</a>
+              <a href="#" class="catalog-page-menu__letter">В</a>
+              <a href="#" class="catalog-page-menu__letter">Г</a>
+              <a href="#" class="catalog-page-menu__letter">Д</a>
+              <a href="#" class="catalog-page-menu__letter">Е</a>
+              <a href="#" class="catalog-page-menu__letter">Ё</a>
+              <a href="#" class="catalog-page-menu__letter">Ж</a>
+              <a href="#" class="catalog-page-menu__letter">З</a>
+              <a href="#" class="catalog-page-menu__letter">И</a>
+              <a href="#" class="catalog-page-menu__letter">К</a>
+              <a href="#" class="catalog-page-menu__letter">Л</a>
+              <a href="#" class="catalog-page-menu__letter">М</a>
+              <a href="#" class="catalog-page-menu__letter">Н</a>
+              <a href="#" class="catalog-page-menu__letter">О</a>
+              <a href="#" class="catalog-page-menu__letter">П</a>
+              <a href="#" class="catalog-page-menu__letter">Р</a>
+              <a href="#" class="catalog-page-menu__letter">С</a>
+              <a href="#" class="catalog-page-menu__letter">Т</a>
+              <a href="#" class="catalog-page-menu__letter">У</a>
+              <a href="#" class="catalog-page-menu__letter">Ф</a>
+              <a href="#" class="catalog-page-menu__letter">Х</a>
+              <a href="#" class="catalog-page-menu__letter">Ц</a>
+              <a href="#" class="catalog-page-menu__letter">Ч</a>
+              <a href="#" class="catalog-page-menu__letter">Щ</a>
+              <a href="#" class="catalog-page-menu__letter">Э</a>
+              <a href="#" class="catalog-page-menu__letter">Ю</a>
+              <a href="#" class="catalog-page-menu__letter">Я</a>
+            </div>
+          </div>
+          <div class="catalog-page-search-wrap">
+            <form
+              id="catalogSearchInput"
+              class="catalog-page-search"
+              action="/"
+            >
+              <div class="catalog-page-search__input-wrap">
+                <input
+                  class="catalog-page-search__input"
+                  placeholder="Поиск товаров"
+                  type="text"
+                />
+              </div>
+              <button class="catalog-page-search__submit" type="submit">
+                <i class="icon-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="section section--spaced pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 order-1 order-md-1">
+              <div class="catalog-page-sidebar mb-5">
+                <div class="catalog-page-collapse">
+                  <a
+                    href="javascript:void(0)"
+                    class="catalog-page-collapse__btn"
+                  >
+                    <span class="catalog-page-collapse__btn-text">
+                      Хлорсодержащие препараты
+                    </span>
+                    <span class="catalog-page-collapse__btn-quantity">
+                      (15)
+                    </span>
+                  </a>
+                  <div class="catalog-page-collapse__body">
+                    <ul class="catalog-page-collapse__list">
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalog-page-collapse">
+                  <a
+                    href="javascript:void(0)"
+                    class="catalog-page-collapse__btn"
+                  >
+                    <span class="catalog-page-collapse__btn-text">
+                      Хлорсодержащие препараты
+                    </span>
+                    <span class="catalog-page-collapse__btn-quantity">
+                      (15)
+                    </span>
+                  </a>
+                  <div class="catalog-page-collapse__body">
+                    <ul class="catalog-page-collapse__list">
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalog-page-collapse">
+                  <a
+                    href="javascript:void(0)"
+                    class="catalog-page-collapse__btn"
+                  >
+                    <span class="catalog-page-collapse__btn-text">
+                      Хлорсодержащие препараты
+                    </span>
+                    <span class="catalog-page-collapse__btn-quantity">
+                      (15)
+                    </span>
+                  </a>
+                  <div class="catalog-page-collapse__body">
+                    <ul class="catalog-page-collapse__list">
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalog-page-collapse">
+                  <a
+                    href="javascript:void(0)"
+                    class="catalog-page-collapse__btn"
+                  >
+                    <span class="catalog-page-collapse__btn-text">
+                      Хлорсодержащие препараты
+                    </span>
+                    <span class="catalog-page-collapse__btn-quantity">
+                      (15)
+                    </span>
+                  </a>
+                  <div class="catalog-page-collapse__body">
+                    <ul class="catalog-page-collapse__list">
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                      <li class="catalog-page-collapse__list-item">
+                        <a class="catalog-page-collapse__list-link" href="#">
+                          Силикагель фасованный порционный
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 order-2 order-md-2">
+              <div class="table-responsive mb-5">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Наименование</th>
+                      <th scope="col" style="width: 17%">Фасовка</th>
+                      <th scope="col" style="width: 25%">Цена с учетом тары</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="product-table__title-row">
+                      <td colspan="99">
+                        <a href="#">
+                          <h3 class="product-table__title">Хлорная известь</h3>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr class="product-table__content-row">
+                      <th scope="row">
+                        <a href="#">Хлорная известь (Россия, «ТАТСОРБ»)</a>
+                      </th>
+                      <td>20 кг</td>
+                      <td>
+                        <div class="product-table__price">
+                          <span>52-58 руб/кг</span>
+                          <span class="product-table__tip">без НДС</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="product-table__content-row">
+                      <th scope="row">
+                        <a href="#">Хлорная известь (Россия, «ТАТСОРБ»)</a>
+                      </th>
+                      <td>20 кг</td>
+                      <td>
+                        <div class="product-table__price">
+                          <span>52-58 руб/кг</span>
+                          <span class="product-table__tip">без НДС</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="product-table__content-row">
+                      <th scope="row">
+                        <a href="#">Хлорная известь (Россия, «ТАТСОРБ»)</a>
+                      </th>
+                      <td>20 кг</td>
+                      <td>
+                        <div class="product-table__price">
+                          <span>52-58 руб/кг</span>
+                          <span class="product-table__tip">без НДС</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="product-table__content-row">
+                      <th scope="row">
+                        <a href="#"
+                          >Активированный уголь БАУ-ЛВП ТУ
+                          20.14.72-023-72651045-2017(для ликероводки) (пакеты по
+                          500 гр) (Вакуумная упаковка)</a
+                        >
+                      </th>
+                      <td>20 кг</td>
+                      <td>
+                        <div class="product-table__price">
+                          <span>52-58 руб/кг</span>
+                          <span class="product-table__tip">без НДС</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr class="product-table__title-row">
+                      <td colspan="99">
+                        <a href="#">
+                          <h3 class="product-table__title">Хлорная известь</h3>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr class="product-table__content-row">
+                      <th scope="row">
+                        <a href="#">Хлорная известь (Россия, «ТАТСОРБ»)</a>
+                      </th>
+                      <td>20 кг</td>
+                      <td>
+                        <div class="product-table__price">
+                          <span>52-58 руб/кг</span>
+                          <span class="product-table__tip">без НДС</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="product-table__content-row">
+                      <th scope="row">
+                        <a href="#">Хлорная известь (Россия, «ТАТСОРБ»)</a>
+                      </th>
+                      <td>20 кг</td>
+                      <td>
+                        <div class="product-table__price">
+                          <span>52-58 руб/кг</span>
+                          <span class="product-table__tip">без НДС</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="product-table__content-row">
+                      <th scope="row">
+                        <a href="#">Хлорная известь (Россия, «ТАТСОРБ»)</a>
+                      </th>
+                      <td>20 кг</td>
+                      <td>
+                        <div class="product-table__price">
+                          <span>52-58 руб/кг</span>
+                          <span class="product-table__tip">без НДС</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="product-table__content-row">
+                      <th scope="row">
+                        <a href="#">Хлорная известь (Россия, «ТАТСОРБ»)</a>
+                      </th>
+                      <td>20 кг</td>
+                      <td>
+                        <div class="product-table__price">
+                          <span>52-58 руб/кг</span>
+                          <span class="product-table__tip">без НДС</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- inject:footer:html -->
+    <footer class="main-footer">
+  <div class="main-footer__top-wrap">
+    <div class="container">
+      <div class="main-footer__top">
+        <div class="main-footer__contacts-col">
+          <div class="main-footer__contacts">
+            <div class="main-footer__contacts-desc">
+              <!-- <i class="icon-phone"></i> -->
+              <img src="assets/ic_phone.svg" alt="phone" />
+            </div>
+            <div class="main-footer__contacts-content">
+              <div class="main-footer__contacts-content-item">
+                <a href="tel:88003332625">
+                  8 (800) 333-26-25 (Звонок бесплатный)
+                </a>
+              </div>
+              <div class="main-header__contacts-content-item">
+                <a href="tel:84951364812">8 (495) 136-48-12 (Москва)</a>
+              </div>
+              <div class="main-footer__contacts-content-item">
+                <a href="tel:848722461684">8 (4872) 246-16-84 (Казань)</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-footer__contacts">
+            <div class="main-footer__contacts-desc">
+              <!-- <i class="icon-mail"></i> -->
+              <img src="assets/ic_mail.svg" alt="mail" />
+            </div>
+            <div class="main-footer__contacts-content">
+              <div>
+                <a href="mailto:info@him-kazan.ru">info@him-kazan.ru</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-footer__socials">
+            <div class="main-footer__socials-item">
+              <a href="#" class="main-footer__socials-item-link">
+                <img src="assets/fb.svg" alt="fb" />
+              </a>
+            </div>
+            <div class="main-footer__socials-item">
+              <a href="#" class="main-footer__socials-item-link">
+                <img src="assets/vk.svg" alt="vk" />
+              </a>
+            </div>
+            <div class="main-footer__socials-item">
+              <a href="#" class="main-footer__socials-item-link">
+                <img src="assets/yt.svg" alt="yt" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer__menu-col">
+          <ul class="main-footer__menu">
+            <li class="main-footer__menu-item">
+              <a href="#" class="main-footer__menu-item-link"> Каталог </a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a href="#" class="main-footer__menu-item-link"> О компании </a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a href="#" class="main-footer__menu-item-link"> Статьи </a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a href="#" class="main-footer__menu-item-link">
+                Благодарности
+              </a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a href="#" class="main-footer__menu-item-link"> Партнёрам </a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a href="#" class="main-footer__menu-item-link"> Клиентам </a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a href="#" class="main-footer__menu-item-link"> Реквизиты </a>
+            </li>
+            <li class="main-footer__menu-item">
+              <a href="#" class="main-footer__menu-item-link"> Контакты </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__schedule-col">
+          <ul class="main-footer__schedule">
+            <li class="main-footer__schedule-item">
+              <span class="main-footer__schedule-item-title">
+                Понедельник:
+              </span>
+              <span class="main-footer__schedule-item-time">08:30 — 17:30</span>
+            </li>
+            <li class="main-footer__schedule-item">
+              <span class="main-footer__schedule-item-title">Вторник: </span>
+              <span class="main-footer__schedule-item-time">08:30 — 17:30</span>
+            </li>
+            <li class="main-footer__schedule-item">
+              <span class="main-footer__schedule-item-title">Среда: </span>
+              <span class="main-footer__schedule-item-time">08:30 — 17:30</span>
+            </li>
+            <li class="main-footer__schedule-item">
+              <span class="main-footer__schedule-item-title">Четверг:</span>
+              <span class="main-footer__schedule-item-time">08:30 — 17:30</span>
+            </li>
+            <li class="main-footer__schedule-item">
+              <span class="main-footer__schedule-item-title">Пятница:</span>
+              <span class="main-footer__schedule-item-time">08:30 — 17:30</span>
+            </li>
+            <li class="main-footer__schedule-item">
+              <span class="main-footer__schedule-item-title">Суббота:</span>
+              <span class="main-footer__schedule-item-time">Выходной</span>
+            </li>
+            <li class="main-footer__schedule-item">
+              <span class="main-footer__schedule-item-title"
+                >Воскресенье:
+              </span>
+              <span class="main-footer__schedule-item-time">Выходной</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer__bottom-wrap">
+    <div class="container">
+      <div class="main-footer__bottom">
+        <div class="main-footer__bottom-copyright">
+          <p class="m-0">Аквахим© Все права защищены. 2004-2011</p>
+        </div>
+        <div class="main-footer__bottom-links">
+          <div><a href="#">Политика конфеденциальности</a></div>
+        </div>
+        <div class="main-footer__bottom-description">
+          <p class="m-0">
+            Сайт носит информационный характер и не является публичной офертой
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<noindex>
+  <div id="contactFormPopup" class="overlay-cdk contact-popup-overlay">
+    <div class="overlay-cdk__content-wrap">
+      <button class="overlay-cdk__close-btn">
+        <i class="icon-x"></i>
+      </button>
+      <div class="overlay-cdk__title">Заказать</div>
+      <form class="overlay-cdk__contact-form" action="/" method="POST">
+        <div class="form-input-wrap disabled">
+          <label for="overlay_product_1">Наименование</label>
+          <input
+            id="overlay_product_1"
+            class="form-input overlay-form-product-name"
+            name="product"
+            type="text"
+            placeholder="Название товара"
+            value=""
+            disabled
+            required
+          />
+        </div>
+        <div class="form-input-wrap">
+          <label for="overlay_name_1">Имя</label>
+          <input
+            id="overlay_name_1"
+            class="form-input"
+            name="name"
+            type="text"
+            placeholder="Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-input-wrap">
+          <label for="overlay_tel_1">Телефон</label>
+          <input
+            id="overlay_tel_1"
+            class="form-input"
+            name="phone"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form-input-wrap">
+          <label for="overlay_email_1">Email</label>
+          <input
+            id="overlay_email_1"
+            class="form-input"
+            name="email"
+            type="email"
+            placeholder="example@email.com"
+            required
+          />
+        </div>
+        <div class="form-input-wrap">
+          <label for="overlay_message_1">Комментарий</label>
+          <textarea
+            id="overlay_message_1"
+            class="form-input"
+            name="message"
+            placeholder="Здесь можете указать объйм реквизиты , город доставки  и тд"
+            cols="30"
+            rows="9"
+          ></textarea>
+        </div>
+        <div class="form-checkbox-wrap">
+          <input
+            type="checkbox"
+            id="overlay_checkbox_1"
+            name="terms_agreed"
+            class="custom-control-input"
+            value="type_pickup"
+            checked
+            required
+          />
+          <label class="custom-control-label" for="overlay_checkbox_1">
+            <span>
+              Нажимая на кнопку «Отправить заявку», вы соглашаетесь с
+              <a href="#">Политикой конфеденциальности</a>
+            </span>
+          </label>
+        </div>
+        <div class="form-submit-wrap">
+          <button class="form-submit-btn" type="submit">
+            Отправить заявку
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="floating-manager-wrap">
+    <div class="floating-manager">
+      <button class="floating-manager__close-btn">
+        <i class="icon-x"></i>
+      </button>
+      <button class="floating-manager__label-wrap">
+        <div class="floating-manager__label">
+          <span>Менеджер</span>
+          <i class="icon-manager"></i>
+        </div>
+      </button>
+      <div class="floating-manager__info">
+        <div class="floating-manager__info-image-wrap">
+          <img
+            src="assets/avatar.png"
+            alt="manager"
+            class="floating-manager__info-image"
+          />
+        </div>
+        <div class="floating-manager__info-content">
+          <div class="floating-manager__name">Юлия</div>
+          <div class="floating-manager__position">Ваш менеджер в г. Казань</div>
+        </div>
+      </div>
+      <div class="floating-manager__contacts">
+        <div class="floating-manager__contacts-item">
+          <div class="floating-manager__contacts-icon-wrap">
+            <i class="icon-mail"></i>
+          </div>
+          <div class="floating-manager__contacts-content">
+            <div class="floating-manager__contacts-content-item">
+              <a href="#">880033326@mail.ru</a>
+            </div>
+            <div class="floating-manager__contacts-content-item">
+              <a href="#">moskva@him-kazan.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="floating-manager__contacts-item">
+          <div class="floating-manager__contacts-icon-wrap">
+            <i class="icon-phone"></i>
+          </div>
+          <div class="floating-manager__contacts-content">
+            <div class="floating-manager__contacts-content-item">
+              <a href="#">
+                +7 (495) 789-47-32
+                <span class="text-primary">доб. 102, 152</span>
+              </a>
+            </div>
+            <div class="floating-manager__contacts-content-item">
+              <a href="#">
+                8 (800) 333-26-25
+                <span class="text-primary">доб. 102, 152 </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</noindex>
+
+    <!-- endinject -->
+    <script src="js/components.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/moment/moment.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
