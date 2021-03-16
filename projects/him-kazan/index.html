@@ -3059,6 +3059,7 @@
             name="product"
             type="text"
             placeholder="Название товара"
+            autocomplete="off"
             value=""
             disabled
             required
@@ -3072,6 +3073,7 @@
             name="name"
             type="text"
             placeholder="Ваше имя"
+            autocomplete="name"
             required
           />
         </div>
@@ -3079,10 +3081,11 @@
           <label for="overlay_tel_1">Телефон</label>
           <input
             id="overlay_tel_1"
-            class="form-input"
+            class="form-input phone-input-mask"
             name="phone"
             type="tel"
             placeholder="+7 (___) ___-__-__"
+            autocomplete="tel"
             required
           />
         </div>
@@ -3094,6 +3097,7 @@
             name="email"
             type="email"
             placeholder="example@email.com"
+            autocomplete="email"
             required
           />
         </div>

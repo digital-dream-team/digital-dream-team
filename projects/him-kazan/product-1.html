@@ -632,7 +632,7 @@
                     -->
                   </div>
                 </div>
-                <div class="product-page-info__row">
+                <div class="product-page-info__row align-items-end">
                   <div class="product-page-info__col">
                     <div class="product-page-info__price">
                       <div class="product-page-info__price-title">
@@ -679,7 +679,9 @@
           <div class="pb-5 mb-5">
             <h2>Разброс цен</h2>
             <div class="table-responsive">
-              <table class="table table--p3-content table--boldy-content">
+              <table
+                class="table table--no-hover table--p3-content table--boldy-content"
+              >
                 <thead>
                   <tr>
                     <th scope="col">До 800 кг</th>
@@ -750,7 +752,9 @@
           <div class="pb-5 mb-5">
             <h2>Технические характеристики</h2>
             <div class="table-responsive">
-              <table class="table table--p3-content table--boldy-content">
+              <table
+                class="table table--no-hover table--p3-content table--boldy-content"
+              >
                 <tbody>
                   <tr>
                     <th scope="row">Синонимы</th>
@@ -1116,6 +1120,7 @@
             name="product"
             type="text"
             placeholder="Название товара"
+            autocomplete="off"
             value=""
             disabled
             required
@@ -1129,6 +1134,7 @@
             name="name"
             type="text"
             placeholder="Ваше имя"
+            autocomplete="name"
             required
           />
         </div>
@@ -1136,10 +1142,11 @@
           <label for="overlay_tel_1">Телефон</label>
           <input
             id="overlay_tel_1"
-            class="form-input"
+            class="form-input phone-input-mask"
             name="phone"
             type="tel"
             placeholder="+7 (___) ___-__-__"
+            autocomplete="tel"
             required
           />
         </div>
@@ -1151,6 +1158,7 @@
             name="email"
             type="email"
             placeholder="example@email.com"
+            autocomplete="email"
             required
           />
         </div>
