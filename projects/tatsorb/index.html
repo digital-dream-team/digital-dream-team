@@ -70,8 +70,9 @@
           <a
             href="#"
             class="dd-button dd-button--filled open-contact-form-popup"
-            >Написать</a
           >
+            Написать
+          </a>
         </div>
       </div>
       <div class="navbar-toggler-wrap navbar-light d-block d-sm-none">
@@ -1329,7 +1330,12 @@
         </div>
       </div>
       <div class="col-md-3">
-        <form action="/" class="contact-form">
+        <form
+          action="http://scripts.local"
+          method="post"
+          class="contact-form ajax-form"
+          data-type=""
+        >
           <div class="contact-form__title">Напишите нам</div>
           <div>
             <input
@@ -1337,6 +1343,8 @@
               type="text"
               placeholder="Имя..."
               autocomplete="name"
+              name="name"
+              required
             />
           </div>
           <div>
@@ -1345,12 +1353,16 @@
               type="tel"
               placeholder="Телефон..."
               autocomplete="tel"
+              name="phone"
+              required
             />
           </div>
           <div>
             <textarea
               class="contact-form__textarea"
               placeholder="Сообщение"
+              name="message"
+              required
             ></textarea>
           </div>
           <div>
@@ -1386,13 +1398,19 @@
     </button>
     <div class="contact-form-popup__title">Связь с нами</div>
     <div class="contact-form-popup__content">
-      <form action="/" class="contact-form">
+      <form
+        action="http://scripts.local"
+        class="contact-form ajax-form"
+        data-type=""
+      >
         <div>
           <input
             class="contact-form__input"
             type="text"
             placeholder="Имя..."
             autocomplete="name"
+            name="name"
+            required
           />
         </div>
         <div>
@@ -1401,12 +1419,16 @@
             type="tel"
             placeholder="Телефон..."
             autocomplete="tel"
+            name="phone"
+            required
           />
         </div>
         <div>
           <textarea
             class="contact-form__textarea"
             placeholder="Сообщение"
+            name="message"
+            required
           ></textarea>
         </div>
         <div>
