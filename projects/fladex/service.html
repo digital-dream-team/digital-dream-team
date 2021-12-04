@@ -184,10 +184,13 @@
         </ul>
       </div>
       <div class="main-header__contact-btn-wrap">
-        <a href="#" class="dd-button"> Оставить заявку </a>
+        <a href="#" class="dd-button open-contact-popup"> Оставить заявку </a>
       </div>
       <div class="hamburger-wrap">
-        <button class="hamburger hamburger--collapse" type="button">
+        <button
+          class="hamburger hamburger--collapse toggle-mobile-slidebar"
+          type="button"
+        >
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
@@ -229,14 +232,141 @@
         </nav>
       </div>
     </div>
-    <div class="main-header__mobile-menu"></div>
+    <div id="slidebarContainer" class="main-header__mobile-slidebar-wrap">
+      <div class="main-header__mobile-slidebar">
+        <div class="main-header__mobile-slidebar-header">
+          <div class="dd-tag-wrap">
+            <a href="#">
+              <div class="dd-tag">fladex.ru</div>
+            </a>
+          </div>
+          <button
+            class="main-header__mobile-slidebar-close-btn close-mobile-slidebar"
+          >
+            ✖
+          </button>
+        </div>
+        <div class="main-header__nav-wrap">
+          <nav class="main-header_nav">
+            <ul class="main-header__nav-menu">
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> CMS </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Интернет-маркетинг
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Информационные сайты
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Услуги </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Обо мне </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__socials-wrap">
+          <ul class="main-header__socials">
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/vk.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/tg.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/fb.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/youtube.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/dzen.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/tiktok.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/ok.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/inst.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-header__contact-btn-wrap">
+          <a href="#" class="dd-button open-contact-popup"> Оставить заявку </a>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
     <!-- endinject -->
     <main class="main-content">
       <section
-        class="section section-page-hero"
+        class="section section-page-hero section-page-hero--mobile-offset"
         style="background-image: url('assets/service_splash.png')"
       >
         <div class="container">
@@ -318,7 +448,7 @@
             Настройка Яндекс Директ и Google Ads
           </h2>
           <div class="row">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
               <div class="icon-card-wrap">
                 <div class="icon-card">
                   <div class="icon-card__icon-wrap">
@@ -328,7 +458,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
               <div class="icon-card-wrap">
                 <div class="icon-card">
                   <div class="icon-card__icon-wrap">
@@ -340,7 +470,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
               <div class="icon-card-wrap">
                 <div class="icon-card">
                   <div class="icon-card__icon-wrap">
@@ -352,11 +482,88 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
               <div class="icon-card-wrap">
                 <div class="icon-card">
                   <div class="icon-card__icon-wrap">
                     <i class="icon-card__icon icon-pencil_cog"></i>
+                  </div>
+                  <div class="icon-card__title">
+                    Оптимизация расходов на контекстную рекламу
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__small-title">
+            Настройка Яндекс Директ и Google Ads
+          </h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3">
+              <div class="icon-card-wrap">
+                <div class="icon-card">
+                  <div class="icon-card__icon-wrap">
+                    <span class="icon-card__icon">1</span>
+                  </div>
+                  <div class="icon-card__title">Увеличение ваших продаж</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3">
+              <div class="icon-card-wrap">
+                <div class="icon-card">
+                  <div class="icon-card__icon-wrap">
+                    <span class="icon-card__icon">2</span>
+                  </div>
+                  <div class="icon-card__title">
+                    Снижение стоимости цены одной продажи
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3">
+              <div class="icon-card-wrap">
+                <div class="icon-card">
+                  <div class="icon-card__icon-wrap">
+                    <span class="icon-card__icon">3</span>
+                  </div>
+                  <div class="icon-card__title">
+                    Отптимальное соотношения цены и качества заявок
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3">
+              <div class="icon-card-wrap">
+                <div class="icon-card">
+                  <div class="icon-card__icon-wrap">
+                    <span class="icon-card__icon">4</span>
+                  </div>
+                  <div class="icon-card__title">
+                    Оптимизация расходов на контекстную рекламу
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3">
+              <div class="icon-card-wrap">
+                <div class="icon-card">
+                  <div class="icon-card__icon-wrap">
+                    <span class="icon-card__icon">5</span>
+                  </div>
+                  <div class="icon-card__title">Увеличение ваших продаж</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3">
+              <div class="icon-card-wrap">
+                <div class="icon-card">
+                  <div class="icon-card__icon-wrap">
+                    <span class="icon-card__icon">6</span>
                   </div>
                   <div class="icon-card__title">Увеличение ваших продаж</div>
                 </div>
@@ -401,17 +608,17 @@
               <div class="package-card-wrap">
                 <div class="package-card">
                   <div class="package-card__header">
-                    <div class="package-card__title">Яндекс.Директ</div>
+                    <div class="package-card__title">Google Ads</div>
                   </div>
                   <div class="package-card__image-wrap">
                     <img
-                      src="assets/yandex_direct.png"
+                      src="assets/gads.png"
                       alt="pic"
                       class="package-card__image"
                     />
                   </div>
                   <div class="package-card__footer">
-                    <div class="package-card__price">от 25 000 ₽</div>
+                    <div class="package-card__price">от 18 000 ₽</div>
                     <a
                       href="#"
                       class="
@@ -429,17 +636,17 @@
               <div class="package-card-wrap">
                 <div class="package-card">
                   <div class="package-card__header">
-                    <div class="package-card__title">Яндекс.Директ</div>
+                    <div class="package-card__title">Лендинг (+ЯД, +GA)</div>
                   </div>
                   <div class="package-card__image-wrap">
                     <img
-                      src="assets/yandex_direct.png"
+                      src="assets/landing.png"
                       alt="pic"
                       class="package-card__image"
                     />
                   </div>
                   <div class="package-card__footer">
-                    <div class="package-card__price">от 25 000 ₽</div>
+                    <div class="package-card__price">от 100 000 ₽</div>
                     <a
                       href="#"
                       class="
@@ -464,7 +671,7 @@
               <div class="target-card-wrap">
                 <div class="target-card">
                   <div class="target-card__header">
-                    <div class="target-card__title">Title</div>
+                    <div class="target-card__title">Интернет-магазины</div>
                   </div>
                   <div class="target-card__image-wrap">
                     <img
@@ -486,11 +693,11 @@
               <div class="target-card-wrap">
                 <div class="target-card">
                   <div class="target-card__header">
-                    <div class="target-card__title">Title</div>
+                    <div class="target-card__title">Сфера услуг</div>
                   </div>
                   <div class="target-card__image-wrap">
                     <img
-                      src="assets/target1.png"
+                      src="assets/target2.png"
                       alt="pic"
                       class="target-card__image"
                     />
@@ -508,11 +715,11 @@
               <div class="target-card-wrap">
                 <div class="target-card">
                   <div class="target-card__header">
-                    <div class="target-card__title">Title</div>
+                    <div class="target-card__title">Инфобизнес</div>
                   </div>
                   <div class="target-card__image-wrap">
                     <img
-                      src="assets/target1.png"
+                      src="assets/target3.png"
                       alt="pic"
                       class="target-card__image"
                     />
@@ -530,11 +737,11 @@
               <div class="target-card-wrap">
                 <div class="target-card">
                   <div class="target-card__header">
-                    <div class="target-card__title">Title</div>
+                    <div class="target-card__title">Моно-товары</div>
                   </div>
                   <div class="target-card__image-wrap">
                     <img
-                      src="assets/target1.png"
+                      src="assets/target4.png"
                       alt="pic"
                       class="target-card__image"
                     />
@@ -558,7 +765,7 @@
             Минимальный рекламный бюджет - 30 000 рублей.
           </h3>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <div class="tarrif-heading-col">
                 <div class="tarrif-heading-col__name text-truncate">
                   Название тарифа
@@ -595,31 +802,73 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <div class="tarrif-card-wrap">
                 <div class="tarrif-card">
                   <div class="tarrif-card__title text-truncate">Старт</div>
                   <div class="tarrif-card__body">
-                    <div class="tarrif-card__value text-truncate">25 000 ₽</div>
-                    <div class="tarrif-card__value text-truncate">
-                      +16 000 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Настройка Яндекс.Директ
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        25 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 2 000 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Настройка Google Ads
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        +16 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 1 200 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ключевые слова</div>
+                      <div class="tarrif-card__value text-truncate">
+                        до 2 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 1 200 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Объявления</div>
+                      <div class="tarrif-card__value text-truncate">
+                        до 1 200 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">3 недели</div>
-                    <div class="tarrif-card__value text-truncate">Да</div>
-                    <div class="tarrif-card__value text-truncate">Да</div>
-                    <div class="tarrif-card__value text-truncate">
-                      10 конкурентов
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Рекламные кампании
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        Поиск + РСЯ + Ретаргет
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">Услуги</div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ведение</div>
+                      <div class="tarrif-card__value text-truncate">
+                        3 недели
+                      </div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Аудит сайта</div>
+                      <div class="tarrif-card__value text-truncate">Да</div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ретаргетинг</div>
+                      <div class="tarrif-card__value text-truncate">Да</div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Маркетинговое исследование
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        10 конкурентов
+                      </div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Кому подойдет</div>
+                      <div class="tarrif-card__value text-truncate">Услуги</div>
+                    </div>
                   </div>
                   <div class="tarrif-card__footer">
                     <a href="#" class="dd-button dd-button--accent">
@@ -629,33 +878,75 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <div class="tarrif-card-wrap">
                 <div class="tarrif-card selected">
                   <div class="tarrif-card__title text-truncate">
                     Оптимальный
                   </div>
                   <div class="tarrif-card__body">
-                    <div class="tarrif-card__value text-truncate">25 000 ₽</div>
-                    <div class="tarrif-card__value text-truncate">
-                      +16 000 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Настройка Яндекс.Директ
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        25 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 2 000 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Настройка Google Ads
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        +16 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 1 200 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ключевые слова</div>
+                      <div class="tarrif-card__value text-truncate">
+                        до 2 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 1 200 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Объявления</div>
+                      <div class="tarrif-card__value text-truncate">
+                        до 1 200 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">3 недели</div>
-                    <div class="tarrif-card__value text-truncate">Да</div>
-                    <div class="tarrif-card__value text-truncate">Да</div>
-                    <div class="tarrif-card__value text-truncate">
-                      10 конкурентов
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Рекламные кампании
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        Поиск + РСЯ + Ретаргет
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">Услуги</div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ведение</div>
+                      <div class="tarrif-card__value text-truncate">
+                        3 недели
+                      </div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Аудит сайта</div>
+                      <div class="tarrif-card__value text-truncate">Да</div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ретаргетинг</div>
+                      <div class="tarrif-card__value text-truncate">Да</div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Маркетинговое исследование
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        10 конкурентов
+                      </div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Кому подойдет</div>
+                      <div class="tarrif-card__value text-truncate">Услуги</div>
+                    </div>
                   </div>
                   <div class="tarrif-card__footer">
                     <a href="#" class="dd-button dd-button--accent">
@@ -665,33 +956,75 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <div class="tarrif-card-wrap">
                 <div class="tarrif-card">
                   <div class="tarrif-card__title text-truncate">
-                    Оптимальный
+                    Профессиональный
                   </div>
                   <div class="tarrif-card__body">
-                    <div class="tarrif-card__value text-truncate">25 000 ₽</div>
-                    <div class="tarrif-card__value text-truncate">
-                      +16 000 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Настройка Яндекс.Директ
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        25 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 2 000 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Настройка Google Ads
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        +16 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 1 200 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ключевые слова</div>
+                      <div class="tarrif-card__value text-truncate">
+                        до 2 000 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">
-                      до 1 200 ₽
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Объявления</div>
+                      <div class="tarrif-card__value text-truncate">
+                        до 1 200 ₽
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">3 недели</div>
-                    <div class="tarrif-card__value text-truncate">Да</div>
-                    <div class="tarrif-card__value text-truncate">Да</div>
-                    <div class="tarrif-card__value text-truncate">
-                      10 конкурентов
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Рекламные кампании
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        Поиск + РСЯ + Ретаргет
+                      </div>
                     </div>
-                    <div class="tarrif-card__value text-truncate">Услуги</div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ведение</div>
+                      <div class="tarrif-card__value text-truncate">
+                        3 недели
+                      </div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Аудит сайта</div>
+                      <div class="tarrif-card__value text-truncate">Да</div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Ретаргетинг</div>
+                      <div class="tarrif-card__value text-truncate">Да</div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">
+                        Маркетинговое исследование
+                      </div>
+                      <div class="tarrif-card__value text-truncate">
+                        10 конкурентов
+                      </div>
+                    </div>
+                    <div class="tarrif-card__line">
+                      <div class="tarrif-card__line-title">Кому подойдет</div>
+                      <div class="tarrif-card__value text-truncate">Услуги</div>
+                    </div>
                   </div>
                   <div class="tarrif-card__footer">
                     <a href="#" class="dd-button dd-button--accent">
@@ -709,7 +1042,7 @@
           <div class="section__header">
             <h2 class="section__small-title">Кейсы</h2>
             <a href="#" class="section__header-details-btn">
-              <span>Все услуги</span>
+              <span>Все кейсы</span>
               <i class="icon-arrow"></i>
             </a>
           </div>
@@ -717,7 +1050,7 @@
             <div class="col-lg-3 col-md-4">
               <div class="case-card-wrap">
                 <a href="#">
-                  <div class="case-card">
+                  <div class="case-card case-card--small">
                     <div class="case-card__image-wrap">
                       <img
                         src="assets/case_img.png"
@@ -726,12 +1059,14 @@
                       />
                     </div>
                     <div class="case-card__content">
-                      <div class="case-card__title">Title</div>
-                      <div class="case-card__text">
+                      <div class="case-card__title">
+                        Продвижение ателье женского белья
+                      </div>
+                      <!-- <div class="case-card__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorem enim modi recusandae molestias, ullam
                         distinctio.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </a>
@@ -740,21 +1075,21 @@
             <div class="col-lg-3 col-md-4">
               <div class="case-card-wrap">
                 <a href="#">
-                  <div class="case-card">
+                  <div class="case-card case-card--small">
                     <div class="case-card__image-wrap">
                       <img
-                        src="assets/case_img.png"
+                        src="assets/case_img2.png"
                         alt="pic"
                         class="case-card__image"
                       />
                     </div>
                     <div class="case-card__content">
-                      <div class="case-card__title">Title</div>
-                      <div class="case-card__text">
+                      <div class="case-card__title">Продвижение автошколы</div>
+                      <!-- <div class="case-card__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorem enim modi recusandae molestias, ullam
                         distinctio.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </a>
@@ -763,21 +1098,23 @@
             <div class="col-lg-3 col-md-4">
               <div class="case-card-wrap">
                 <a href="#">
-                  <div class="case-card">
+                  <div class="case-card case-card--small">
                     <div class="case-card__image-wrap">
                       <img
-                        src="assets/case_img.png"
+                        src="assets/case_img3.png"
                         alt="pic"
                         class="case-card__image"
                       />
                     </div>
                     <div class="case-card__content">
-                      <div class="case-card__title">Title</div>
-                      <div class="case-card__text">
+                      <div class="case-card__title">
+                        Продвижение юридического сайта, услуги банкротства
+                      </div>
+                      <!-- <div class="case-card__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorem enim modi recusandae molestias, ullam
                         distinctio.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </a>
@@ -786,7 +1123,7 @@
             <div class="col-lg-3 col-md-4">
               <div class="case-card-wrap">
                 <a href="#">
-                  <div class="case-card">
+                  <div class="case-card case-card--small">
                     <div class="case-card__image-wrap">
                       <img
                         src="assets/case_img.png"
@@ -795,12 +1132,14 @@
                       />
                     </div>
                     <div class="case-card__content">
-                      <div class="case-card__title">Title</div>
-                      <div class="case-card__text">
+                      <div class="case-card__title">
+                        Продвижение ателье женского белья
+                      </div>
+                      <!-- <div class="case-card__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorem enim modi recusandae molestias, ullam
                         distinctio.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </a>
@@ -809,7 +1148,7 @@
             <div class="col-lg-3 col-md-4">
               <div class="case-card-wrap">
                 <a href="#">
-                  <div class="case-card">
+                  <div class="case-card case-card--small">
                     <div class="case-card__image-wrap">
                       <img
                         src="assets/case_img.png"
@@ -818,12 +1157,14 @@
                       />
                     </div>
                     <div class="case-card__content">
-                      <div class="case-card__title">Title</div>
-                      <div class="case-card__text">
+                      <div class="case-card__title">
+                        Продвижение ателье женского белья
+                      </div>
+                      <!-- <div class="case-card__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorem enim modi recusandae molestias, ullam
                         distinctio.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </a>
@@ -832,21 +1173,23 @@
             <div class="col-lg-3 col-md-4">
               <div class="case-card-wrap">
                 <a href="#">
-                  <div class="case-card">
+                  <div class="case-card case-card--small">
                     <div class="case-card__image-wrap">
                       <img
-                        src="assets/case_img.png"
+                        src="assets/case_img3.png"
                         alt="pic"
                         class="case-card__image"
                       />
                     </div>
                     <div class="case-card__content">
-                      <div class="case-card__title">Title</div>
-                      <div class="case-card__text">
+                      <div class="case-card__title">
+                        Продвижение юридического сайта, услуги банкротства
+                      </div>
+                      <!-- <div class="case-card__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorem enim modi recusandae molestias, ullam
                         distinctio.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </a>
@@ -855,7 +1198,7 @@
             <div class="col-lg-3 col-md-4">
               <div class="case-card-wrap">
                 <a href="#">
-                  <div class="case-card">
+                  <div class="case-card case-card--small">
                     <div class="case-card__image-wrap">
                       <img
                         src="assets/case_img.png"
@@ -864,12 +1207,14 @@
                       />
                     </div>
                     <div class="case-card__content">
-                      <div class="case-card__title">Title</div>
-                      <div class="case-card__text">
+                      <div class="case-card__title">
+                        Продвижение ателье женского белья
+                      </div>
+                      <!-- <div class="case-card__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorem enim modi recusandae molestias, ullam
                         distinctio.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </a>
@@ -878,21 +1223,21 @@
             <div class="col-lg-3 col-md-4">
               <div class="case-card-wrap">
                 <a href="#">
-                  <div class="case-card">
+                  <div class="case-card case-card--small">
                     <div class="case-card__image-wrap">
                       <img
-                        src="assets/case_img.png"
+                        src="assets/case_img2.png"
                         alt="pic"
                         class="case-card__image"
                       />
                     </div>
                     <div class="case-card__content">
-                      <div class="case-card__title">Title</div>
-                      <div class="case-card__text">
+                      <div class="case-card__title">Продвижение автошколы</div>
+                      <!-- <div class="case-card__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorem enim modi recusandae molestias, ullam
                         distinctio.
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </a>
@@ -962,7 +1307,7 @@
         <div class="container">
           <h2 class="section__small-title">Отзывы</h2>
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-8 mb-5 mb-lg-0">
               <div class="home-reviews-wrap">
                 <div class="home-reviews">
                   <div class="home-reviews-item">
@@ -1286,10 +1631,52 @@
           class="overlay-cdk__image"
         />
       </div>
-      <div class="overlay-cdk__title">Title</div>
-      <div class="overlay-cdk__subtitle">Subtitle</div>
+      <div class="overlay-cdk__title">Спасибо за завявку</div>
+      <div class="overlay-cdk__subtitle">Я свяжусь с вами втечение 6 часов</div>
       <div class="overlay-cdk__footer">
         <a href="#" class="dd-button overlay-cdk__close-btn"> Отлично, жду </a>
+      </div>
+    </div>
+  </div>
+</noindex>
+<noindex>
+  <div id="contactPopup" class="overlay-cdk">
+    <div class="overlay-cdk__content">
+      <div class="overlay-cdk__contact-form-wrap">
+        <div class="overlay-cdk__small-title">Отправить заявку</div>
+        <div class="overlay-cdk__subtitle">
+          Оставьте заявку, и я свяжусь с вами в течение суток
+        </div>
+        <form
+          action="/"
+          method="POST"
+          class="overlay-cdk__contact-form ajax-contact-form"
+        >
+          <div class="dd-input-wrap">
+            <input
+              type="text"
+              placeholder="Имя"
+              name="Имя"
+              class="dd-input w-100"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="dd-input-wrap">
+            <input
+              type="tel"
+              placeholder="Телефон"
+              name="Телефон"
+              class="dd-input w-100"
+              autocomplete="tel"
+              required
+            />
+          </div>
+          <div class="dd-button-wrap">
+            <button type="submit" class="dd-button w-100">Отправить</button>
+          </div>
+          <input type="hidden" name="action" value="ajaxForm" />
+        </form>
       </div>
     </div>
   </div>

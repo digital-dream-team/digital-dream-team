@@ -184,10 +184,13 @@
         </ul>
       </div>
       <div class="main-header__contact-btn-wrap">
-        <a href="#" class="dd-button"> Оставить заявку </a>
+        <a href="#" class="dd-button open-contact-popup"> Оставить заявку </a>
       </div>
       <div class="hamburger-wrap">
-        <button class="hamburger hamburger--collapse" type="button">
+        <button
+          class="hamburger hamburger--collapse toggle-mobile-slidebar"
+          type="button"
+        >
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
@@ -229,7 +232,134 @@
         </nav>
       </div>
     </div>
-    <div class="main-header__mobile-menu"></div>
+    <div id="slidebarContainer" class="main-header__mobile-slidebar-wrap">
+      <div class="main-header__mobile-slidebar">
+        <div class="main-header__mobile-slidebar-header">
+          <div class="dd-tag-wrap">
+            <a href="#">
+              <div class="dd-tag">fladex.ru</div>
+            </a>
+          </div>
+          <button
+            class="main-header__mobile-slidebar-close-btn close-mobile-slidebar"
+          >
+            ✖
+          </button>
+        </div>
+        <div class="main-header__nav-wrap">
+          <nav class="main-header_nav">
+            <ul class="main-header__nav-menu">
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> CMS </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Интернет-маркетинг
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Информационные сайты
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Услуги </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Обо мне </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__socials-wrap">
+          <ul class="main-header__socials">
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/vk.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/tg.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/fb.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/youtube.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/dzen.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/tiktok.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/ok.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/inst.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-header__contact-btn-wrap">
+          <a href="#" class="dd-button open-contact-popup"> Оставить заявку </a>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -318,12 +448,128 @@
             <div class="col-lg-3">
               <div class="widget-sidebar">
                 <div class="widget-sidebar__info">
-                  <div class="widget-sidebar__info-image-wrap">
-                    <img
-                      src="assets/maxim_small.png"
-                      alt="pic"
-                      class="widget-sidebar__info-image"
-                    />
+                  <div class="mouse-follow-target mb-2">
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-00
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/000.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-0
+                        active
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/0.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-1
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/2.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-2
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/3.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-3
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/4.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-4
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/6.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-5
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/7.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-6
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/9.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-7
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/10.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
+                    <div
+                      class="
+                        widget-sidebar__info-image-wrap
+                        mouse-follow-target__inner mouse-follow-target__inner-8
+                      "
+                    >
+                      <img
+                        src="assets/a-photo/12.png"
+                        alt="pic"
+                        class="widget-sidebar__info-image"
+                      />
+                    </div>
                   </div>
                   <div class="widget-sidebar__info-title">Истляев Максим</div>
                   <div class="widget-sidebar__info-content">
@@ -428,7 +674,10 @@
                   <li class="comments-list__item">
                     <div class="comments-list__item-label-wrap">
                       <!-- <img src="assets/sample.png" alt="pic" class="comments-list__item-label-img" /> -->
-                      <div class="comments-list__item-label-text">D</div>
+                      <!-- <div class="comments-list__item-label-text">D</div> -->
+                      <div
+                        class="comments-list__item-label-icon icon-user"
+                      ></div>
                     </div>
                     <div class="comments-list__item-content">
                       <div class="comments-list__item-header">
@@ -458,9 +707,12 @@
                           <li class="comments-list__item">
                             <div class="comments-list__item-label-wrap">
                               <!-- <img src="assets/sample.png" alt="pic" class="comments-list__item-label-img" /> -->
-                              <div class="comments-list__item-label-text">
+                              <!-- <div class="comments-list__item-label-text">
                                 D
-                              </div>
+                              </div> -->
+                              <div
+                                class="comments-list__item-label-icon icon-user"
+                              ></div>
                             </div>
                             <div class="comments-list__item-content">
                               <div class="comments-list__item-header">
@@ -500,7 +752,10 @@
                   <li class="comments-list__item">
                     <div class="comments-list__item-label-wrap">
                       <!-- <img src="assets/sample.png" alt="pic" class="comments-list__item-label-img" /> -->
-                      <div class="comments-list__item-label-text">D</div>
+                      <!-- <div class="comments-list__item-label-text">D</div> -->
+                      <div
+                        class="comments-list__item-label-icon icon-user"
+                      ></div>
                     </div>
                     <div class="comments-list__item-content">
                       <div class="comments-list__item-header">
@@ -530,9 +785,12 @@
                           <li class="comments-list__item">
                             <div class="comments-list__item-label-wrap">
                               <!-- <img src="assets/sample.png" alt="pic" class="comments-list__item-label-img" /> -->
-                              <div class="comments-list__item-label-text">
+                              <!-- <div class="comments-list__item-label-text">
                                 D
-                              </div>
+                              </div> -->
+                              <div
+                                class="comments-list__item-label-icon icon-user"
+                              ></div>
                             </div>
                             <div class="comments-list__item-content">
                               <div class="comments-list__item-header">
@@ -568,9 +826,12 @@
                           <li class="comments-list__item">
                             <div class="comments-list__item-label-wrap">
                               <!-- <img src="assets/sample.png" alt="pic" class="comments-list__item-label-img" /> -->
-                              <div class="comments-list__item-label-text">
+                              <!-- <div class="comments-list__item-label-text">
                                 D
-                              </div>
+                              </div> -->
+                              <div
+                                class="comments-list__item-label-icon icon-user"
+                              ></div>
                             </div>
                             <div class="comments-list__item-content">
                               <div class="comments-list__item-header">
@@ -787,10 +1048,52 @@
           class="overlay-cdk__image"
         />
       </div>
-      <div class="overlay-cdk__title">Title</div>
-      <div class="overlay-cdk__subtitle">Subtitle</div>
+      <div class="overlay-cdk__title">Спасибо за завявку</div>
+      <div class="overlay-cdk__subtitle">Я свяжусь с вами втечение 6 часов</div>
       <div class="overlay-cdk__footer">
         <a href="#" class="dd-button overlay-cdk__close-btn"> Отлично, жду </a>
+      </div>
+    </div>
+  </div>
+</noindex>
+<noindex>
+  <div id="contactPopup" class="overlay-cdk">
+    <div class="overlay-cdk__content">
+      <div class="overlay-cdk__contact-form-wrap">
+        <div class="overlay-cdk__small-title">Отправить заявку</div>
+        <div class="overlay-cdk__subtitle">
+          Оставьте заявку, и я свяжусь с вами в течение суток
+        </div>
+        <form
+          action="/"
+          method="POST"
+          class="overlay-cdk__contact-form ajax-contact-form"
+        >
+          <div class="dd-input-wrap">
+            <input
+              type="text"
+              placeholder="Имя"
+              name="Имя"
+              class="dd-input w-100"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="dd-input-wrap">
+            <input
+              type="tel"
+              placeholder="Телефон"
+              name="Телефон"
+              class="dd-input w-100"
+              autocomplete="tel"
+              required
+            />
+          </div>
+          <div class="dd-button-wrap">
+            <button type="submit" class="dd-button w-100">Отправить</button>
+          </div>
+          <input type="hidden" name="action" value="ajaxForm" />
+        </form>
       </div>
     </div>
   </div>

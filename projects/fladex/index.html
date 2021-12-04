@@ -184,10 +184,13 @@
         </ul>
       </div>
       <div class="main-header__contact-btn-wrap">
-        <a href="#" class="dd-button"> Оставить заявку </a>
+        <a href="#" class="dd-button open-contact-popup"> Оставить заявку </a>
       </div>
       <div class="hamburger-wrap">
-        <button class="hamburger hamburger--collapse" type="button">
+        <button
+          class="hamburger hamburger--collapse toggle-mobile-slidebar"
+          type="button"
+        >
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
@@ -229,7 +232,134 @@
         </nav>
       </div>
     </div>
-    <div class="main-header__mobile-menu"></div>
+    <div id="slidebarContainer" class="main-header__mobile-slidebar-wrap">
+      <div class="main-header__mobile-slidebar">
+        <div class="main-header__mobile-slidebar-header">
+          <div class="dd-tag-wrap">
+            <a href="#">
+              <div class="dd-tag">fladex.ru</div>
+            </a>
+          </div>
+          <button
+            class="main-header__mobile-slidebar-close-btn close-mobile-slidebar"
+          >
+            ✖
+          </button>
+        </div>
+        <div class="main-header__nav-wrap">
+          <nav class="main-header_nav">
+            <ul class="main-header__nav-menu">
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> CMS </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Интернет-маркетинг
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Информационные сайты
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Услуги </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Обо мне </a>
+              </li>
+              <li class="main-header__nav-menu-item">
+                <a href="#" class="main-header__nav-menu-link"> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__socials-wrap">
+          <ul class="main-header__socials">
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/vk.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/tg.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/fb.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/youtube.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/dzen.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/tiktok.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/ok.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+            <li class="main-header__socials-item">
+              <a href="#" class="main-header__socials-link">
+                <img
+                  src="assets/inst.svg"
+                  alt="icon"
+                  class="main-header__socials-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-header__contact-btn-wrap">
+          <a href="#" class="dd-button open-contact-popup"> Оставить заявку </a>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -238,7 +368,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title">Немного обо мне</h2>
-          <div class="row">
+          <div class="row align-items-end">
             <div class="col-lg-5">
               <img src="assets/img1.png" alt="img" class="img-rounded section__content-image" />
             </div>
@@ -638,176 +768,164 @@
           <div class="row">
             <div class="col-lg-4">
               <div class="blog-card-wrap">
-                <div class="blog-card">
-                  <div class="blog-card__date">04.11.2020</div>
-                  <div class="blog-card__title">
-                    <a href="#"> Как CMS влияют на стоимость разработки </a>
-                  </div>
-                  <div class="blog-card__image-wrap">
-                    <a href="#">
+                <a href="#">
+                  <div class="blog-card">
+                    <div class="blog-card__date">04.11.2020</div>
+                    <div class="blog-card__title">
+                      Как CMS влияют на стоимость разработки
+                    </div>
+                    <div class="blog-card__image-wrap">
                       <img
-                        src="assets/blog1.png"
-                        alt="pic"
-                        class="blog-card__image"
-                      />
-                    </a>
-                  </div>
-                  <div class="blog-card__meta">
-                    <div class="blog-card__meta-item-wrap">
-                      <a href="#">
+                      src="assets/blog1.png"
+                      alt="pic"
+                      class="blog-card__image"
+                    />
+                    </div>
+                    <div class="blog-card__meta">
+                      <div class="blog-card__meta-item-wrap">
                         <div class="blog-card__meta-item">
                           <i class="icon-comment"></i>
                           <span>24</span>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="blog-card-wrap">
-                <div class="blog-card">
-                  <div class="blog-card__date">04.11.2020</div>
-                  <div class="blog-card__title">
-                    <a href="#"> Как CMS влияют на стоимость разработки </a>
-                  </div>
-                  <div class="blog-card__image-wrap">
-                    <a href="#">
+                <a href="#">
+                  <div class="blog-card">
+                    <div class="blog-card__date">04.11.2020</div>
+                    <div class="blog-card__title">
+                      Как CMS влияют на стоимость разработки
+                    </div>
+                    <div class="blog-card__image-wrap">
                       <img
-                        src="assets/blog1.png"
-                        alt="pic"
-                        class="blog-card__image"
-                      />
-                    </a>
-                  </div>
-                  <div class="blog-card__meta">
-                    <div class="blog-card__meta-item-wrap">
-                      <a href="#">
+                      src="assets/blog1.png"
+                      alt="pic"
+                      class="blog-card__image"
+                    />
+                    </div>
+                    <div class="blog-card__meta">
+                      <div class="blog-card__meta-item-wrap">
                         <div class="blog-card__meta-item">
                           <i class="icon-comment"></i>
                           <span>24</span>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="blog-card-wrap">
-                <div class="blog-card">
-                  <div class="blog-card__date">04.11.2020</div>
-                  <div class="blog-card__title">
-                    <a href="#"> Как CMS влияют на стоимость разработки </a>
-                  </div>
-                  <div class="blog-card__image-wrap">
-                    <a href="#">
+                <a href="#">
+                  <div class="blog-card">
+                    <div class="blog-card__date">04.11.2020</div>
+                    <div class="blog-card__title">
+                      Как CMS влияют на стоимость разработки
+                    </div>
+                    <div class="blog-card__image-wrap">
                       <img
-                        src="assets/blog1.png"
-                        alt="pic"
-                        class="blog-card__image"
-                      />
-                    </a>
-                  </div>
-                  <div class="blog-card__meta">
-                    <div class="blog-card__meta-item-wrap">
-                      <a href="#">
+                      src="assets/blog1.png"
+                      alt="pic"
+                      class="blog-card__image"
+                    />
+                    </div>
+                    <div class="blog-card__meta">
+                      <div class="blog-card__meta-item-wrap">
                         <div class="blog-card__meta-item">
                           <i class="icon-comment"></i>
                           <span>24</span>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="blog-card-wrap">
-                <div class="blog-card">
-                  <div class="blog-card__date">04.11.2020</div>
-                  <div class="blog-card__title">
-                    <a href="#"> Как CMS влияют на стоимость разработки </a>
-                  </div>
-                  <div class="blog-card__image-wrap">
-                    <a href="#">
+                <a href="#">
+                  <div class="blog-card">
+                    <div class="blog-card__date">04.11.2020</div>
+                    <div class="blog-card__title">
+                      Как CMS влияют на стоимость разработки
+                    </div>
+                    <div class="blog-card__image-wrap">
                       <img
-                        src="assets/blog1.png"
-                        alt="pic"
-                        class="blog-card__image"
-                      />
-                    </a>
-                  </div>
-                  <div class="blog-card__meta">
-                    <div class="blog-card__meta-item-wrap">
-                      <a href="#">
+                      src="assets/blog1.png"
+                      alt="pic"
+                      class="blog-card__image"
+                    />
+                    </div>
+                    <div class="blog-card__meta">
+                      <div class="blog-card__meta-item-wrap">
                         <div class="blog-card__meta-item">
                           <i class="icon-comment"></i>
                           <span>24</span>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="blog-card-wrap">
-                <div class="blog-card">
-                  <div class="blog-card__date">04.11.2020</div>
-                  <div class="blog-card__title">
-                    <a href="#"> Как CMS влияют на стоимость разработки </a>
-                  </div>
-                  <div class="blog-card__image-wrap">
-                    <a href="#">
+                <a href="#">
+                  <div class="blog-card">
+                    <div class="blog-card__date">04.11.2020</div>
+                    <div class="blog-card__title">
+                      Как CMS влияют на стоимость разработки
+                    </div>
+                    <div class="blog-card__image-wrap">
                       <img
-                        src="assets/blog1.png"
-                        alt="pic"
-                        class="blog-card__image"
-                      />
-                    </a>
-                  </div>
-                  <div class="blog-card__meta">
-                    <div class="blog-card__meta-item-wrap">
-                      <a href="#">
+                      src="assets/blog1.png"
+                      alt="pic"
+                      class="blog-card__image"
+                    />
+                    </div>
+                    <div class="blog-card__meta">
+                      <div class="blog-card__meta-item-wrap">
                         <div class="blog-card__meta-item">
                           <i class="icon-comment"></i>
                           <span>24</span>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="blog-card-wrap">
-                <div class="blog-card">
-                  <div class="blog-card__date">04.11.2020</div>
-                  <div class="blog-card__title">
-                    <a href="#"> Как CMS влияют на стоимость разработки </a>
-                  </div>
-                  <div class="blog-card__image-wrap">
-                    <a href="#">
+                <a href="#">
+                  <div class="blog-card">
+                    <div class="blog-card__date">04.11.2020</div>
+                    <div class="blog-card__title">
+                      Как CMS влияют на стоимость разработки
+                    </div>
+                    <div class="blog-card__image-wrap">
                       <img
-                        src="assets/blog1.png"
-                        alt="pic"
-                        class="blog-card__image"
-                      />
-                    </a>
-                  </div>
-                  <div class="blog-card__meta">
-                    <div class="blog-card__meta-item-wrap">
-                      <a href="#">
+                      src="assets/blog1.png"
+                      alt="pic"
+                      class="blog-card__image"
+                    />
+                    </div>
+                    <div class="blog-card__meta">
+                      <div class="blog-card__meta-item-wrap">
                         <div class="blog-card__meta-item">
                           <i class="icon-comment"></i>
                           <span>24</span>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -1134,55 +1252,140 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title">Моя история</h2>
-          <div class="dd-timeline-wrap">
+          <div class="dd-timeline-wrap out-of-bound-tl">
             <ul class="dd-timeline">
-              <li class="dd-timeline__item active">
+              <li class="dd-timeline__item">
                 <div class="dd-timeline__item-dot"></div>
-                <ul class="dd-timeline__item-content">
-                  <li>Регистрация домена fladex.ru, старт блога;</li>
-                  <li>Фриланс по форумному движку phpBB;</li>
-                  <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
-                </ul>
-              </li>
-              <li class="dd-timeline__item active">
-                <div class="dd-timeline__item-dot"></div>
-                <ul class="dd-timeline__item-content">
-                  <li>Регистрация домена fladex.ru, старт блога;</li>
-                  <li>Фриланс по форумному движку phpBB;</li>
-                  <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
-                </ul>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
               </li>
               <li class="dd-timeline__item">
                 <div class="dd-timeline__item-dot"></div>
-                <ul class="dd-timeline__item-content">
-                  <li>Регистрация домена fladex.ru, старт блога;</li>
-                  <li>Фриланс по форумному движку phpBB;</li>
-                  <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
-                </ul>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
               </li>
               <li class="dd-timeline__item">
                 <div class="dd-timeline__item-dot"></div>
-                <ul class="dd-timeline__item-content">
-                  <li>Регистрация домена fladex.ru, старт блога;</li>
-                  <li>Фриланс по форумному движку phpBB;</li>
-                  <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
-                </ul>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                  </ul>
+                </div>
               </li>
               <li class="dd-timeline__item">
                 <div class="dd-timeline__item-dot"></div>
-                <ul class="dd-timeline__item-content">
-                  <li>Регистрация домена fladex.ru, старт блога;</li>
-                  <li>Фриланс по форумному движку phpBB;</li>
-                  <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
-                </ul>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
               </li>
               <li class="dd-timeline__item">
                 <div class="dd-timeline__item-dot"></div>
-                <ul class="dd-timeline__item-content">
-                  <li>Регистрация домена fladex.ru, старт блога;</li>
-                  <li>Фриланс по форумному движку phpBB;</li>
-                  <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
-                </ul>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
+              </li>
+              <li class="dd-timeline__item">
+                <div class="dd-timeline__item-dot"></div>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
+              </li>
+              <li class="dd-timeline__item">
+                <div class="dd-timeline__item-dot"></div>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
+              </li>
+              <li class="dd-timeline__item">
+                <div class="dd-timeline__item-dot"></div>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
+              </li>
+              <li class="dd-timeline__item">
+                <div class="dd-timeline__item-dot"></div>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
+              </li>
+              <li class="dd-timeline__item">
+                <div class="dd-timeline__item-dot"></div>
+                <div class="dd-timeline__item-content-wrap">
+                  <div class="dd-timeline__item-content-line"></div>
+                  <ul class="dd-timeline__item-content">
+                    <li>Регистрация домена fladex.ru, старт блога;</li>
+                    <li>Фриланс по форумному движку phpBB;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                    <li>Регистрация на SEO-форумах SearchEngines и MaulTalk;</li>
+                  </ul>
+                </div>
+                <div class="dd-timeline__item-date">2019</div>
               </li>
             </ul>
           </div>
@@ -1521,7 +1724,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="contact-form-wrap">
+              <div class="contact-form-wrap mtp-md-32">
                 <form action="/" class="contact-form">
                   <div class="contact-form__title">Обсудим размещение?</div>
                   <div class="contact-form__subtitle">
@@ -1674,10 +1877,36 @@
                 <div class="home-comments">
                   <div class="home-comments-item">
                     <div class="home-comments-item__title">
-                      <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
-                      <span class="char">D</span>
-                      <span class="name">DGNZ</span>
-                      <span class="date">2 нед</span>
+                      <a href="#">
+                        <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
+                        <!-- <span class="char">D</span> -->
+                        <span class="icon icon-user"></span>
+                        <span class="name">DGNZ</span>
+                        <span class="date">2 нед</span>
+                      </a>
+                    </div>
+                    <div class="home-comments-item__content">
+                      <a href="#">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Impedit, veritatis beatae laudantium animi tempore
+                      voluptate ipsa in rem est recusandae!
+                      </a>
+                    </div>
+                    <div class="home-comments-item__details-btn-wrap">
+                      <a href="#" class="home-comments-item__details-btn">
+                        Почему вебмастерам нужно переходить...
+                      </a>
+                    </div>
+                  </div>
+                  <div class="home-comments-item">
+                    <div class="home-comments-item__title">
+                      <a href="#">
+                        <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
+                        <!-- <span class="char">D</span> -->
+                        <span class="icon icon-user"></span>
+                        <span class="name">DGNZ</span>
+                        <span class="date">2 нед</span>
+                      </a>
                     </div>
                     <div class="home-comments-item__content">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1692,10 +1921,13 @@
                   </div>
                   <div class="home-comments-item">
                     <div class="home-comments-item__title">
-                       <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
-                      <span class="char">D</span>
-                      <span class="name">DGNZ</span>
-                      <span class="date">2 нед</span>
+                      <a href="#">
+                        <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
+                        <!-- <span class="char">D</span> -->
+                        <span class="icon icon-user"></span>
+                        <span class="name">DGNZ</span>
+                        <span class="date">2 нед</span>
+                      </a>
                     </div>
                     <div class="home-comments-item__content">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1710,10 +1942,13 @@
                   </div>
                   <div class="home-comments-item">
                     <div class="home-comments-item__title">
-                       <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
-                      <span class="char">D</span>
-                      <span class="name">DGNZ</span>
-                      <span class="date">2 нед</span>
+                      <a href="#">
+                        <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
+                        <!-- <span class="char">D</span> -->
+                        <span class="icon icon-user"></span>
+                        <span class="name">DGNZ</span>
+                        <span class="date">2 нед</span>
+                      </a>
                     </div>
                     <div class="home-comments-item__content">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1728,10 +1963,13 @@
                   </div>
                   <div class="home-comments-item">
                     <div class="home-comments-item__title">
-                       <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
-                      <span class="char">D</span>
-                      <span class="name">DGNZ</span>
-                      <span class="date">2 нед</span>
+                      <a href="#">
+                        <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
+                        <!-- <span class="char">D</span> -->
+                        <span class="icon icon-user"></span>
+                        <span class="name">DGNZ</span>
+                        <span class="date">2 нед</span>
+                      </a>
                     </div>
                     <div class="home-comments-item__content">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1746,28 +1984,13 @@
                   </div>
                   <div class="home-comments-item">
                     <div class="home-comments-item__title">
-                       <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
-                      <span class="char">D</span>
-                      <span class="name">DGNZ</span>
-                      <span class="date">2 нед</span>
-                    </div>
-                    <div class="home-comments-item__content">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Impedit, veritatis beatae laudantium animi tempore
-                      voluptate ipsa in rem est recusandae!
-                    </div>
-                    <div class="home-comments-item__details-btn-wrap">
-                      <a href="#" class="home-comments-item__details-btn">
-                        Почему вебмастерам нужно переходить...
+                      <a href="#">
+                        <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
+                        <!-- <span class="char">D</span> -->
+                        <span class="icon icon-user"></span>
+                        <span class="name">DGNZ</span>
+                        <span class="date">2 нед</span>
                       </a>
-                    </div>
-                  </div>
-                  <div class="home-comments-item">
-                    <div class="home-comments-item__title">
-                       <!-- <img src="assets/sample.png" alt="pic" class="img"> -->
-                      <span class="char">D</span>
-                      <span class="name">DGNZ</span>
-                      <span class="date">2 нед</span>
                     </div>
                     <div class="home-comments-item__content">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1983,10 +2206,52 @@
           class="overlay-cdk__image"
         />
       </div>
-      <div class="overlay-cdk__title">Title</div>
-      <div class="overlay-cdk__subtitle">Subtitle</div>
+      <div class="overlay-cdk__title">Спасибо за завявку</div>
+      <div class="overlay-cdk__subtitle">Я свяжусь с вами втечение 6 часов</div>
       <div class="overlay-cdk__footer">
         <a href="#" class="dd-button overlay-cdk__close-btn"> Отлично, жду </a>
+      </div>
+    </div>
+  </div>
+</noindex>
+<noindex>
+  <div id="contactPopup" class="overlay-cdk">
+    <div class="overlay-cdk__content">
+      <div class="overlay-cdk__contact-form-wrap">
+        <div class="overlay-cdk__small-title">Отправить заявку</div>
+        <div class="overlay-cdk__subtitle">
+          Оставьте заявку, и я свяжусь с вами в течение суток
+        </div>
+        <form
+          action="/"
+          method="POST"
+          class="overlay-cdk__contact-form ajax-contact-form"
+        >
+          <div class="dd-input-wrap">
+            <input
+              type="text"
+              placeholder="Имя"
+              name="Имя"
+              class="dd-input w-100"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="dd-input-wrap">
+            <input
+              type="tel"
+              placeholder="Телефон"
+              name="Телефон"
+              class="dd-input w-100"
+              autocomplete="tel"
+              required
+            />
+          </div>
+          <div class="dd-button-wrap">
+            <button type="submit" class="dd-button w-100">Отправить</button>
+          </div>
+          <input type="hidden" name="action" value="ajaxForm" />
+        </form>
       </div>
     </div>
   </div>
